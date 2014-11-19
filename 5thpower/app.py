@@ -33,17 +33,27 @@ class Controller(object):
 		return Scraper().thing(type, thing)
 
 	@cherrypy.expose
-	@cherrypy.tools.json_out()
 	@cherrypy.tools.allow(methods=['GET'])
-	def atkvaedi(self):
-		return {'hello': 'important stuff'}
+	def thingmenn(self, thing):
+		return Scraper().thingmenn(thing)
 
 	@cherrypy.expose
 	@cherrypy.tools.json_out()
 	@cherrypy.tools.allow(methods=['GET'])
-	def maeting(self):
-		return {'hello': 'important stuff'}
+	def atkvaedi(self):
+		return Scraper().get_all_votes()
 
+	@cherrypy.expose
+	@cherrypy.tools.json_out()
+	@cherrypy.tools.allow(methods=['GET'])
+	def fundir(self, thing):
+		return Scraper().fundir(thing)
+
+	@cherrypy.expose
+	@cherrypy.tools.json_out()
+	@cherrypy.tools.allow(methods=['GET'])
+	def fundur(self, url):
+		return Scraper().fundur(url)
 
 if __name__ == '__main__':
 	cherrypy.config.update(file('server.conf'))
