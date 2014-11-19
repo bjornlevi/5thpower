@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import cherrypy
 import simplejson
 from scraper import Scraper
@@ -22,7 +25,7 @@ class Controller(object):
 	@cherrypy.tools.json_out()
 	@cherrypy.tools.allow(methods=['GET'])
 	def thingflokkar(self):
-		return {'hello': 'important stuff'}
+		return Scraper().thingflokkar()
 
 	@cherrypy.expose
 	@cherrypy.tools.allow(methods=['GET'])
