@@ -1,0 +1,9 @@
+The MongoMediator relays JSON data between user and a MongoDB
+
+--- Setup ---
+1. Install Mongo
+2. Activate virtualenvironment
+2. pip install requirements.txt
+3. Change the db / collection names
+3. python app.py
+
