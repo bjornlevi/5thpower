@@ -11,7 +11,8 @@ class DatabasePlugin(plugins.SimplePlugin):
 
     def start(self):
         self.bus.log('Starting up DB access')
-        self.bus.subscribe("get-data", self.get_data)
+        self.bus.subscribe("get-votes", self.get_votes)
+        self.bus.subscribe("get-thingmenn", self.get_thingmenn)
         self.bus.subscribe("db-save", self.save_it)
         self.bus.subscribe("db-update", self.update_it)
         self.bus.subscribe("db-delete", self.delete_it)
@@ -21,7 +22,8 @@ class DatabasePlugin(plugins.SimplePlugin):
 
     def stop(self):
         self.bus.log('Stopping down DB access')
-        self.bus.unsubscribe("get-data", self.get_data)
+        self.bus.unsubscribe("get-votes", self.get_votes)
+        self.bus.unsubscribe("get-thingmenn", self.get_thingmenn)
         self.bus.unsubscribe("db-save", self.save_it)
         self.bus.unsubscribe("db-update", self.update_it)
         self.bus.unsubscribe("db-delete", self.delete_it)
@@ -30,8 +32,12 @@ class DatabasePlugin(plugins.SimplePlugin):
         self.bus.unsubscribe("db-getall", self.get_all)
 
     @cherrypy.tools.json_out()
-    def get_data(self, vote_id):
-        return self.db.get_data(vote_id)
+    def get_votes(self, vote_id):
+        return self.db.get_votes(vote_id)
+
+    @cherrypy.tools.json_out()
+    def get_thingmenn(self):
+        return self.db.get_thingmenn()
 
     @cherrypy.tools.json_out()
     def save_it(self, entity):

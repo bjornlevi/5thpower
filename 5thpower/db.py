@@ -18,9 +18,7 @@ class DB(object):
 		self.connection = Connection()
 		self.db = self.connection[self.connection_name]
 
-	def is_vote(self, vote_id):
-		response = requests.get('http://www.althingi.is/dba-bin/atkvgr.pl?nnafnak='+str(vote_id))
-		soup = BeautifulSoup(response.text)
+	def is_vote(self, soup):
 		nobrs = soup.find_all('nobr')
 		if len(nobrs)==0:
 			return False
@@ -39,12 +37,16 @@ class DB(object):
 				current = current.nextSibling
 				if current.name == 'nobr':
 					results.append(current.text)
+					#results.append(self.get_thingmadur(current.text))
 		except:
 			pass
 		return results
 
-	def get_data(self, vote_id):
-		if not self.is_vote(vote_id):
+	def get_votes(self, vote_id):
+		response = requests.get('http://www.althingi.is/dba-bin/atkvgr.pl?nnafnak='+str(vote_id))
+		soup = BeautifulSoup(response.text)
+
+		if not self.is_vote(soup):
 			print "Vote: " + str(vote_id) + " skipped"
 			return False
 
@@ -52,9 +54,6 @@ class DB(object):
 			print "Vote: " + str(vote_id) + " exists"
 			return False
 
-		print "Running vote: " + str(vote_id)
-		response = requests.get('http://www.althingi.is/dba-bin/atkvgr.pl?nnafnak='+str(vote_id))
-		soup = BeautifulSoup(response.text)
 		print "Parsing vote: " + str(vote_id)
 		#<h2 class="FyrirsognSv">já:</h2>
 		#<h2 class="FyrirsognSv">nei:</h2>
@@ -79,7 +78,33 @@ class DB(object):
 				#handle absent
 				vote['absent'] = self.collect_votes(header)
 		print "Saving vote: " + str(vote_id)
+		self.collection_name = 'votes'
 		return cherrypy.engine.publish('db-save', vote)
+
+	def get_thingmadur(self, name):
+		collection = self.db['thingmenn']
+		results = []
+		for i in collection.find({"nafn": name}):
+			i["_id"] = str(i["_id"])
+			results.append(i)
+		return results		
+
+	def get_thingmenn(self):
+		self.collection_name = 'thingmenn'
+		results = []
+		letters = ['A','%C1','B','D','E','F','G','H','I','%CD','J','K','L','M','N','O','%D3','P','R','S','T','U','V','W','%DE','%D6']
+		for letter in letters:
+			response = requests.get('http://www.althingi.is/altext/cv/is/?cstafur='+str(letter))
+			soup = BeautifulSoup(response.text)
+			print "Parsing page: " + soup.title.text
+			for li in soup.find_all('li'):
+				thingmadur = {
+					'nafn': li.a.text,
+					'url': li.a['href']
+				}
+				results.append(cherrypy.engine.publish('db-save', thingmadur))
+		return results
+
 
 	def save(self, data):
 		collection = self.db[self.collection_name]

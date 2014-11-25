@@ -31,7 +31,7 @@ def validate_or(data_structure):
 	if len(found) == 0 or len(extras) > 0:
 		raise cherrypy.HTTPError("400 Bad Request", "Required fields are: " + str(data_structure))
 
-submit = ["vote_id_from", "vote_id_to"]
+collect_votes = ["vote_id_from", "vote_id_to"]
 update = ["update_id", "update_data"]
 delete = ["vote_id"]
 get_where = ["vote_id"]

@@ -40,18 +40,24 @@ class Controller(object):
 	@cherrypy.expose
 	@cherrypy.tools.json_in()
 	@cherrypy.tools.json_out()
-	@cherrypy.tools.validate_and(data_structure=input_validation.submit)
+	@cherrypy.tools.validate_and(data_structure=input_validation.collect_votes)
 	@cherrypy.tools.before_submit()
 	@cherrypy.tools.after_submit()
 	@cherrypy.tools.allow(methods=['POST', 'OPTIONS'])
-	def submit(self):
+	def collect_votes(self):
 		try:
 			ids = []
 			for vote_id in range(cherrypy.request.json["vote_id_from"], cherrypy.request.json["vote_id_to"]):
-				ids.append(cherrypy.engine.publish('get-data', vote_id))
+				ids.append(cherrypy.engine.publish('get-votes', vote_id))
 			return ids
 		except:
 			return
+
+	@cherrypy.expose
+	@cherrypy.tools.json_out()
+	@cherrypy.tools.allow(methods=['GET'])
+	def collect_thingmenn(self):
+		return cherrypy.engine.publish('get-thingmenn')
 
 	@cherrypy.expose
 	@cherrypy.tools.json_in()
