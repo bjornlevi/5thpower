@@ -50,7 +50,7 @@ def collect_thingmenn():
 				t.add_party(party_id)
 				t.add_thing("144")
 				by_short_names[skammstofun] = t
-				print 'adding: ' + t.skammstofun
+				#print 'adding: ' + t.skammstofun
 				#print t.to_json()
 			except Exception as e:				
 				pass
@@ -61,7 +61,7 @@ def collect_thingmenn():
 	for pp in past_parties:
 		try:
 			party_id = pp.text
-			print party_id
+			#print party_id
 			member_list = read_table_search_results(pp['href'])
 			for row in member_list:
 				try:
@@ -72,26 +72,23 @@ def collect_thingmenn():
 					url = query_path + cols[1].a['href']
 					if skammstofun in by_short_names:
 						#þingmaður already added, add thing and possibly a new party
-						print 'existing þingmaður: ' + skammstofun
+						#print 'existing þingmaður: ' + skammstofun
 						if party_id not in by_short_names[skammstofun].party:
-							print 'adding party_id: ' + party_id
+							#print 'adding party_id: ' + party_id
 							by_short_names[skammstofun].add_party(party_id)
-						print 'adding thing: ' + thing
+						#print 'adding thing: ' + thing
 						by_short_names[skammstofun].add_thing(thing)
 						#print by_short_names[skammstofun].to_json()
 						continue
-					
+					print "Adding thingmadur: " + skammstofun
 					t = Thingmadur(nafn, skammstofun, url)
 					t.add_party(party_id)
 					t.add_thing(thing)
 					by_short_names[skammstofun] = t
 					#print t.to_json()
 				except Exception as e:			
-					print e
+					pass
 		except:
 			pass
 
 	return by_short_names
-
-for thingmadur in collect_thingmenn():
-	print thingmadur

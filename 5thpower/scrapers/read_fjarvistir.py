@@ -34,14 +34,14 @@ def collect_fjarvistir():
 		soup = BeautifulSoup(response.text)
 		fundir = soup.find_all(href=re.compile('/altext/'))
 		for fundur in fundir:
-			print fundur
-			try:
-				by_thing[thing.text][fundur.text] = find_fjarvistir(query_path + fundur['href'])
-			except:
-				pass
+			if "fundur" in fundur.text or "setning" in fundur.text:
+				fundur_key = fundur.text.replace('.','')
+				try:
+					by_thing[thing.text][fundur_key] = find_fjarvistir(query_path + fundur['href'])
+				except:
+					pass
 			#print fundur_name, fundur_link
-		f = open(thing.text, 'w')
-		f.write(str(by_thing[thing.text]))
-		by_thing = {}
-		
-collect_fjarvistir()
+		#f = open(thing.text, 'w')
+		#f.write(str(by_thing[thing.text]))
+		#by_thing = {}
+	return by_thing
