@@ -2,12 +2,7 @@ import cherrypy
 import uuid
 
 def before_submit():
-	try:
-		cherrypy.request.json["vote_id_from"] = int(cherrypy.request.json["vote_id_from"])
-		cherrypy.request.json["vote_id_to"] = int(cherrypy.request.json["vote_id_to"])
-	except:
-		cherrypy.request.json["vote_id_from"] = 0
-		cherrypy.request.json["vote_id_to"] = 0
+	pass
 
 def after_submit():
 	pass
