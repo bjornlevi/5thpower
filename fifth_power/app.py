@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
 import cherrypy
 import simplejson
 from jinja2 import FileSystemLoader, Environment
@@ -12,7 +13,7 @@ import before_and_after_handlers as handlers
 
 from scrapers import utility
 
-env = Environment(loader=FileSystemLoader('templates'))
+env = Environment(loader=FileSystemLoader('view'))
 
 def CORS():
 	cherrypy.response.headers["Access-Control-Allow-Origin"] = "*"
@@ -87,7 +88,31 @@ class Controller(object):
 
 if __name__ == '__main__':
 	DatabasePlugin(cherrypy.engine, DB).subscribe()
-	cherrypy.config.update(file('server.conf'))
-	root = Controller()
 
-	cherrypy.quickstart(root, '/')
+	current_dir = os.path.dirname(os.path.abspath(__file__)) + os.path.sep
+
+	config = {
+		'global': {
+			'log.screen': True,
+			'tools.staticdir.debug': True,
+			'server.socket_host': '0.0.0.0',
+			'server.socket_port': 8080,
+			'tools.encode.on': True,
+			'tools.encode.encoding':'utf-8',
+			'log.error_file': os.path.join(current_dir, 'errors.log'),
+        	'log.access_file': os.path.join(current_dir, 'access.log'),
+		},
+		'/':{
+        	'tools.staticdir.root' : current_dir,
+        },
+    	'/static': {
+	    	'tools.staticdir.on': True,
+		    'tools.staticdir.dir': 'static'
+    	}
+	}
+
+	print config
+	print current_dir
+
+	#cherrypy.config.update(config) #file('server.conf'))
+	cherrypy.quickstart(Controller(), '/', config)
