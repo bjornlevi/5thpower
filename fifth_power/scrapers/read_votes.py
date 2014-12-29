@@ -4,6 +4,7 @@
 import requests
 from bs4 import BeautifulSoup
 from pymongo import MongoClient, Connection
+from utility import *
 
 connection_name = "althingi"
 vote_collection = "votes"
@@ -13,7 +14,7 @@ db = connection[connection_name]
 
 def vote_exists(vote):
 	collection = db[vote_collection]
-	if collection.find({'nafnak': vote['nafnak'], 'voter': vote['voter']}).count() > 0:
+	if collection.find({'vote_id': vote['vote_id'], 'mp_id': vote['mp_id']}).count() > 0:
 		return True
 	return False
 
@@ -38,16 +39,16 @@ def get_vote_data(vote_data, current_mp, thing, mal_nr):
 
 	#get vote data
 	vote_results = {}
-	vote_results['voter'] = current_mp
-	vote_results['thing'] = thing
-	vote_results['mal'] = mal_nr
+	vote_results['mp_id'] = current_mp
+	vote_results['session_nr'] = thing
+	vote_results['issue'] = mal_nr
 	vote_results['date'] = vote[0].nobr.text.strip()
 	vote_results['phase'] = vote[1].text.strip()
 	try:
 		vote_results['type'] = vote[2].abbr['title'].strip()
 	except:
 		vote_results['type'] = vote[2].a.text.strip()
-	vote_results['nafnak'] = vote[2].a['href'].split('=')[-1].strip()
+	vote_results['vote_id'] = vote[2].a['href'].split('=')[-1].strip()
 	vote_results['vote'] = vote[3].font.text
 	return vote_results
 
@@ -56,7 +57,7 @@ def collect_votes():
 	"""
 	{
 		{
-			'voter': 'mp_skammstofun',
+			'mp_id': 'mp_id',
 			'thing': 'thing nr',
 			'mal': 'thingmal',
 			'date': '24.11.2006 10:49'
@@ -73,8 +74,9 @@ def collect_votes():
 	mps = db[mp_collection]
 	for i,mp in enumerate(mps.find()[800:]):
 		print i+800
-		current_mp = mp['skammstofun']
-		for thing in mp['thing']:
+		current_mp = mp['mp_id']
+		for thing in mp['sessions']:
+			thing = thing.keys()[0]
 			print thing, current_mp
 			mal_nr = ''
 			insert_votes = []

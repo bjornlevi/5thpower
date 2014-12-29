@@ -3,7 +3,7 @@
 
 from pymongo import MongoClient, Connection
 from scrapers import read_fjarvistir, read_votes, read_mps, read_parties, read_sessions, read_absents
-import utility
+from scrapers import utility
 
 import sys
 

@@ -83,7 +83,7 @@ def get_party_description():
 			results.append({'party_name': party_name, 'party_id': party_id})
 		except:
 			pass
-	return results		
+	return results
 
 def get_session_absents(session_nr):
 	session_absents = []

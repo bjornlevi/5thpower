@@ -30,12 +30,13 @@ class DB(object):
 		return results
 
 	def get_mps(self, session_nr):
-		collection = self.db[mp_collection]
+		"""
+			find all mps in session 144: db.mps.find({"sessions.144": {$exists: "1"}})
+		"""
+		collection = self.db[self.mp_collection]
 		results = []
-		for i in collection.find({"session_nr": session_nr}):
-			i["_id"] = str(i["_id"])
-			i["nafn"] = i["nafn"]
-			results.append(i)
+		for mp in collection.find({"sessions.144": {"$exists": "1"}}):
+			results.append(str(mp))
 		return results
 
 	def get_absents(self):

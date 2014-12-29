@@ -41,6 +41,11 @@ class Controller(object):
 	"""
 
 	@cherrypy.expose
+	@cherrypy.tools.allow(methods=['GET'])
+	def index(self):
+		return "<html><head><title>By the numbers</title></head><body>Yay</body></html>"
+
+	@cherrypy.expose
 	@cherrypy.tools.json_out()
 	@cherrypy.tools.allow(methods=['GET'])
 	def get_votes(self, session):
