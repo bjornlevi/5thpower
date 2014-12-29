@@ -3,6 +3,7 @@
 
 import cherrypy
 import simplejson
+from jinja2 import FileSystemLoader, Environment
 from DatabasePlugin import DatabasePlugin
 
 from db import DB
@@ -10,6 +11,8 @@ import input_validation
 import before_and_after_handlers as handlers
 
 from scrapers import utility
+
+env = Environment(loader=FileSystemLoader('templates'))
 
 def CORS():
 	cherrypy.response.headers["Access-Control-Allow-Origin"] = "*"
@@ -43,7 +46,8 @@ class Controller(object):
 	@cherrypy.expose
 	@cherrypy.tools.allow(methods=['GET'])
 	def index(self):
-		return "<html><head><title>By the numbers</title></head><body>Yay</body></html>"
+		tmpl = env.get_template('index.html')
+		return tmpl.render()
 
 	@cherrypy.expose
 	@cherrypy.tools.json_out()
