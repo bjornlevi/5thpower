@@ -41,6 +41,7 @@ def get_mp_id_and_short_name(thing):
 	return results
 
 def get_mp_commitees(thing):
+	#returns {commitee_id: [mp_id, ...], ...} if mp_id is not varamaður or áheyrnarfulltrúi
 	url = "http://www.althingi.is/altext/xml/nefndir/nefndarmenn/?lthing="+str(thing)
 	response = requests.get(url)
 	soup = BeautifulSoup(response.text)
@@ -51,7 +52,7 @@ def get_mp_commitees(thing):
 		#print commitee_id, commitee_name.encode('utf-8')
 		for commitee_member in commitee.find_all(u'nefndarmaður'):
 			position = commitee_member.find(u'staða').contents[0].encode('utf-8', 'ignore')
-			if position == u'varamaður'.encode('utf-8', 'ignore') or position == u'áheynarfulltrúi'.encode('utf-8', 'ignore'):
+			if position == u'varamaður'.encode('utf-8', 'ignore') or position == u'áheyrnarfulltrúi'.encode('utf-8', 'ignore'):
 				#ignore these positions
 				pass
 			else:
