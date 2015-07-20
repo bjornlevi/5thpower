@@ -6,8 +6,6 @@ import json, re, csv
 
 import xmltodict
 
-mp_short_names = {}
-
 # ! --- MP INFORMATION ---
 def get_mp_short_names(thing):
 	url = "http://www.althingi.is/altext/xml/thingmenn/?lthing="+str(thing)
@@ -20,28 +18,16 @@ def get_mp_short_names(thing):
 		results.append(mp[u'skammstöfun'].encode('utf-8', 'ignore'))
 	return results
 
-def get_mp_short_name(mp_id, thing):
-	global mp_short_names
-	if thing in mp_short_names and mp_id in mp_short_names[thing]:
-		return mp_short_names[thing][mp_id]
-	else:
-		if thing in mp_short_names:
-			#fine - positive programming ftw
-			pass
-		else:
-			#thing does not exist, prepare for mps
-			mp_short_names = mp_short_names[thing] = {}
-
-
+def get_mp_short_names_and_id(thing):
 	url = "http://www.althingi.is/altext/xml/thingmenn/?lthing="+str(thing)
 	response = requests.get(url)
 	#print response.text.encode('utf-8', 'ignore')
 	data = xmltodict.parse(response.text)
+
+	results = {}
 	for mp in data[u'þingmannalisti'][u'þingmaður']:
-		#print mp[u'skammstöfun'].encode('utf-8', 'ignore')
-		if str(mp[u'@id']) == str(mp_id):
-			mp_short_names[thing][mp_id] = mp[u'skammstöfun']
-			return mp[u'skammstöfun']
+		results[mp[u'skammstöfun'].encode('utf-8', 'ignore')] = mp[u'@id']
+	return results	
 
 def get_mp_commitees(thing):
 	url = "http://www.althingi.is/altext/xml/nefndir/nefndarmenn/?lthing="+str(thing)
@@ -59,9 +45,9 @@ def get_mp_commitees(thing):
 				pass
 			else:
 				if commitee_id in commitees:
-					commitees[commitee_id].append(get_mp_short_name(commitee_member[u'id'], thing))
+					commitees[commitee_id].append(commitee_member[u'id'])
 				else:
-					commitees[commitee_id] = [get_mp_short_name(commitee_member[u'id'], thing)]
+					commitees[commitee_id] = [commitee_member[u'id']]
 	return commitees
 
 # ! --- END MP INFORMATION ---
@@ -104,7 +90,8 @@ def get_commitee_meetings_attendence(thing):
 	response = requests.get(url)
 	soup = BeautifulSoup(response.text)
 	commitee_members_list = get_mp_short_names(thing)
-	results = {} #{short_name: [[commitee_id,meeting_id], ...]}
+	mp_short_name_to_id = get_mp_short_names_and_id(thing)
+	results = {} #{mp_id: [[commitee_id,meeting_id], ...]}
 	failed = []
 	count = 0
 	for commitee_meeting in soup.find_all(u'nefndarfundur'):
@@ -129,10 +116,11 @@ def get_commitee_meetings_attendence(thing):
 
 			#log attendence: mp, meeting_id
 			for mp in short_name_list:
-				if mp in results:
-					results[mp].append([commitee_id, meeting_id])
+				mp_id = mp_short_name_to_id[mp]
+				if mp_id in results:
+					results[mp_id].append([commitee_id, meeting_id])
 				else:
-					results[mp] = [[commitee_id, meeting_id]]
+					results[mp_id] = [[commitee_id, meeting_id]]
 		except Exception as e:
 			failed.append(meeting_id)
 		print "processing ", meeting_id, short_name_list
@@ -182,7 +170,6 @@ print "processing commitee meeting count"
 
 #count number of meetings for each commitee
 commitee_meetings = get_commitee_meeting_dates(144)
-print commitee_meetings
 with open('commitee_meetings.csv', 'w+') as csvfile:
 	data = ""
 	for meeting in commitee_meetings:
