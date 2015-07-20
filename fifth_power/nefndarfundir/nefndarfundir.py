@@ -27,7 +27,18 @@ def get_mp_short_names_and_id(thing):
 	results = {}
 	for mp in data[u'þingmannalisti'][u'þingmaður']:
 		results[mp[u'skammstöfun'].encode('utf-8', 'ignore')] = mp[u'@id']
-	return results	
+	return results
+
+def get_mp_id_and_short_name(thing):
+	url = "http://www.althingi.is/altext/xml/thingmenn/?lthing="+str(thing)
+	response = requests.get(url)
+	#print response.text.encode('utf-8', 'ignore')
+	data = xmltodict.parse(response.text)
+
+	results = {}
+	for mp in data[u'þingmannalisti'][u'þingmaður']:
+		results[mp[u'@id']] = mp[u'skammstöfun'].encode('utf-8', 'ignore')
+	return results
 
 def get_mp_commitees(thing):
 	url = "http://www.althingi.is/altext/xml/nefndir/nefndarmenn/?lthing="+str(thing)
@@ -129,49 +140,3 @@ def get_commitee_meetings_attendence(thing):
 # ! --- END MEETING INFORMATION ---
  
 
-# ! --- SAVE OUTPUT ---
-
-print "Processing commitee members"
-commitee_membership = get_mp_commitees(144)
-commitee_members = get_commitee_members([commitee_membership[i] for i in commitee_membership])
-
-print "Saving commitee membership"
-
-#mps registered as commitee members
-with open('mps_in_commitees.csv', 'w+') as csvfile:
-	data = ""
-	for member in commitee_members:
-		data += member.encode('utf-8', 'ignore') + '\n'
-	csvfile.write(data)
-
-#mps registered as commitee members
-with open('commitee_members.csv', 'w+') as csvfile:
-	data = ""
-	for commitee in commitee_membership:
-		for member in commitee_membership[commitee]:
-			data += commitee.encode('utf-8', 'ignore') + "," + member.encode('utf-8', 'ignore') + '\n'
-	csvfile.write(data)
-
-print "Processing meeting attendence"
-
-#count number of meetings in each commitee
-mp_meetings = get_commitee_meetings_attendence(144)
-with open('commitee_attendence.csv', 'w+') as csvfile:
-	data = ""
-	for mp in mp_meetings:
-		#for meeting in mp_meetings[mp]: #to list all meetings attended
-			#mp, commitee_id, meeting_id
-			#data += mp + ',' + str(meeting[0]) + ',' + str(meeting[1]) + '\n'
-		#mp, number of meetings
-		data += mp + ',' + str(len(mp_meetings[mp])) + '\n' #to only count number of meetings for each mp
-	csvfile.write(data)
-
-print "processing commitee meeting count"
-
-#count number of meetings for each commitee
-commitee_meetings = get_commitee_meeting_dates(144)
-with open('commitee_meetings.csv', 'w+') as csvfile:
-	data = ""
-	for meeting in commitee_meetings:
-		data += meeting.encode('utf-8', 'ignore') + "," + str(len(commitee_meetings[meeting])) + '\n'
-	csvfile.write(data)

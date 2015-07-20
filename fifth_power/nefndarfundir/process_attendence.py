@@ -1,31 +1,35 @@
 # -*- coding: utf-8 -*-
 
 import csv
+from nefndarfundir import *
 
-mps = open('mps_in_commitees.csv', 'r') #mp_short_name
-mp_fieldnames = ['mp_short_name']
-mp_reader = csv.DictReader(mps, mp_fieldnames)
+mps = open('mps_in_commitees.csv', 'r') #mp_id
+mp_reader = csv.DictReader(mps)
 
-membership = open('commitee_members.csv', 'r') #commitee_id, mp_short_name
-membership_fieldnames = ['commitee_id', 'mp_short_name']
-membership_reader = csv.DictReader(membership, membership_fieldnames)
+membership = open('commitee_members.csv', 'r') #commitee_id, mp_id
+membership_reader = csv.DictReader(membership)
 
 commitee_meetings = open('commitee_meetings.csv', 'r') #commitee_id, meeting_count
-commitee_fieldnames = ['commitee_id', 'meeting_count']
-commitee_reader = csv.DictReader(commitee_meetings, commitee_fieldnames)
+commitee_reader = csv.DictReader(commitee_meetings)
 
 #commitee meeting counter data
 commitee_counter = {}
 for row in commitee_reader:
 	commitee_counter[row['commitee_id']] = row['meeting_count']
 
+commitee_attendence = open('commitee_attendence.csv', 'r') #commitee_id, meeting_count
+commitee_attendence_reader = csv.DictReader(commitee_attendence)
+mp_meeting_attendence = {}
+for row in commitee_attendence_reader:
+	mp_meeting_attendence[row['mp_id']] = row['meeting_count']
+
 #collect commitees each mp is registered for
 mp_commitees = {}
 for row in membership_reader:
-	if row['mp_short_name'] in mp_commitees:
-		mp_commitees[row['mp_short_name']].append(row['commitee_id'])
+	if row['mp_id'] in mp_commitees:
+		mp_commitees[row['mp_id']].append(row['commitee_id'])
 	else:
-		mp_commitees[row['mp_short_name']] = [row['commitee_id']]
+		mp_commitees[row['mp_id']] = [row['commitee_id']]
 
 #collect number of meetings each mp should attend
 mp_expected_attendence = {}
@@ -41,9 +45,13 @@ for mp in mp_commitees:
 		except:
 			#log commitees that have no meeting data
 			if mp in not_registered_commitees:
-				mp_expected_attendence[mp].append(commitee_id)
+				not_registered_commitees[mp].append(commitee_id)
 			else:
-				mp_expected_attendence[mp] = [commitee_id]
+				not_registered_commitees[mp] = [commitee_id]
 
-for mp in mp_expected_attendence:
-	print mp.encode('utf-8', 'ignore') + ',' + str(mp_expected_attendence[mp])
+mp_list = get_mp_id_and_short_name(144)
+with open('expected_attendence.csv', 'w+') as csvfile:
+	data = "mp_id,total_meetings,attended_meetings\n"
+	for mp in mp_expected_attendence:
+		data += str(mp_list[mp]) + ',' + str(mp_expected_attendence[mp]) + ',' + str(mp_meeting_attendence[mp]) + '\n'
+	csvfile.write(data)
