@@ -4,103 +4,187 @@ import requests
 from bs4 import BeautifulSoup
 import json, re, csv
 
-def get_fundargerd(url):
+import xmltodict
+
+mp_short_names = {}
+
+# ! --- MP INFORMATION ---
+def get_mp_short_names(thing):
+	url = "http://www.althingi.is/altext/xml/thingmenn/?lthing="+str(thing)
+	response = requests.get(url)
+	#print response.text.encode('utf-8', 'ignore')
+	data = xmltodict.parse(response.text)
+
+	results = []
+	for mp in data[u'þingmannalisti'][u'þingmaður']:
+		results.append(mp[u'skammstöfun'].encode('utf-8', 'ignore'))
+	return results
+
+def get_mp_short_name(mp_id, thing):
+	global mp_short_names
+	if thing in mp_short_names and mp_id in mp_short_names[thing]:
+		return mp_short_names[thing][mp_id]
+	else:
+		if thing in mp_short_names:
+			#fine - positive programming ftw
+			pass
+		else:
+			#thing does not exist, prepare for mps
+			mp_short_names = mp_short_names[thing] = {}
+
+
+	url = "http://www.althingi.is/altext/xml/thingmenn/?lthing="+str(thing)
+	response = requests.get(url)
+	#print response.text.encode('utf-8', 'ignore')
+	data = xmltodict.parse(response.text)
+	for mp in data[u'þingmannalisti'][u'þingmaður']:
+		#print mp[u'skammstöfun'].encode('utf-8', 'ignore')
+		if str(mp[u'@id']) == str(mp_id):
+			mp_short_names[thing][mp_id] = mp[u'skammstöfun']
+			return mp[u'skammstöfun']
+
+def get_mp_commitees(thing):
+	url = "http://www.althingi.is/altext/xml/nefndir/nefndarmenn/?lthing="+str(thing)
+	response = requests.get(url)
+	soup = BeautifulSoup(response.text)
+	commitees = {}
+	for commitee in soup.find_all('nefnd'):
+		commitee_id = commitee[u'id']
+		#commitee_name = u'' + commitee.find(u'heiti').contents[0].strip()
+		#print commitee_id, commitee_name.encode('utf-8')
+		for commitee_member in commitee.find_all(u'nefndarmaður'):
+			position = commitee_member.find(u'staða').contents[0].encode('utf-8', 'ignore')
+			if position == u'varamaður'.encode('utf-8', 'ignore') or position == u'áheynarfulltrúi'.encode('utf-8', 'ignore'):
+				#ignore these positions
+				pass
+			else:
+				if commitee_id in commitees:
+					commitees[commitee_id].append(get_mp_short_name(commitee_member[u'id'], thing))
+				else:
+					commitees[commitee_id] = [get_mp_short_name(commitee_member[u'id'], thing)]
+	return commitees
+
+# ! --- END MP INFORMATION ---
+
+# ! --- COMMITEE INFORMATION ---
+
+def get_commitee_members(commitee_member_lists):
+	results = []
+	for member_list in commitee_member_lists:
+		results = results + member_list
+	return list(set(results))
+
+def get_commitee_meeting_dates(thing):
+	url = "http://huginn.althingi.is/altext/xml/nefndarfundir/?lthing="+str(thing)
+	response = requests.get(url)
+	soup = BeautifulSoup(response.text)
+	commitee_meeting_dates = {}
+	for commitee_meeting in soup.find_all(u'nefndarfundur'):
+		commitee_id = commitee_meeting.find(u'nefnd')[u'id']
+		try:
+			if commitee_id in commitee_meeting_dates:
+				commitee_meeting_dates[commitee_id].append(commitee_meeting.find('dagur').contents[0])
+			else:
+				commitee_meeting_dates[commitee_id] = [commitee_meeting.find('dagur').contents[0]]
+		except:
+			pass
+	return commitee_meeting_dates
+
+# ! --- END COMMITEE INFORMATION ---
+
+# ! --- MEETING INFORMATION ---
+
+def get_meeting_minutes(url):
 	response = requests.get(url)
 	soup = BeautifulSoup(response.text)
 	return soup.find(u'fundargerð').find('texti').contents[0]
 
-def get_meeting_dates(thing):
+def get_commitee_meetings_attendence(thing):
 	url = "http://huginn.althingi.is/altext/xml/nefndarfundir/?lthing="+str(thing)
 	response = requests.get(url)
 	soup = BeautifulSoup(response.text)
-	meeting_dates = []
-	for nefndarfundur in soup.find_all(u'nefndarfundur'):
-		try: 
-			meeting_dates.append(nefndarfundur.find('dagur').contents[0])
-		except:
-			pass
-	return meeting_dates
-
-def get_fundargerdir_faerslunr(thing):
-	url = "http://huginn.althingi.is/altext/xml/nefndarfundir/?lthing="+str(thing)
-	response = requests.get(url)
-	soup = BeautifulSoup(response.text)
-	nefndarfundir = {}
-	attending_days = {}
+	commitee_members_list = get_mp_short_names(thing)
+	results = {} #{short_name: [[commitee_id,meeting_id], ...]}
 	failed = []
 	count = 0
-	for nefndarfundur in soup.find_all(u'nefndarfundur'):
-		try: 
-			meeting_id = nefndarfundur[u'númer']
-			nefndarfundir[meeting_id] = {}
+	for commitee_meeting in soup.find_all(u'nefndarfundur'):
+		try:
+			#meeting information
+			meeting_id = commitee_meeting[u'númer']
+			commitee_id = commitee_meeting.find(u'nefnd')[u'id']
 
-			#extra info fields if wanted
-			#dagskra = nefndarfundur.find(u'dagskrá')
-			#nefndarfundir[meeting_id]['dagskra'] = nefndarfundur.find('xml').contents[0]
-
-			#nefnd = nefndarfundur.find('nefnd')
-			#nefndarfundir[meeting_id]['nefnd'] = nefnd['id']#{'id': nefnd['id'], 'nafn': nefnd.contents[0]}
-
-			#nefndarfundir[meeting_id]['dagur'] = nefndarfundur.find('dagur').contents[0]
-			#nefndarfundir[meeting_id]['timi'] = nefndarfundur.find('timi').contents[0]
-
-			fundargerd = nefndarfundur.find(u'fundargerð')
-			nefndarfundir[meeting_id]['fundargerd'] = fundargerd.find('xml').contents[0]
-
-			attendees = get_fundargerd(nefndarfundir[meeting_id]['fundargerd'])
-			#find all short names (xyz)
-			re.UNICODE
-			attendee_short_name_list = [x[2:-1] for x in re.findall(r'\s\(.{2,20}\)', attendees.encode('utf-8'))]
+			#minutes information
+			meeting_minutes_information = commitee_meeting.find(u'fundargerð')
+			meeting_minutes = get_meeting_minutes(meeting_minutes_information.find('xml').contents[0])
 			
-			dagur = nefndarfundur.find('dagur').contents[0]
-			for attendee in attendee_short_name_list:
-				if attendee in attending_days:
-					attending_days[attendee].append(dagur)
+			#attendee list
+			re.UNICODE
+			raw_short_names = [x[2:-1] for x in re.findall(r'\s\(.{2,20}\)', meeting_minutes.encode('utf-8'))]
+			
+			#clean short name list
+			short_name_list = []
+			for short_name in raw_short_names:
+				if short_name in commitee_members_list:
+					short_name_list.append(short_name)
+
+			#log attendence: mp, meeting_id
+			for mp in short_name_list:
+				if mp in results:
+					results[mp].append([commitee_id, meeting_id])
 				else:
-					attending_days[attendee] = [dagur]
-
-			#TODO: compare short name list to actual MP short names | use actual short name list to search meeting minutes
-			#nefndarfundir[meeting_id]['short_names'] = attendee_short_name_list
-
+					results[mp] = [[commitee_id, meeting_id]]
 		except Exception as e:
 			failed.append(meeting_id)
-		print "processing ", meeting_id, attendee_short_name_list
-	return attending_days
+		print "processing ", meeting_id, short_name_list
+	return results
 
-#data = get_meeting_dates(144)
+# ! --- END MEETING INFORMATION ---
+ 
 
-#get the data
-data = get_fundargerdir_faerslunr(144)
+# ! --- SAVE OUTPUT ---
 
-"""
-#write to json
-with open('nefndarfundir.js', 'w+') as outfile:
-    json.dump(data, outfile)
+print "Processing commitee members"
+commitee_membership = get_mp_commitees(144)
+commitee_members = get_commitee_members([commitee_membership[i] for i in commitee_membership])
 
-#count short name instances
-short_names = {}
-meetings_attended = {}
-for meeting_id in data:
-	try:
-		for short_name in data[meeting_id]['short_names']:
-			if short_name in short_names:
-				short_names[short_name] += 1
-			else:
-				short_names[short_name] = 1
-			if short_name in meetings_attended:
-				meetings_attended[short_name].append(data[meeting_id]['nefnd'])
-			else:
-				meetings_attended[short_name] = [data[meeting_id]['nefnd']]
-	except Exception as e:
-		pass
+print "Saving commitee membership"
 
-with open(u'meeting_dates.csv', 'w+') as csvfile:
-    for key in data:
-    	line = "'" + key + "':" + str(data[key]) + ',\n'
-    	csvfile.write(line)
-"""
-#output csv file
-with open(u'nefndarfundir.csv', 'w+') as csvfile:
-    for short_name in data:
-    	line = short_name + ',' + str(len(data[short_name])) + '\n'
-    	csvfile.write(line)
+#mps registered as commitee members
+with open('mps_in_commitees.csv', 'w+') as csvfile:
+	data = ""
+	for member in commitee_members:
+		data += member.encode('utf-8', 'ignore') + '\n'
+	csvfile.write(data)
+
+#mps registered as commitee members
+with open('commitee_members.csv', 'w+') as csvfile:
+	data = ""
+	for commitee in commitee_membership:
+		for member in commitee_membership[commitee]:
+			data += commitee.encode('utf-8', 'ignore') + "," + member.encode('utf-8', 'ignore') + '\n'
+	csvfile.write(data)
+
+print "Processing meeting attendence"
+
+#count number of meetings in each commitee
+mp_meetings = get_commitee_meetings_attendence(144)
+with open('commitee_attendence.csv', 'w+') as csvfile:
+	data = ""
+	for mp in mp_meetings:
+		#for meeting in mp_meetings[mp]: #to list all meetings attended
+			#mp, commitee_id, meeting_id
+			#data += mp + ',' + str(meeting[0]) + ',' + str(meeting[1]) + '\n'
+		#mp, number of meetings
+		data += mp + ',' + str(len(mp_meetings[mp])) + '\n' #to only count number of meetings for each mp
+	csvfile.write(data)
+
+print "processing commitee meeting count"
+
+#count number of meetings for each commitee
+commitee_meetings = get_commitee_meeting_dates(144)
+print commitee_meetings
+with open('commitee_meetings.csv', 'w+') as csvfile:
+	data = ""
+	for meeting in commitee_meetings:
+		data += meeting.encode('utf-8', 'ignore') + "," + str(len(commitee_meetings[meeting])) + '\n'
+	csvfile.write(data)
