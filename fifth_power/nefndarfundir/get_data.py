@@ -1,5 +1,16 @@
 # -*- coding: utf-8 -*-
-from nefndarfundir import *
+from includes import *
+import sys
+
+if len(sys.argv) == 2:
+	#good
+	pass
+else:
+	if sys.argv[1] == '--help':
+		print "get_data.py session_nr\n"
+		print "get_data.py 144"
+	else:
+		print "incorrect number of arguments, must provide session number"
 
 # ! --- SAVE OUTPUT ---
 
@@ -27,15 +38,26 @@ with open('commitee_members.csv', 'w+') as csvfile:
 print "Processing meeting attendence"
 
 #count number of meetings in each commitee
-mp_meetings = get_commitee_meetings_attendence(144)
+meeting_dates = get_commitee_meetings_attendence(144)
+
 with open('commitee_attendence.csv', 'w+') as csvfile:
 	data = "mp_id,meeting_count\n"
-	for mp in mp_meetings:
-		#for meeting in mp_meetings[mp]: #to list all meetings attended
+	mp_commitee_membership = {}
+	for mp in meeting_dates:
+		#for meeting in meeting_dates[mp]: #to list all meetings attended
 			#mp, commitee_id, meeting_id
 			#data += mp + ',' + str(meeting[0]) + ',' + str(meeting[1]) + '\n'
 		#mp, number of meetings
-		data += mp + ',' + str(len(mp_meetings[mp])) + '\n' #to only count number of meetings for each mp
+		data += mp + ',' + str(len(meeting_dates[mp])) + '\n' #to only count number of meetings for each mp
+	csvfile.write(data)
+
+with open('commitee_attendence_dates.csv', 'w+') as csvfile:
+	data = "mp,commitee_id,meeting_id,meeting_date\n"
+	mp_commitee_membership = {}
+	for mp in meeting_dates:
+		for meeting in meeting_dates[mp]: #to list all meetings attended
+			#mp,commitee_id,meeting_id,meeting_date
+			data += mp + ',' + str(meeting[0]) + ',' + str(meeting[1]) + ',' + str(meeting[2]) + '\n'
 	csvfile.write(data)
 
 print "processing commitee meeting count"

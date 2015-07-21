@@ -7,8 +7,8 @@ import json, re, csv
 import xmltodict
 
 # ! --- MP INFORMATION ---
-def get_mp_short_names(thing):
-	url = "http://www.althingi.is/altext/xml/thingmenn/?lthing="+str(thing)
+def get_mp_short_names(session):
+	url = "http://www.althingi.is/altext/xml/thingmenn/?lthing="+str(session)
 	response = requests.get(url)
 	#print response.text.encode('utf-8', 'ignore')
 	data = xmltodict.parse(response.text)
@@ -18,8 +18,8 @@ def get_mp_short_names(thing):
 		results.append(mp[u'skammstöfun'].encode('utf-8', 'ignore'))
 	return results
 
-def get_mp_short_names_and_id(thing):
-	url = "http://www.althingi.is/altext/xml/thingmenn/?lthing="+str(thing)
+def get_mp_short_names_and_id(session):
+	url = "http://www.althingi.is/altext/xml/thingmenn/?lthing="+str(session)
 	response = requests.get(url)
 	#print response.text.encode('utf-8', 'ignore')
 	data = xmltodict.parse(response.text)
@@ -29,8 +29,8 @@ def get_mp_short_names_and_id(thing):
 		results[mp[u'skammstöfun'].encode('utf-8', 'ignore')] = mp[u'@id']
 	return results
 
-def get_mp_id_and_short_name(thing):
-	url = "http://www.althingi.is/altext/xml/thingmenn/?lthing="+str(thing)
+def get_mp_id_and_short_name(session):
+	url = "http://www.althingi.is/altext/xml/thingmenn/?lthing="+str(session)
 	response = requests.get(url)
 	#print response.text.encode('utf-8', 'ignore')
 	data = xmltodict.parse(response.text)
@@ -40,9 +40,43 @@ def get_mp_id_and_short_name(thing):
 		results[mp[u'@id']] = mp[u'skammstöfun'].encode('utf-8', 'ignore')
 	return results
 
-def get_mp_commitees(thing):
+
+def get_mp_commitee_membership_dates(mp_id):
+	url = "http://www.althingi.is/altext/xml/thingmenn/thingmadur/nefndaseta/?nr="+str(mp_id)
+	response = requests.get(url)
+	#print response.text.encode('utf-8', 'ignore')
+	data = xmltodict.parse(response.text)
+	results = {}
+	try:
+		for commitee_position in data[u'þingmaður'][u'nefndasetur'][u'nefndaseta']:
+			if u'út' in commitee_position[u'tímabil']:
+				end = commitee_position[u'tímabil'][u'út']
+			else:
+				end = None		
+			if commitee_position[u'þing'] in results:
+				results[commitee_position[u'þing']].append({
+						'commitee_id': commitee_position[u'nefnd'][u'@id'],
+						'commitee_name': commitee_position[u'nefnd'][u'#text'].encode('utf-8', 'ignore'),
+						'position': commitee_position[u'staða'].encode('utf-8', 'ignore'),
+						'start': commitee_position[u'tímabil'][u'inn'],
+						'end': end
+					})
+			else:
+				 results[commitee_position[u'þing']] = [{
+						'commitee_id': commitee_position[u'nefnd'][u'@id'],
+						'commitee_name': commitee_position[u'nefnd'][u'#text'].encode('utf-8', 'ignore'),
+						'position': commitee_position[u'staða'].encode('utf-8', 'ignore'),
+						'start': commitee_position[u'tímabil'][u'inn'],
+						'end': end
+					}]
+	except:
+		pass
+	return results
+
+#DEPRECATE
+def get_mp_commitees(session):
 	#returns {commitee_id: [mp_id, ...], ...} if mp_id is not varamaður or áheyrnarfulltrúi
-	url = "http://www.althingi.is/altext/xml/nefndir/nefndarmenn/?lthing="+str(thing)
+	url = "http://www.althingi.is/altext/xml/nefndir/nefndarmenn/?lthing="+str(session)
 	response = requests.get(url)
 	soup = BeautifulSoup(response.text)
 	commitees = {}
@@ -72,8 +106,8 @@ def get_commitee_members(commitee_member_lists):
 		results = results + member_list
 	return list(set(results))
 
-def get_commitee_meeting_dates(thing):
-	url = "http://huginn.althingi.is/altext/xml/nefndarfundir/?lthing="+str(thing)
+def get_commitee_meeting_dates(session):
+	url = "http://huginn.althingi.is/altext/xml/nefndarfundir/?lthing="+str(session)
 	response = requests.get(url)
 	soup = BeautifulSoup(response.text)
 	commitee_meeting_dates = {}
@@ -97,12 +131,12 @@ def get_meeting_minutes(url):
 	soup = BeautifulSoup(response.text)
 	return soup.find(u'fundargerð').find('texti').contents[0]
 
-def get_commitee_meetings_attendence(thing):
-	url = "http://huginn.althingi.is/altext/xml/nefndarfundir/?lthing="+str(thing)
+def get_commitee_meetings_attendence(session):
+	url = "http://huginn.althingi.is/altext/xml/nefndarfundir/?lthing="+str(session)
 	response = requests.get(url)
 	soup = BeautifulSoup(response.text)
-	commitee_members_list = get_mp_short_names(thing)
-	mp_short_name_to_id = get_mp_short_names_and_id(thing)
+	commitee_members_list = get_mp_short_names(session)
+	mp_short_name_to_id = get_mp_short_names_and_id(session)
 	results = {} #{mp_id: [[commitee_id,meeting_id], ...]}
 	failed = []
 	count = 0
@@ -111,6 +145,7 @@ def get_commitee_meetings_attendence(thing):
 			#meeting information
 			meeting_id = commitee_meeting[u'númer']
 			commitee_id = commitee_meeting.find(u'nefnd')[u'id']
+			meeting_date = commitee_meeting.find(u'dagur').contents[0]
 
 			#minutes information
 			meeting_minutes_information = commitee_meeting.find(u'fundargerð')
@@ -130,14 +165,12 @@ def get_commitee_meetings_attendence(thing):
 			for mp in short_name_list:
 				mp_id = mp_short_name_to_id[mp]
 				if mp_id in results:
-					results[mp_id].append([commitee_id, meeting_id])
+					results[mp_id].append([commitee_id, meeting_id, meeting_date])
 				else:
-					results[mp_id] = [[commitee_id, meeting_id]]
+					results[mp_id] = [[commitee_id, meeting_id, meeting_date]]
 		except Exception as e:
 			failed.append(meeting_id)
-		print "processing ", meeting_id, short_name_list
+		print "processing ", meeting_id
 	return results
 
 # ! --- END MEETING INFORMATION ---
- 
-

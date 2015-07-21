@@ -9,14 +9,14 @@ def get_fundargerd(url):
 	soup = BeautifulSoup(response.text)
 	return soup.find(u'fundargerð').find('texti').contents[0]
 
-def get_mps(thing):
-	url = "http://www.althingi.is/altext/xml/thingmenn/?lthing="+str(thing)
+def get_mps(session):
+	url = "http://www.althingi.is/altext/xml/thingmenn/?lthing="+str(session)
 	response = requests.get(url)
 	response_text = response.text.replace(u'<þ', '<th')
 	response_text = response_text.replace(u'</þ', '</th')
 	soup = BeautifulSoup(response_text)
 	mps = {}
-	for mp in soup.find_all(u'thingmaður'):
+	for mp in soup.find_all(u'sessionmaður'):
 		try:
 			mp_id = mp['id']
 			short_name = mp.find(u'skammstöfun').contents[0]
