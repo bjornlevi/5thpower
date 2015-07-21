@@ -146,10 +146,16 @@ def get_commitee_meetings_attendence(session):
 			meeting_id = commitee_meeting[u'númer']
 			commitee_id = commitee_meeting.find(u'nefnd')[u'id']
 			meeting_date = commitee_meeting.find(u'dagur').contents[0]
+			print "processing ", meeting_id
 
 			#minutes information
-			meeting_minutes_information = commitee_meeting.find(u'fundargerð')
-			meeting_minutes = get_meeting_minutes(meeting_minutes_information.find('xml').contents[0])
+			try:
+				meeting_minutes_information = commitee_meeting.find(u'fundargerð')
+				meeting_minutes = get_meeting_minutes(meeting_minutes_information.find('xml').contents[0])
+			except:
+				print "meeting mintues do not include attendence in this session"
+				exit()
+
 			
 			#attendee list
 			re.UNICODE
@@ -169,8 +175,8 @@ def get_commitee_meetings_attendence(session):
 				else:
 					results[mp_id] = [[commitee_id, meeting_id, meeting_date]]
 		except Exception as e:
+			print str(e)
 			failed.append(meeting_id)
-		print "processing ", meeting_id
 	return results
 
 # ! --- END MEETING INFORMATION ---
