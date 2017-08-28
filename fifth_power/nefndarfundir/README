@@ -1,5 +1,0 @@
-get_data.py session_nr
-
-Example:
-get_data.py 144
-process_attendence.py
