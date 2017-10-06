@@ -42,7 +42,7 @@ def get_documents(url):
 		'answer': answer
 		}
 
-sessions = list(range(146,147))
+sessions = list(range(122,147))
 
 url = "http://www.althingi.is/altext/xml/thingmalalisti/?lthing="
 
@@ -68,7 +68,7 @@ for session in sessions:
 			pass
 		elif issues[i]['answer'] == '':
 			#question has not been answered
-			print(issues[i]['question']['question_date'] + ', ' + issues[i]['question']['question_name'] + ', ' + issues[i]['question']['question_to'] + ', ' + issues[i]['question']['url'])
+			#print(issues[i]['question']['question_date'] + ', ' + issues[i]['question']['question_name'] + ', ' + issues[i]['question']['question_to'] + ', ' + issues[i]['question']['url'])
 			date1 = datetime.strptime(issues[i]['question']['question_date'], '%Y-%m-%d %H:%M')
 			date2 = datetime.now()
 			unanswered.append(abs(date2-date1).days)
