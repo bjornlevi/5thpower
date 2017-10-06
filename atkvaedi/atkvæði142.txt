@@ -1,0 +1,75 @@
+þingmaður, já, nei, sat hjá, boðaði fjarvist, fjarverandi
+Valgerður Gunnarsdóttir,67,10,0,13,12
+Pétur H. Blöndal,57,11,2,28,4
+Skúli Helgason,9,4,5,0,0
+Eygló Harðardóttir,69,14,1,2,16
+Sigrún Magnúsdóttir,83,17,0,0,2
+Sigurður Ingi Jóhannsson,35,8,0,31,28
+Sigrún Gunnarsdóttir,11,1,0,0,0
+Jón Gunnarsson,71,13,0,11,7
+Katrín Jakobsdóttir,37,13,15,9,28
+Kristján L. Möller,53,8,13,0,28
+Illugi Gunnarsson,48,12,0,0,42
+Gunnar Bragi Sveinsson,50,12,0,33,7
+Oddný G. Harðardóttir,38,5,9,0,32
+Edward H. Huijbens,12,5,7,0,1
+Sigríður Ingibjörg Ingadóttir,61,16,11,0,14
+Guðmundur Steingrímsson,26,9,4,0,5
+Rósa Björk Brynjólfsdóttir,12,5,6,0,2
+Birgir Ármannsson,64,13,0,12,13
+Ragnheiður Ríkharðsdóttir,77,14,0,0,11
+Elsa Lára Arnardóttir,54,9,0,36,3
+Össur Skarphéðinsson,34,13,6,0,49
+Róbert Marshall,58,10,7,13,2
+Unnur Brá Konráðsdóttir,59,13,3,25,2
+Valgerður Bjarnadóttir,15,1,5,0,63
+Haraldur Benediktsson,75,15,0,8,4
+Líneik Anna Sævarsdóttir,77,15,3,0,7
+Ögmundur Jónasson,40,13,4,1,19
+Helgi Hjörvar,41,8,11,21,21
+Helgi Hrafn Gunnarsson,52,12,34,0,4
+Páll Jóhann Pálsson,72,8,8,0,14
+Sigríður Á. Andersen,40,8,1,0,3
+Bjarni Benediktsson,70,14,0,12,6
+Guðbjartur Hannesson,67,14,11,0,10
+Brynhildur Pétursdóttir,67,16,7,8,4
+Árni Páll Árnason,50,9,12,21,10
+Árni Þór Sigurðsson,43,12,7,0,15
+Willum Þór Þórsson,74,14,0,12,2
+Björn Valur Gíslason,12,6,6,0,1
+Vilhjálmur Bjarnason,68,14,1,12,7
+Elín Hirst,70,15,0,9,8
+Lilja Rafney Magnúsdóttir,51,14,4,20,13
+Einar K. Guðfinnsson,62,12,0,0,28
+Björgvin G. Sigurðsson,8,4,6,0,0
+Frosti Sigurjónsson,46,6,0,0,5
+Vigdís Hauksdóttir,79,18,0,0,5
+Sigmundur Davíð Gunnlaugsson,57,14,1,0,30
+Karl Garðarsson,54,12,4,2,30
+Ragnheiður E. Árnadóttir,71,14,0,0,17
+Brynjar Níelsson,62,10,0,14,16
+Þórunn Egilsdóttir,77,16,0,0,9
+Katrín Júlíusdóttir,39,9,9,0,45
+Freyja Haraldsdóttir,46,10,2,0,0
+Bjarkey Olsen Gunnarsdóttir,53,16,8,0,25
+Oddgeir Ágúst Ottesen,13,3,1,0,1
+Páll Valur Björnsson,78,13,8,0,3
+Haraldur Einarsson,83,14,2,0,3
+Guðlaugur Þór Þórðarson,46,10,0,0,12
+Ásmundur Einar Daðason,76,17,0,0,9
+Höskuldur Þórhallsson,42,8,1,30,21
+Svandís Svavarsdóttir,56,21,6,0,19
+Jón Þór Ólafsson,18,17,62,0,5
+Ásmundur Friðriksson,61,10,0,8,23
+Björt Ólafsdóttir,69,17,5,0,11
+Silja Dögg Gunnarsdóttir,66,14,3,12,7
+Jóhanna María Sigmundsdóttir,62,15,2,13,10
+Þorsteinn Magnússon,34,8,3,0,0
+Óttarr Proppé,22,5,4,21,3
+Þorsteinn Sæmundsson,83,18,1,0,0
+Birgitta Jónsdóttir,39,11,34,0,18
+Hanna Birna Kristjánsdóttir,19,2,0,0,63
+Kristján Þór Júlíusson,62,11,0,0,29
+Brynhildur S. Björnsdóttir,35,6,3,0,3
+Vilhjálmur Árnason,45,6,0,27,6
+Steingrímur J. Sigfússon,45,15,7,0,10
