@@ -117,19 +117,19 @@ def mp_in_nefnd(mp, nefnd, mp_nefndir, meeting_date):
 				return True
 	return False
 
-session = 146
+session = 145
 
 mp_nefndir = get_mps_adalnefndir(session)
 #{'mp':[{'start':date, 'end':date, nefnd_id:id}, ...]
 #{Guðjón S. Brjánsson: [{'end': '2017-01-24', 'nefnd_id': '201', 'start': '2016-12-19'}, ...], ...}
-for mp in mp_nefndir:
-	print(mp+';'+str(mp_nefndir[mp]))
+#for mp in mp_nefndir:
+	#print(mp+';'+str(mp_nefndir[mp]))
 
 fjoldi_nefndarfunda = count_nefndarfundir(session)
 #{'nefnd_id': fjöldi funda}
 #{'201': 52, '203': ...}
-for nefnd in fjoldi_nefndarfunda:
-	print(nefnd+';'+str(fjoldi_nefndarfunda[nefnd]))
+#for nefnd in fjoldi_nefndarfunda:
+	#print(nefnd+';'+str(fjoldi_nefndarfunda[nefnd]))
 
 #nefndir = get_nefndir(146)
 #print(mp_nefndir.keys())
@@ -141,20 +141,24 @@ mp_fundir = get_fundir(session)
 #for fundur in mp_fundir:
 	#print(fundur)
 
-for mp in mp_nefndir.keys():
-	total_meeting = 0
-	expected_meetings = 0
-	missed_meeting = 0
-	for fundur in mp_fundir:
-		if mp_in_nefnd(mp, fundur['nefnd'], mp_nefndir, fundur['dagsetning']):
-			expected_meetings += 1 #fjöldi funda sem mp ætti að mæta á
-			if mp in fundur['mps']:
-				total_meeting += 1 #mættur og á að vera
-			else:
-				missed_meeting += 1 #ekki mættur en á að vera
-				print(fundur['dagsetning'], fundur['nefnd'])
-		else:
-			if mp in fundur['mps']:
-				total_meeting += 1 #mættur en á ekki að vera
+with open(u'nefndir'+str(session)+'.txt', 'w') as f:
+	f.write('þingmaður, Fjöldi allra funda, Fjöldi funda sem aðalmaður, Fjöldi fjarvera sem aðalmaður\n')
 
-	print(mp+';'+str(total_meeting)+';'+str(expected_meetings)+';'+str(missed_meeting))
+	for mp in mp_nefndir.keys():
+		total_meeting = 0
+		expected_meetings = 0
+		missed_meeting = 0
+		for fundur in mp_fundir:
+			if mp_in_nefnd(mp, fundur['nefnd'], mp_nefndir, fundur['dagsetning']):
+				expected_meetings += 1 #fjöldi funda sem mp ætti að mæta á
+				if mp in fundur['mps']:
+					total_meeting += 1 #mættur og á að vera
+				else:
+					missed_meeting += 1 #ekki mættur en á að vera
+					print(fundur['dagsetning'], fundur['nefnd'])
+			else:
+				if mp in fundur['mps']:
+					total_meeting += 1 #mættur en á ekki að vera
+
+		#print(mp+';'+str(total_meeting)+';'+str(expected_meetings)+';'+str(missed_meeting))
+		f.write(mp+';'+str(total_meeting)+';'+str(expected_meetings)+';'+str(missed_meeting)+'\n')

@@ -1,3 +1,4 @@
+þingmaður, Fjöldi allra funda, Fjöldi funda sem aðalmaður, Fjöldi fjarvera sem aðalmaður
 Óli Björn Kárason;78;74;4
 Pawel Bartoszek;90;95;10
 Eva Pandora Baldursdóttir;6;43;37
