@@ -3,7 +3,7 @@
 import requests
 import xmltodict
 
-sessions = list(range(143,147))
+sessions = list(range(137,142))
 url = 'http://www.althingi.is/altext/xml/atkvaedagreidslur/?lthing='
 
 session_votes = {}
@@ -32,8 +32,7 @@ for session in sessions:
 			pass #enginn hreyfir andmælum
 	session_votes[session] = mp_votes
 
-print('þingmaður, já, nei, sat hjá, boðaði fjarvist, fjarverandi')
-for session in session_votes:
-	print(session)
-	for mp in session_votes[session]:
-		print(mp +','+ str(session_votes[session][mp].count('já')) +','+ str(session_votes[session][mp].count('nei')) +','+ str(session_votes[session][mp].count('greiðir ekki atkvæði')) +','+ str(session_votes[session][mp].count('boðaði fjarvist')) +','+ str(session_votes[session][mp].count('fjarverandi')))
+	with open(u'atkvæðatalning'+str(session)+'.txt', 'w') as f:
+		f.write('þingmaður, já, nei, sat hjá, boðaði fjarvist, fjarverandi\n')
+		for mp in mp_votes:
+			f.write(mp +','+ str(mp_votes[mp].count('já')) +','+ str(mp_votes[mp].count('nei')) +','+ str(mp_votes[mp].count('greiðir ekki atkvæði')) +','+ str(mp_votes[mp].count('boðaði fjarvist')) +','+ str(mp_votes[mp].count('fjarverandi'))+'\n')

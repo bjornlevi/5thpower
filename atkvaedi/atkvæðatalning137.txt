@@ -1,0 +1,67 @@
+þingmaður, já, nei, sat hjá, boðaði fjarvist, fjarverandi
+Kristján Þór Júlíusson,82,23,49,1,104
+Árni Þór Sigurðsson,225,18,0,1,15
+Eygló Harðardóttir,93,32,37,0,97
+Ásmundur Einar Daðason,219,18,1,3,18
+Bjarni Benediktsson,94,11,33,1,120
+Björgvin G. Sigurðsson,174,16,0,2,67
+Katrín Júlíusdóttir,104,12,0,25,118
+Sigurður Ingi Jóhannsson,107,28,51,0,73
+Ragnheiður E. Árnadóttir,101,30,52,1,75
+Þór Saari,121,26,29,0,28
+Unnur Brá Konráðsdóttir,89,11,41,18,100
+Vigdís Hauksdóttir,147,31,53,0,28
+Ásta R. Jóhannesdóttir,173,16,0,25,45
+Illugi Gunnarsson,64,17,40,9,129
+Ásbjörn Óttarsson,72,28,67,4,88
+Álfheiður Ingadóttir,230,18,2,1,8
+Þorgerður K. Gunnarsdóttir,39,8,37,0,175
+Helgi Hjörvar,232,18,0,4,5
+Lilja Rafney Magnúsdóttir,167,17,0,46,29
+Birkir Jón Jónsson,63,27,31,24,114
+Ólína Kjerúlf Þorvarðardóttir,204,16,1,22,16
+Sigríður Ingibjörg Ingadóttir,198,17,1,0,43
+Árni Páll Árnason,179,18,0,0,62
+Birgir Ármannsson,99,33,50,9,68
+Tryggvi Þór Herbertsson,118,30,42,0,69
+Ragnheiður Ríkharðsdóttir,116,34,65,12,32
+Bjarkey Olsen Gunnarsdóttir,135,14,0,0,6
+Höskuldur Þórhallsson,51,24,22,56,106
+Katrín Jakobsdóttir,152,14,0,29,64
+Össur Skarphéðinsson,192,18,0,0,49
+Arndís Soffía Sigurðardóttir,55,0,0,0,1
+Birgitta Jónsdóttir,140,37,64,0,18
+Jón Bjarnason,139,15,0,23,82
+Valgerður Bjarnadóttir,233,18,3,1,4
+Siv Friðleifsdóttir,132,24,52,0,51
+Skúli Helgason,150,18,0,1,90
+Björn Valur Gíslason,87,14,1,24,15
+Sigmundur Ernir Rúnarsson,140,15,1,0,103
+Steingrímur J. Sigfússon,218,18,0,1,22
+Jónína Rós Guðmundsdóttir,158,12,0,1,88
+Magnús Orri Schram,168,16,0,0,75
+Margrét Tryggvadóttir,157,33,55,0,14
+Steinunn Valdís Óskarsdóttir,168,18,0,35,38
+Sigmundur Davíð Gunnlaugsson,92,15,47,1,104
+Lilja Mósesdóttir,165,15,4,25,50
+Kristján L. Möller,202,14,0,0,43
+Pétur H. Blöndal,110,36,49,13,51
+Ögmundur Jónasson,183,18,0,14,44
+Guðmundur Steingrímsson,86,28,28,3,114
+Guðbjartur Hannesson,210,19,0,0,30
+Ólöf Nordal,110,27,56,3,63
+Árni Johnsen,38,17,23,1,180
+Atli Gíslason,179,17,0,1,6
+Jón Gunnarsson,42,16,24,0,177
+Þórunn Sveinbjarnardóttir,124,17,0,16,102
+Einar K. Guðfinnsson,118,34,48,28,31
+Róbert Marshall,181,14,0,30,34
+Jóhanna Sigurðardóttir,201,18,0,9,31
+Guðfríður Lilja Grétarsdóttir,187,17,2,20,33
+Valgeir Skagfjörð,25,5,23,0,2
+Gunnar Bragi Sveinsson,106,30,34,26,63
+Þuríður Backman,197,11,0,2,12
+Guðlaugur Þór Þórðarson,69,21,42,0,127
+Þráinn Bertelsson,104,40,37,7,71
+Oddný G. Harðardóttir,226,18,0,1,14
+Svandís Svavarsdóttir,100,12,0,21,126

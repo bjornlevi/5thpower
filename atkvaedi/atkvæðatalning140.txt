@@ -1,0 +1,85 @@
+þingmaður, já, nei, sat hjá, boðaði fjarvist, fjarverandi
+Arnbjörg Sveinsdóttir,6,0,0,0,0
+Ragnheiður E. Árnadóttir,364,121,259,6,219
+Eyrún Ingibjörg Sigþórsdóttir,134,20,75,0,7
+Árni Þór Sigurðsson,512,80,14,158,38
+Eygló Harðardóttir,400,57,241,2,269
+Þráinn Bertelsson,662,108,4,0,195
+Ásmundur Einar Daðason,302,70,233,7,357
+Bjarni Benediktsson,270,110,167,173,249
+Björgvin G. Sigurðsson,629,84,1,35,220
+Katrín Júlíusdóttir,278,72,0,0,86
+Sigurður Ingi Jóhannsson,404,58,215,97,195
+Arna Lára Jónsdóttir,15,0,0,0,0
+Kristján Þór Júlíusson,289,77,257,10,330
+Þór Saari,375,45,392,15,136
+Davíð Stefánsson,6,0,0,0,7
+Unnur Brá Konráðsdóttir,403,140,303,18,105
+Vigdís Hauksdóttir,241,91,252,0,213
+Auður Lilja Erlingsdóttir,140,25,2,0,0
+Ásta R. Jóhannesdóttir,811,112,9,0,37
+Illugi Gunnarsson,379,95,279,9,207
+Ásbjörn Óttarsson,267,68,230,14,154
+Álfheiður Ingadóttir,745,110,12,72,23
+Þorgerður K. Gunnarsdóttir,246,100,200,18,405
+Helgi Hjörvar,612,80,2,17,258
+Lilja Rafney Magnúsdóttir,646,86,0,32,42
+Birkir Jón Jónsson,303,63,209,16,360
+Ólína Kjerúlf Þorvarðardóttir,771,98,24,43,33
+Magnús M. Norðdahl,467,35,2,0,29
+Sigríður Ingibjörg Ingadóttir,812,112,2,4,39
+Telma Magnúsdóttir,6,0,0,0,0
+Árni Páll Árnason,671,99,6,26,167
+Huld Aðalbjarnardóttir,11,3,2,0,2
+Birgir Ármannsson,408,133,324,8,96
+Ragnheiður Ríkharðsdóttir,417,106,307,30,109
+Bjarkey Olsen Gunnarsdóttir,5,0,0,0,0
+Höskuldur Þórhallsson,200,38,210,42,479
+Ólafur Þór Gunnarsson,319,18,7,0,4
+Katrín Jakobsdóttir,410,103,1,52,397
+Baldvin Jónsson,102,20,68,0,50
+Össur Skarphéðinsson,463,26,0,187,293
+Arndís Soffía Sigurðardóttir,0,0,0,0,8
+Birgitta Jónsdóttir,322,49,267,15,76
+Lúðvík Geirsson,633,101,5,18,94
+Jón Bjarnason,479,88,27,25,350
+Valgerður Bjarnadóttir,720,87,6,6,150
+Guðrún H. Valdimarsdóttir,109,7,32,0,24
+Siv Friðleifsdóttir,239,64,256,61,349
+Skúli Helgason,676,86,4,147,56
+Björn Valur Gíslason,717,111,2,25,114
+Sigmundur Ernir Rúnarsson,558,89,9,12,94
+Steingrímur J. Sigfússon,741,106,2,30,90
+Jónína Rós Guðmundsdóttir,832,103,7,1,26
+Halldóra Lóa Þorvaldsdóttir,110,10,6,0,31
+Magnús Orri Schram,675,84,2,22,186
+Margrét Tryggvadóttir,505,35,337,11,78
+Tryggvi Þór Herbertsson,378,116,279,8,188
+Sigmundur Davíð Gunnlaugsson,292,53,158,18,448
+Lilja Mósesdóttir,506,40,248,41,134
+Kristján L. Möller,665,102,4,86,106
+Pétur H. Blöndal,404,159,275,20,111
+Ögmundur Jónasson,478,101,7,0,278
+Guðmundur Steingrímsson,363,18,190,35,363
+Amal Tamimi,116,0,0,0,2
+Ari Matthíasson,6,0,0,0,0
+Guðbjartur Hannesson,563,105,0,105,181
+Ólöf Nordal,278,98,236,0,357
+Árni Johnsen,187,66,163,6,547
+Atli Gíslason,381,50,193,80,257
+Jón Gunnarsson,187,90,139,0,553
+Einar K. Guðfinnsson,387,96,288,6,192
+Róbert Marshall,630,82,3,8,246
+Baldur Þórhallsson,72,7,0,0,13
+Jóhanna Sigurðardóttir,635,101,1,90,50
+Guðfríður Lilja Grétarsdóttir,506,82,13,26,99
+Valgeir Skagfjörð,3,0,0,0,3
+Gunnar Bragi Sveinsson,422,99,324,0,102
+Jón Kr. Arnarson,2,0,1,0,0
+Mörður Árnason,640,92,21,25,191
+Guðlaugur Þór Þórðarson,265,114,217,0,373
+Logi Einarsson,175,5,0,0,33
+Þuríður Backman,654,101,3,84,122
+Sigurgeir Sindri Sigurgeirsson,16,4,2,0,0
+Oddný G. Harðardóttir,784,108,0,22,55
+Svandís Svavarsdóttir,536,85,0,25,317
