@@ -19,16 +19,16 @@ Páll Jóhann Pálsson;30;35;5
 Þorsteinn Sæmundsson;22;22;2
 Þórunn Egilsdóttir;31;34;3
 Brynjar Níelsson;17;19;4
-Frosti Sigurjónsson;25;26;1
-Guðmundur Steingrímsson;15;18;5
+Frosti Sigurjónsson;25;26;0
+Guðmundur Steingrímsson;15;18;4
 Pétur H. Blöndal;23;32;9
 Ragnheiður Ríkharðsdóttir;17;18;4
-Steingrímur J. Sigfússon;10;18;8
+Steingrímur J. Sigfússon;10;18;5
 Vilhjálmur Bjarnason;24;26;2
 Árni Páll Árnason;9;18;11
 Bjarkey Olsen Gunnarsdóttir;0;16;16
 Brynhildur Pétursdóttir;24;16;2
-Guðlaugur Þór Þórðarson;14;24;10
+Guðlaugur Þór Þórðarson;14;24;6
 Karl Garðarsson;27;31;5
 Oddný G. Harðardóttir;14;16;4
 Valgerður Gunnarsdóttir;16;16;3
@@ -36,14 +36,14 @@ Vigdís Hauksdóttir;17;16;1
 Ásmundur Einar Daðason;16;24;8
 Einar K. Guðfinnsson;0;0;0
 Silja Dögg Gunnarsdóttir;7;8;1
-Óttarr Proppé;7;8;3
+Óttarr Proppé;7;8;2
 Birgitta Jónsdóttir;14;12;1
 Ögmundur Jónasson;14;15;1
 Birgir Ármannsson;8;12;4
 Elín Hirst;12;12;2
 Helgi Hjörvar;11;14;6
 Höskuldur Þórhallsson;7;4;0
-Róbert Marshall;6;4;2
+Róbert Marshall;6;4;1
 Katrín Jakobsdóttir;8;4;1
 Árni Þór Sigurðsson;9;8;0
 Valgerður Bjarnadóttir;11;14;5

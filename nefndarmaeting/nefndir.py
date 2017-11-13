@@ -4,6 +4,8 @@ import requests
 import xmltodict
 from datetime import datetime
 
+session = 147
+
 def get_nefndir(session):
 	url = 'http://www.althingi.is/altext/xml/nefndir/?lthing='+str(session)
 	response = requests.get(url)
@@ -117,7 +119,48 @@ def mp_in_nefnd(mp, nefnd, mp_nefndir, meeting_date):
 				return True
 	return False
 
-session = 145
+def get_mp_ids(session):
+	url = 'http://www.althingi.is/altext/xml/thingmenn/?lthing='+str(session)
+	response = requests.get(url)
+	data = xmltodict.parse(response.text)
+	mp_ids = {}
+	for mp in data[u'þingmannalisti'][u'þingmaður']:
+		mp_ids[mp[u'nafn']]=mp[u'@id']
+	return mp_ids
+
+mp_ids = get_mp_ids(session)
+#{'Nafn': 'mp_id', ...}
+
+def get_assembly_attendance(mps):
+	mp_in_session = {}
+	for mp in mps:
+		mp_in_session[mp] = []
+		url = 'http://www.althingi.is/altext/xml/thingmenn/thingmadur/thingseta/?nr='+mps[mp]
+		response = requests.get(url)
+		data = xmltodict.parse(response.text)
+		for sitting in data[u'þingmaður'][u'þingsetur'][u'þingseta']:
+			try:
+				if sitting[u'tegund'] == 'þingmaður':
+					mp_in_session[mp].append([sitting[u'tímabil'][u'inn'], sitting[u'tímabil'][u'út']])
+			except:
+				print(sitting, mp)
+	return mp_in_session
+
+def mp_in_attendance(mp, mp_in_session_dates, meeting_date):
+	for sitting in mp_in_session_dates[mp]:
+		if datetime.strptime(meeting_date, '%Y-%m-%d') >= datetime.strptime(sitting[0], '%d.%m.%Y') and datetime.strptime(meeting_date, '%Y-%m-%d') <= datetime.strptime(sitting[1], '%d.%m.%Y'):
+			return True
+	return False	
+
+mp_fundir = get_fundir(session)
+#{'mps': ['Haraldur Benediktsson', 'Oddný G. Harðardóttir', ...], 
+#'nefnd': '207', 
+#'dagsetning': '2016-12-07'}
+#for fundur in mp_fundir:
+	#print(fundur)
+
+mp_attendance = get_assembly_attendance(mp_ids)
+#{'Haraldur Benediktsson': [[date_inn, date_út], [date_inn, ...], ...], 'Oddný ...': [[...], ...]}
 
 mp_nefndir = get_mps_adalnefndir(session)
 #{'mp':[{'start':date, 'end':date, nefnd_id:id}, ...]
@@ -134,28 +177,22 @@ fjoldi_nefndarfunda = count_nefndarfundir(session)
 #nefndir = get_nefndir(146)
 #print(mp_nefndir.keys())
 
-mp_fundir = get_fundir(session)
-#{'mps': ['Haraldur Benediktsson', 'Oddný G. Harðardóttir', ...], 
-#'nefnd': '207', 
-#'dagsetning': '2016-12-07'}
-#for fundur in mp_fundir:
-	#print(fundur)
-
 with open(u'nefndir'+str(session)+'.txt', 'w') as f:
 	f.write('þingmaður, Fjöldi allra funda, Fjöldi funda sem aðalmaður, Fjöldi fjarvera sem aðalmaður\n')
 
 	for mp in mp_nefndir.keys():
-		total_meeting = 0
-		expected_meetings = 0
-		missed_meeting = 0
+		total_meeting = 0 #heildarfjöldi funda sem mætt er á sem aðalmaður eða ekki.
+		expected_meetings = 0 #fjöldi funda sem aðalmaður
+		missed_meeting = 0 #mætti ekki sem aðalmaður
 		for fundur in mp_fundir:
 			if mp_in_nefnd(mp, fundur['nefnd'], mp_nefndir, fundur['dagsetning']):
 				expected_meetings += 1 #fjöldi funda sem mp ætti að mæta á
 				if mp in fundur['mps']:
 					total_meeting += 1 #mættur og á að vera
 				else:
-					missed_meeting += 1 #ekki mættur en á að vera
-					print(fundur['dagsetning'], fundur['nefnd'])
+					if mp_in_attendance(mp, mp_attendance, fundur['dagsetning']):
+						missed_meeting += 1 #ekki mættur en er með varamann
+					#print(fundur['dagsetning'], fundur['nefnd'])
 			else:
 				if mp in fundur['mps']:
 					total_meeting += 1 #mættur en á ekki að vera

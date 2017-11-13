@@ -1,56 +1,56 @@
 þingmaður, Fjöldi allra funda, Fjöldi funda sem aðalmaður, Fjöldi fjarvera sem aðalmaður
 Bjarkey Olsen Gunnarsdóttir;155;188;33
 Elsa Lára Arnardóttir;140;180;43
-Guðbjartur Hannesson;0;19;19
-Guðmundur Steingrímsson;162;196;39
+Guðbjartur Hannesson;0;19;0
+Guðmundur Steingrímsson;162;196;38
 Haraldur Einarsson;110;119;24
-Helgi Hrafn Gunnarsson;102;102;33
-Jóhanna María Sigmundsdóttir;74;102;29
+Helgi Hrafn Gunnarsson;102;102;30
+Jóhanna María Sigmundsdóttir;74;102;27
 Karl Garðarsson;86;132;48
 Líneik Anna Sævarsdóttir;168;196;34
-Unnur Brá Konráðsdóttir;167;209;46
+Unnur Brá Konráðsdóttir;167;209;40
 Vilhjálmur Árnason;150;177;35
-Ólína Kjerúlf Þorvarðardóttir;114;193;82
-Björt Ólafsdóttir;49;84;36
+Ólína Kjerúlf Þorvarðardóttir;114;193;74
+Björt Ólafsdóttir;49;84;24
 Haraldur Benediktsson;130;170;43
 Jón Gunnarsson;78;84;7
-Kristján L. Möller;67;84;22
-Lilja Rafney Magnúsdóttir;71;84;18
-Páll Jóhann Pálsson;135;168;39
-Ásmundur Friðriksson;159;191;41
+Kristján L. Möller;67;84;19
+Lilja Rafney Magnúsdóttir;71;84;16
+Páll Jóhann Pálsson;135;168;26
+Ásmundur Friðriksson;159;191;36
 Þorsteinn Sæmundsson;75;84;25
 Þórunn Egilsdóttir;72;84;18
 Brynjar Níelsson;127;169;43
 Frosti Sigurjónsson;132;162;33
-Katrín Jakobsdóttir;78;94;20
+Katrín Jakobsdóttir;78;94;18
 Sigríður Á. Andersen;77;94;23
-Valgerður Bjarnadóttir;83;94;16
-Vilhjálmur Bjarnason;138;162;26
-Willum Þór Þórsson;153;167;23
-Brynhildur Pétursdóttir;115;87;16
+Valgerður Bjarnadóttir;83;94;10
+Vilhjálmur Bjarnason;138;162;21
+Willum Þór Þórsson;153;167;18
+Brynhildur Pétursdóttir;115;87;14
 Guðlaugur Þór Þórðarson;81;86;15
-Oddný G. Harðardóttir;70;86;19
+Oddný G. Harðardóttir;70;86;17
 Valgerður Gunnarsdóttir;65;86;22
 Vigdís Hauksdóttir;86;94;14
-Ásmundur Einar Daðason;58;89;38
+Ásmundur Einar Daðason;58;89;35
 Einar K. Guðfinnsson;1;1;0
 Róbert Marshall;64;78;23
 Silja Dögg Gunnarsdóttir;120;173;54
-Steingrímur J. Sigfússon;88;110;36
-Óttarr Proppé;55;68;17
-Birgitta Jónsdóttir;82;74;25
-Ragnheiður Ríkharðsdóttir;62;107;46
+Steingrímur J. Sigfússon;88;110;34
+Óttarr Proppé;55;68;16
+Birgitta Jónsdóttir;82;74;22
+Ragnheiður Ríkharðsdóttir;62;107;44
 Ögmundur Jónasson;59;73;17
 Birgir Ármannsson;132;149;27
-Elín Hirst;87;146;59
+Elín Hirst;87;146;56
 Höskuldur Þórhallsson;83;148;68
 Páll Valur Björnsson;95;107;15
-Árni Páll Árnason;53;73;27
+Árni Páll Árnason;53;73;26
 Helgi Hjörvar;60;73;24
 Katrín Júlíusdóttir;68;75;14
 Svandís Svavarsdóttir;100;76;10
-Ásta Guðrún Helgadóttir;81;75;55
+Ásta Guðrún Helgadóttir;81;75;54
 Hanna Birna Kristjánsdóttir;62;68;8
-Steinunn Þóra Árnadóttir;86;68;8
+Steinunn Þóra Árnadóttir;86;68;4
 Össur Skarphéðinsson;46;68;29
 Sigríður Ingibjörg Ingadóttir;103;107;6
