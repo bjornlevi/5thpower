@@ -1,0 +1,54 @@
+þingmaður, Fjöldi allra funda, Fjöldi funda sem aðalmaður, Fjöldi fjarvera sem aðalmaður
+Andrés Ingi Jónsson;24;25;0
+Anna Kolbrún Árnadóttir;19;28;0
+Birgir Ármannsson;14;13;0
+Guðmundur Andri Thorsson;14;13;0
+Jón Steindór Valdimarsson;18;19;0
+Páll Magnússon;20;26;0
+Steinunn Þóra Árnadóttir;12;16;0
+Willum Þór Þórsson;22;28;0
+Þórhildur Sunna Ævarsdóttir;10;13;1
+Albertína Friðbjörg Elíasdóttir;3;0;0
+Halla Signý Kristjánsdóttir;9;12;0
+Inga Sæland;4;0;0
+Kolbeinn Óttarsson Proppé;5;9;0
+Lilja Rafney Magnúsdóttir;1;0;0
+Njáll Trausti Friðbertsson;15;15;0
+Sigurður Páll Jónsson;0;0;0
+Smári McCarthy;4;3;0
+Ásmundur Friðriksson;14;12;1
+Bryndís Haraldsdóttir;15;17;0
+Brynjar Níelsson;13;20;0
+Helgi Hrafn Gunnarsson;14;14;0
+Oddný G. Harðardóttir;11;15;0
+Sigmundur Davíð Gunnlaugsson;8;15;0
+Silja Dögg Gunnarsdóttir;16;20;0
+Ólafur Þór Gunnarsson;24;26;3
+Óli Björn Kárason;20;20;0
+Þorsteinn Víglundsson;24;14;0
+Birgir Þórarinsson;12;13;2
+Bjarkey Olsen Gunnarsdóttir;13;13;0
+Björn Leví Gunnarsson;14;14;0
+Haraldur Benediktsson;13;13;0
+Ágúst Ólafur Ágústsson;12;14;0
+Ólafur Ísleifsson;19;16;0
+Guðjón S. Brjánsson;11;12;0
+Jón Þór Ólafsson;6;6;0
+Steingrímur J. Sigfússon;0;0;0
+Þorsteinn Sæmundsson;8;6;0
+Þórunn Egilsdóttir;6;6;0
+Áslaug Arna Sigurbjörnsdóttir;4;4;0
+Bergþór Ólason;0;0;0
+Rósa Björk Brynjólfsdóttir;4;3;0
+Þorgerður K. Gunnarsdóttir;3;5;0
+Vilhjálmur Árnason;9;15;0
+Hanna Katrín Friðriksson;1;0;0
+Jón Gunnarsson;0;0;0
+Ari Trausti Guðmundsson;4;4;0
+Líneik Anna Sævarsdóttir;11;7;0
+Gunnar Bragi Sveinsson;4;3;0
+Helga Vala Helgadóttir;6;6;0
+Karl Gauti Hjaltason;13;0;0
+Logi Einarsson;3;3;0
+Guðmundur Ingi Kristinsson;19;12;0
+Halldóra Mogensen;10;12;0

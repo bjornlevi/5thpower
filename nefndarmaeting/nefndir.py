@@ -4,7 +4,7 @@ import requests
 import xmltodict
 from datetime import datetime
 
-session = 147
+session = 148
 
 def get_nefndir(session):
 	url = 'http://www.althingi.is/altext/xml/nefndir/?lthing='+str(session)
@@ -48,17 +48,22 @@ def get_mps_adalnefndir(session):
 			for mp in nefnd[u'nefndarmaður']:
 				#print(mp[u'nafn'], mp[u'staða'], info_nefnd['id'])
 				if mp[u'staða'] in [u'nefndarmaður', u'formaður', u'1. varaformaður', u'2. varaformaður']:
+					nefndasetu_lauk = ''
+					try:
+						nefndasetu_lauk = mp[u'nefndasetulauk']
+					except:
+						nefndasetu_lauk = datetime.strftime(datetime.now(), '%Y-%m-%d')
 					if mp[u'nafn'] in mps:
 						mps[mp[u'nafn']].append({
 							'nefnd_id': info_nefnd['id'],
 							'start': mp[u'nefndasetahófst'],
-							'end': mp[u'nefndasetulauk']
+							'end': nefndasetu_lauk
 						})
 					else:
 						mps[mp[u'nafn']] = [{
 							'nefnd_id': info_nefnd['id'],
 							'start': mp[u'nefndasetahófst'],
-							'end': mp[u'nefndasetulauk']
+							'end': nefndasetu_lauk
 						}]
 
 				else:
@@ -141,6 +146,8 @@ def get_assembly_attendance(mps):
 		for sitting in data[u'þingmaður'][u'þingsetur'][u'þingseta']:
 			try:
 				if sitting[u'tegund'] == 'þingmaður':
+					if sitting[u'tímabil'][u'út'] == None:
+						sitting[u'tímabil'][u'út'] = datetime.strptime(datetime.now(),'%d.%m.%Y')
 					mp_in_session[mp].append([sitting[u'tímabil'][u'inn'], sitting[u'tímabil'][u'út']])
 			except:
 				print(sitting, mp)
