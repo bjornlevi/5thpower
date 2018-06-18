@@ -8,7 +8,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 from private_data import sheet_key
 
 #initialize 
-session = 146
+session = 148
 url = "http://www.althingi.is/altext/xml/thingmalalisti/?lthing="
 
 # use creds to create a client to interact with the Google Drive API
@@ -63,17 +63,22 @@ def get_flutningsmenn_data(url):
 	data = xmltodict.parse(response.text)
 	if u'nefnd' in data[u'þingskjal'][u'þingskjal'][u'flutningsmenn']:
 		try:
-			flutningsmenn = data[u'þingskjal'][u'þingskjal'][u'flutningsmenn'][u'nefnd'][u'flutningsmaður'][0][u'nafn']
+			flutningsmenn = data[u'þingskjal'][u'þingskjal'][u'flutningsmenn'][u'nefnd'][u'heiti']
 		except:
-			try:
-				flutningsmenn = data[u'þingskjal'][u'þingskjal'][u'flutningsmenn'][u'nefnd'][u'flutningsmaður'][u'nafn']
-			except:
-				flutningsmenn = ''
+			flutningsmenn = ''
+		return flutningsmenn
+
 	try:
-		flutningsmenn = data[u'þingskjal'][u'þingskjal'][u'flutningsmenn'][u'flutningsmaður'][0][u'nafn']
+		if u'ráðherra' in data[u'þingskjal'][u'þingskjal'][u'flutningsmenn'][u'flutningsmaður'][0]:
+			flutningsmenn = data[u'þingskjal'][u'þingskjal'][u'flutningsmenn'][u'flutningsmaður'][0][u'ráðherra']
+		else:
+			flutningsmenn = data[u'þingskjal'][u'þingskjal'][u'flutningsmenn'][u'flutningsmaður'][0][u'nafn']
 	except:
 		try:
-			flutningsmenn = data[u'þingskjal'][u'þingskjal'][u'flutningsmenn'][u'flutningsmaður'][u'nafn']
+			if u'ráðherra' in data[u'þingskjal'][u'þingskjal'][u'flutningsmenn'][u'flutningsmaður']:
+				flutningsmenn = data[u'þingskjal'][u'þingskjal'][u'flutningsmenn'][u'flutningsmaður'][u'ráðherra']
+			else:
+				flutningsmenn = data[u'þingskjal'][u'þingskjal'][u'flutningsmenn'][u'flutningsmaður'][u'nafn']
 		except:
 			flutningsmenn = ''
 	return flutningsmenn
