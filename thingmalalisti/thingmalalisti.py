@@ -3,10 +3,34 @@
 import requests
 import xmltodict
 from datetime import datetime
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+from private_data import sheet_key
 
-session = 148
+#initialize 
+session = 146
 url = "http://www.althingi.is/altext/xml/thingmalalisti/?lthing="
 
+# use creds to create a client to interact with the Google Drive API
+scope = ['https://spreadsheets.google.com/feeds',
+         'https://www.googleapis.com/auth/drive']
+creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
+client = gspread.authorize(creds)
+
+#create new worksheet to store the data
+doc = client.open_by_key(sheet_key)
+try:
+	doc.add_worksheet(str(session), 0, 0)
+	data_sheet = doc.worksheets()[-1]
+except:
+	data_sheet= doc.worksheet(str(session))
+
+# Extract and print all of the values
+#list_of_hashes = sheet.get_all_records()
+#import sys
+#sys.exit()
+
+#functions
 def get_mp_party(url, session):
 	response = requests.get(url)
 	data = xmltodict.parse(response.text)
@@ -123,6 +147,7 @@ def get_mp_party(mp, parties):
 			return party
 	return None
 
+google_data = []
 for issue in data[u'málaskrá'][u'mál']:
 	if 'bmal' in issue[u'xml']:
 		continue #óundirbúinn fyrirspurnartími, sleppa
@@ -132,7 +157,9 @@ for issue in data[u'málaskrá'][u'mál']:
 		issue_name = issue[u'málsheiti']
 		issue_id = issue[u'@málsnúmer']
 		issue_xml = issue[u'xml']
+		issue_html = issue[u'html']
 		issue_type = issue[u'málstegund'][u'@málstegund']
+		issue_party = str(get_mp_party(str(issue_data['mps']), parties))
 		party_issue_count[str(get_mp_party(str(issue_data['mps']), parties))] += 1
 		try:
 			mp_issue_count[str(issue_data['mps'])] += 1
@@ -140,6 +167,23 @@ for issue in data[u'málaskrá'][u'mál']:
 			mp_issue_count[str(issue_data['mps'])] = 1
 		issue_mps = str(issue_data['mps'])
 		issue_status = issue_data['issue_status']
+		google_data.append([issue_id, issue_name, issue_html, issue_type, issue_mps, issue_party, issue_status])
 		f.write(issue_id + ';' + issue_name + ';' + issue_xml + ';' + issue_type + ';' + issue_mps + ';' + issue_status + '\n')
+
+# Cell range
+cell_list = data_sheet.range(1,1,len(google_data),len(google_data[0]))
+
+# Update cells
+cell_nr = 0
+for issue in google_data:
+	for val in issue:
+		cell_list[cell_nr].value=val
+		cell_nr += 1
+#for cell in cell_list:
+#   	cell.value = 'O_o'
+
+# Update in batch
+data_sheet.update_cells(cell_list)
+
 print(party_issue_count)
 print(mp_issue_count)
