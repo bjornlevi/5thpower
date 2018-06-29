@@ -42,7 +42,7 @@ def get_documents(url):
 		'answer': answer
 		}
 
-sessions = list(range(122,147))
+sessions = list(range(146,147))
 
 url = "http://www.althingi.is/altext/xml/thingmalalisti/?lthing="
 
@@ -62,7 +62,13 @@ for session in sessions:
 	unanswered = []
 	answered = []
 
+	ministers = {}
+
 	for i in issues:
+		try:
+			print('Processing: ' + str(issues[i]['question']['question_id']))
+		except:
+			pass
 		if issues[i]['question'] == '':
 			#issue has been dropped
 			pass
@@ -72,11 +78,25 @@ for session in sessions:
 			date1 = datetime.strptime(issues[i]['question']['question_date'], '%Y-%m-%d %H:%M')
 			date2 = datetime.now()
 			unanswered.append(abs(date2-date1).days)
+			if issues[i]['issue_minister'] in ministers:
+				ministers[issues[i]['issue_minister']]['unanswered'].append(abs(date2-date1).days)
+			else:
+				ministers[issues[i]['issue_minister']] = {
+					'unanswered': [abs(date2-date1).days],
+					'answered': []
+				}
 		else:
 			#question has been answered
 			date1 = datetime.strptime(issues[i]['question']['question_date'], '%Y-%m-%d %H:%M')
 			date2 = datetime.strptime(issues[i]['answer']['answer_date'], '%Y-%m-%d %H:%M')
 			answered.append(abs(date2-date1).days)
+			if issues[i]['issue_minister'] in ministers:
+				ministers[issues[i]['issue_minister']]['answered'].append(abs(date2-date1).days)
+			else:
+				ministers[issues[i]['issue_minister']] = {
+					'answered': [abs(date2-date1).days],
+					'unanswered': []
+				}
 
 	u = 0
 	a = 0
@@ -89,5 +109,27 @@ for session in sessions:
 	except:
 		pass
 
-	print('Þing: ' + str(session) + '; Meðalfjöldi virka daga: ' + str(round(u)) + ' / fjöldi ósvaraðra fyrirspurna: ' + str(len(unanswered)) + '. Meðalsvartími í virkum dögum: ' + str(round(a)) + ' / fjöldi svaraðra fyrirspurna: ' + str(len(answered)))
-	#print( str(a) 
+	print('Þing: ' + str(session))
+	print('Meðalfjöldi virka daga v/ósvaraðra spurninga: ' + str(round(u)) + ' / fjöldi ósvaraðra fyrirspurna: ' + str(len(unanswered)))
+	print('Meðalsvartími í virkum dögum: ' + str(round(a)) + ' / fjöldi svaraðra fyrirspurna: ' + str(len(answered)))
+	print('Heildarfjöldi fyrirspurna: ' + str(len(answered)+len(unanswered)))
+	print('===')
+	
+	print('Svartími einstaka ráðherra')
+	for m in ministers:
+		u = 0
+		a = 0
+		try:
+			u = sum(ministers[m]['unanswered'])/len(ministers[m]['unanswered'])*5/7
+		except:
+			pass
+		try:
+			a = sum(ministers[m]['answered'])/len(ministers[m]['answered'])*5/7
+		except:
+			pass
+
+		print(m)
+		print('Meðalfjöldi virka daga v/ósvaraðra spurninga: ' + str(round(u)) + ' / fjöldi ósvaraðra fyrirspurna: ' + str(len(ministers[m]['unanswered'])))
+		print('Meðalsvartími í virkum dögum: ' + str(round(a)) + ' / fjöldi svaraðra fyrirspurna: ' + str(len(ministers[m]['answered'])))
+		print('Heildarfjöldi fyrirspurna: ' + str(len(ministers[m]['answered'])+len(ministers[m]['unanswered'])))
+		print('===')		
