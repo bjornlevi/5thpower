@@ -3,6 +3,7 @@
 import requests
 import xmltodict
 from datetime import datetime
+from fuzzywuzzy import process
 
 session = 148
 
@@ -70,7 +71,7 @@ def get_mps_adalnefndir(session):
 					pass #nefndarmaður er áheyrnarfulltrúi eða varamaður
 	return mps	
 
-def get_fundir(session):
+def get_fundir(session, mps_in_nefndir):
 	url = 'http://www.althingi.is/altext/xml/nefndarfundir/?lthing='+str(session)
 	response = requests.get(url)
 	data = xmltodict.parse(response.text)
@@ -82,8 +83,17 @@ def get_fundir(session):
 			fundargerd = requests.get(fundur[u'nánar'][u'fundargerð'][u'xml'])
 			fundargerd_data = xmltodict.parse(fundargerd.text)
 			maeting = fundargerd_data[u'nefndarfundur'][u'fundargerð'][u'texti'].split('</h2>')[1].split('<BR><BR>')[0]
-			mps = maeting.split('<BR>')
-			mps = [i.split(' (')[0] for i in mps]
+			attendance = maeting.split('<BR>')
+			mps = []
+			for a in attendance:
+				if 'fyrir' in a:
+					m = a.split('fyrir ')[1].split(' (')[0]
+					#laga fallbeygingu
+					mps.append(process.extractOne(m, mps_in_nefndir)[0])
+					print(m + ' > ' + process.extractOne(m, mps_in_nefndir)[0])
+				else:
+					mps.append(a.split(' (')[0])
+			#mps = [i.split(' (')[0] for i in attendance]
 			fundir.append({'nefnd': nefnd_id, 'mps': mps, 'dagsetning': dagsetning})
 		except:
 			pass
@@ -150,7 +160,8 @@ def get_assembly_attendance(mps):
 						sitting[u'tímabil'][u'út'] = datetime.strptime(datetime.now(),'%d.%m.%Y')
 					mp_in_session[mp].append([sitting[u'tímabil'][u'inn'], sitting[u'tímabil'][u'út']])
 			except:
-				print(sitting, mp)
+				#print(sitting, mp)
+				pass
 	return mp_in_session
 
 def mp_in_attendance(mp, mp_in_session_dates, meeting_date):
@@ -159,7 +170,13 @@ def mp_in_attendance(mp, mp_in_session_dates, meeting_date):
 			return True
 	return False	
 
-mp_fundir = get_fundir(session)
+mp_nefndir = get_mps_adalnefndir(session)
+#{'mp':[{'start':date, 'end':date, nefnd_id:id}, ...]
+#{Guðjón S. Brjánsson: [{'end': '2017-01-24', 'nefnd_id': '201', 'start': '2016-12-19'}, ...], ...}
+#for mp in mp_nefndir:
+	#print(mp+';'+str(mp_nefndir[mp]))
+
+mp_fundir = get_fundir(session, mp_nefndir.keys())
 #{'mps': ['Haraldur Benediktsson', 'Oddný G. Harðardóttir', ...], 
 #'nefnd': '207', 
 #'dagsetning': '2016-12-07'}
@@ -168,12 +185,6 @@ mp_fundir = get_fundir(session)
 
 mp_attendance = get_assembly_attendance(mp_ids)
 #{'Haraldur Benediktsson': [[date_inn, date_út], [date_inn, ...], ...], 'Oddný ...': [[...], ...]}
-
-mp_nefndir = get_mps_adalnefndir(session)
-#{'mp':[{'start':date, 'end':date, nefnd_id:id}, ...]
-#{Guðjón S. Brjánsson: [{'end': '2017-01-24', 'nefnd_id': '201', 'start': '2016-12-19'}, ...], ...}
-#for mp in mp_nefndir:
-	#print(mp+';'+str(mp_nefndir[mp]))
 
 fjoldi_nefndarfunda = count_nefndarfundir(session)
 #{'nefnd_id': fjöldi funda}
@@ -185,7 +196,7 @@ fjoldi_nefndarfunda = count_nefndarfundir(session)
 #print(mp_nefndir.keys())
 
 with open(u'nefndir'+str(session)+'.txt', 'w') as f:
-	f.write('þingmaður, Fjöldi allra funda, Fjöldi funda sem aðalmaður, Fjöldi fjarvera sem aðalmaður\n')
+	f.write('þingmaður, Fjöldi mætinga, Vænt mæting, Fjarvera\n')
 
 	for mp in mp_nefndir.keys():
 		total_meeting = 0 #heildarfjöldi funda sem mætt er á sem aðalmaður eða ekki.
