@@ -90,7 +90,6 @@ def get_fundir(session, mps_in_nefndir):
 					m = a.split('fyrir ')[1].split(' (')[0]
 					#laga fallbeygingu
 					mps.append(process.extractOne(m, mps_in_nefndir)[0])
-					print(m + ' > ' + process.extractOne(m, mps_in_nefndir)[0])
 				else:
 					mps.append(a.split(' (')[0])
 			#mps = [i.split(' (')[0] for i in attendance]
