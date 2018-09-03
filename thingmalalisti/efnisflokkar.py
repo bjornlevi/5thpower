@@ -11,25 +11,6 @@ from private_data import sheet_key
 session = 148
 url = "http://www.althingi.is/altext/xml/thingmalalisti/?lthing="
 
-# use creds to create a client to interact with the Google Drive API
-scope = ['https://spreadsheets.google.com/feeds',
-         'https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
-client = gspread.authorize(creds)
-
-#create new worksheet to store the data
-doc = client.open_by_key(sheet_key)
-try:
-	doc.add_worksheet(str(session), 0, 0)
-	data_sheet = doc.worksheets()[-1]
-except:
-	data_sheet= doc.worksheet(str(session))
-
-# Extract and print all of the values
-#list_of_hashes = sheet.get_all_records()
-#import sys
-#sys.exit()
-
 #functions
 def get_mp_party(url, session):
 	response = requests.get(url)
@@ -87,10 +68,32 @@ def get_issue_data(url):
 	response = requests.get(url)
 	data = xmltodict.parse(response.text)
 	thingskjal_url = ''
+	issue_categories = []
+	
+	#staða máls
 	try:
 		issue_status = data[u'þingmál'][u'mál'][u'staðamáls']
 	except:
 		issue_status = ''
+
+	#efnisflokkar
+	try:
+		yfirflokkur = data[u'þingmál'][u'efnisflokkar']['yfirflokkur']
+		if isinstance(yfirflokkur, list):
+			for category in yfirflokkur:
+				try:
+					issue_categories.append(category[u'heiti'] + ' ' + category[u'efnisflokkur'][u'heiti'])
+				except:
+					issue_categories.append(category[u'heiti'] + ' ' + category[u'efnisflokkur'][0][u'heiti'])
+		else:
+			try:
+				issue_categories.append(yfirflokkur[u'heiti'] + ' ' + yfirflokkur[u'efnisflokkur'][u'heiti'])
+			except:
+				issue_categories.append(yfirflokkur[u'heiti'] + ' ' + yfirflokkur[u'efnisflokkur'][0][u'heiti'])
+	except:
+		issue_categories.append('')
+
+	#xml slóð
 	try:
 		try:
 			thingskjal_url = data[u'þingmál'][u'þingskjöl'][u'þingskjal'][0][u'slóð'][u'xml']
@@ -98,7 +101,7 @@ def get_issue_data(url):
 			thingskjal_url = data[u'þingmál'][u'þingskjöl'][u'þingskjal'][u'slóð'][u'xml']
 	except:
 		return ''
-	return {'mps': get_flutningsmenn_data(thingskjal_url), 'issue_status': issue_status}
+	return {'mps': get_flutningsmenn_data(thingskjal_url), 'issue_status': issue_status, 'categories': issue_categories}
 
 malstegund = {
 	'l': 'Frumvarp til laga', 
@@ -136,8 +139,7 @@ response = requests.get(query)
 #print response.text.encode('utf-8', 'ignore')
 data = xmltodict.parse(response.text)
 
-f = open(str(session), 'w')
-f.close()
+
 
 party_issue_count = {"None": 0}
 for k in parties.keys():
@@ -152,18 +154,22 @@ def get_mp_party(mp, parties):
 			return party
 	return None
 
-google_data = []
+#clear file
+f = open(str(session)+'_categories', 'w')
+f.close()
+
 for issue in data[u'málaskrá'][u'mál']:
 	if 'bmal' in issue[u'xml']:
 		continue #óundirbúinn fyrirspurnartími, sleppa
 	print('processing: ' + issue[u'@málsnúmer'])
-	with open(str(session), 'a') as f:
+	with open(str(session)+'_categories', 'a') as f:
 		issue_data = get_issue_data(issue[u'xml'])
 		issue_name = issue[u'málsheiti']
 		issue_id = issue[u'@málsnúmer']
 		issue_xml = issue[u'xml']
 		issue_html = issue[u'html']
 		issue_type = issue[u'málstegund'][u'@málstegund']
+		issue_cat = ', '.join(issue_data['categories'])
 		issue_party = str(get_mp_party(str(issue_data['mps']), parties))
 		party_issue_count[str(get_mp_party(str(issue_data['mps']), parties))] += 1
 		try:
@@ -172,22 +178,8 @@ for issue in data[u'málaskrá'][u'mál']:
 			mp_issue_count[str(issue_data['mps'])] = 1
 		issue_mps = str(issue_data['mps'])
 		issue_status = issue_data['issue_status']
-		google_data.append([issue_id, issue_name, issue_html, issue_type, issue_mps, issue_party, issue_status])
+		f.write(issue_id + ';' + issue_name + ';' + issue_xml + ';' + issue_type + ';' + issue_mps + ';' + issue_party + ';' + issue_status + ';' + issue_cat + '\n')
 
-# Cell range
-cell_list = data_sheet.range(1,1,len(google_data),len(google_data[0]))
-
-# Update cells
-cell_nr = 0
-for issue in google_data:
-	for val in issue:
-		cell_list[cell_nr].value=val
-		cell_nr += 1
-#for cell in cell_list:
-#   	cell.value = 'O_o'
-
-# Update in batch
-data_sheet.update_cells(cell_list)
 
 print(party_issue_count)
 print(mp_issue_count)
