@@ -94,8 +94,8 @@ def get_fundir(session, mps_in_nefndir):
 					mps.append(a.split(' (')[0])
 			#mps = [i.split(' (')[0] for i in attendance]
 			fundir.append({'nefnd': nefnd_id, 'mps': mps, 'dagsetning': dagsetning})
-		except:
-			pass
+		except Exception as e:
+			print(fundur[u'nefnd']['#text'] + ' - ' +  fundur[u'hefst'][u'texti'])
 	return fundir
 
 def count_nefndarfundir(session):
