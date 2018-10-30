@@ -42,7 +42,7 @@ def get_documents(url):
 		'answer': answer
 		}
 
-sessions = list(range(146,147))
+sessions = list(range(149,150))
 
 url = "http://www.althingi.is/altext/xml/thingmalalisti/?lthing="
 
