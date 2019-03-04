@@ -6,9 +6,14 @@ from datetime import datetime
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from private_data import sheet_key
+import sys
 
 #initialize 
-session = 148
+session = None
+try:
+	session = sys.argv[1]
+except:
+	sys.exit(0)
 url = "http://www.althingi.is/altext/xml/thingmalalisti/?lthing="
 
 # use creds to create a client to interact with the Google Drive API
@@ -98,7 +103,14 @@ def get_issue_data(url):
 			thingskjal_url = data[u'þingmál'][u'þingskjöl'][u'þingskjal'][u'slóð'][u'xml']
 	except:
 		return ''
-	return {'mps': get_flutningsmenn_data(thingskjal_url), 'issue_status': issue_status}
+	try:
+		if data[u'þingmál'][u'ræður'][u'ræða'][0][u'tegundræðu'] == 'flutningsræða':
+			issue_introduction = data[u'þingmál'][u'ræður'][u'ræða'][0][u'ræðahófst']
+		else:
+			issue_introduction = ''
+	except Exception as e:
+		issue_introduction = ''
+	return {'mps': get_flutningsmenn_data(thingskjal_url), 'issue_status': issue_status, 'issue_introduction': issue_introduction}
 
 malstegund = {
 	'l': 'Frumvarp til laga', 
@@ -172,7 +184,8 @@ for issue in data[u'málaskrá'][u'mál']:
 			mp_issue_count[str(issue_data['mps'])] = 1
 		issue_mps = str(issue_data['mps'])
 		issue_status = issue_data['issue_status']
-		google_data.append([issue_id, issue_name, issue_html, issue_type, issue_mps, issue_party, issue_status])
+		issue_introduction = issue_data['issue_introduction']
+		google_data.append([issue_id, issue_name, issue_html, issue_type, issue_mps, issue_party, issue_status, issue_introduction])
 
 # Cell range
 cell_list = data_sheet.range(1,1,len(google_data),len(google_data[0]))
@@ -191,3 +204,4 @@ data_sheet.update_cells(cell_list)
 
 print(party_issue_count)
 print(mp_issue_count)
+print()
