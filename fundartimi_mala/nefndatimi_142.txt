@@ -1,0 +1,14 @@
+nefnd_id,nefnd;fjöldi funda;heildarfundartími;fjöldi mála;mnr
+148;utanríkismálanefnd;8;0:59:00;0;;
+203;atvinnuveganefnd;22;1:35:00;5;44,15,4,1,3;
+204;umhverfis- og samgöngunefnd;5;0:00:00;0;;
+207;fjárlaganefnd;16;3:31:00;0;;
+202;efnahags- og viðskiptanefnd;18;0:00:00;4;9,20,1,48;
+206;stjórnskipunar- og eftirlitsnefnd;14;2:50:00;2;5,30;
+201;allsherjar- og menntamálanefnd;18;0:30:00;6;14,2,12,9,37,11;
+205;velferðarnefnd;13;2:45:00;5;40,25,7,9,6;
+195;Þingmannanefnd Íslands og Evrópusambandsins af hálfu Alþingis;1;-1 day, 15:02:00;0;;
+132;Íslandsdeild Alþjóðaþingmannasambandsins;1;-1 day, 21:15:00;0;;
+142;Íslandsdeild þingmannaráðstefnunnar um norðurskautsmál;1;5:06:00;0;;
+137;Íslandsdeild Norðurlandaráðs;2;1:00:00;0;;
+134;Íslandsdeild Evrópuráðsþingsins;1;0:40:00;0;;

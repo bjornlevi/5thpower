@@ -5,7 +5,7 @@ import xmltodict
 from datetime import datetime
 from fuzzywuzzy import process
 
-session = 148
+session = 149
 
 def get_nefndir(session):
 	url = 'http://www.althingi.is/altext/xml/nefndir/?lthing='+str(session)

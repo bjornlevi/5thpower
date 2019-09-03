@@ -55,7 +55,10 @@ def get_party_mps(session):
 	data = xmltodict.parse(response.text)
 	results = {} #{flokkur1: [mp1, mp2], flokkur2: ...}
 	for mp in data[u'þingmannalisti'][u'þingmaður']:
-		mp_party = get_mp_party(mp[u'xml'][u'þingseta'], session)
+		try:
+			mp_party = get_mp_party(mp[u'xml'][u'þingseta'], session)
+		except:
+			mp_party = None
 		mp_name = mp[u'nafn']
 		if mp_party in results:
 			results[mp_party].append(mp_name)

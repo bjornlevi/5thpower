@@ -1,0 +1,5 @@
+nefnd_id,nefnd;fjöldi funda;heildarfundartími;fjöldi mála;mnr
+148;utanríkismálanefnd;1;0:46:00;0;;
+201;allsherjar- og menntamálanefnd;2;2:20:00;2;111,113;
+206;stjórnskipunar- og eftirlitsnefnd;8;3:43:00;0;;
+207;fjárlaganefnd;1;0:06:00;0;;

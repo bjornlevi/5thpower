@@ -1,54 +1,54 @@
 þingmaður, Fjöldi mætinga, Vænt mæting, Fjarvera
-Andrés Ingi Jónsson;92;100;0
-Anna Kolbrún Árnadóttir;85;105;0
-Birgir Ármannsson;50;58;0
-Guðmundur Andri Thorsson;58;58;0
-Jón Steindór Valdimarsson;89;98;0
-Páll Magnússon;98;108;0
-Steinunn Þóra Árnadóttir;50;63;0
-Willum Þór Þórsson;106;110;0
-Þórhildur Sunna Ævarsdóttir;55;58;3
-Albertína Friðbjörg Elíasdóttir;27;31;2
-Halla Signý Kristjánsdóttir;70;73;0
-Inga Sæland;50;32;1
-Kolbeinn Óttarsson Proppé;68;76;0
-Lilja Rafney Magnúsdóttir;28;32;1
-Njáll Trausti Friðbertsson;74;83;8
-Sigurður Páll Jónsson;29;31;0
-Smári McCarthy;52;66;4
-Ásmundur Friðriksson;63;74;3
-Bryndís Haraldsdóttir;71;83;0
-Brynjar Níelsson;66;91;18
+Andrés Ingi Jónsson;99;108;9
+Anna Kolbrún Árnadóttir;92;115;23
+Birgir Ármannsson;50;58;8
+Guðmundur Andri Thorsson;60;60;0
+Jón Steindór Valdimarsson;89;98;9
+Páll Magnússon;97;108;11
+Steinunn Þóra Árnadóttir;50;65;15
+Willum Þór Þórsson;105;110;5
+Þórhildur Sunna Ævarsdóttir;56;58;3
+Albertína Friðbjörg Elíasdóttir;45;49;4
+Halla Signý Kristjánsdóttir;94;99;5
+Inga Sæland;69;54;13
+Kolbeinn Óttarsson Proppé;85;96;11
+Lilja Rafney Magnúsdóttir;49;54;4
+Njáll Trausti Friðbertsson;91;101;9
+Sigurður Páll Jónsson;47;49;2
+Smári McCarthy;72;90;11
+Ásmundur Friðriksson;90;104;13
+Bryndís Haraldsdóttir;79;91;14
+Brynjar Níelsson;67;93;24
 Helgi Hrafn Gunnarsson;48;49;0
-Oddný G. Harðardóttir;47;50;0
+Oddný G. Harðardóttir;47;50;3
 Sigmundur Davíð Gunnlaugsson;38;50;11
-Silja Dögg Gunnarsdóttir;56;87;21
-Ólafur Þór Gunnarsson;81;91;1
-Óli Björn Kárason;88;89;0
-Þorsteinn Víglundsson;75;49;0
-Birgir Þórarinsson;46;50;0
-Bjarkey Olsen Gunnarsdóttir;51;51;1
-Björn Leví Gunnarsson;80;51;0
-Haraldur Benediktsson;44;50;6
-Ágúst Ólafur Ágústsson;43;51;0
-Ólafur Ísleifsson;91;55;0
-Guðjón S. Brjánsson;39;43;2
-Jón Þór Ólafsson;36;40;0
+Silja Dögg Gunnarsdóttir;56;93;24
+Ólafur Þór Gunnarsson;89;99;1
+Óli Björn Kárason;89;89;1
+Þorsteinn Víglundsson;74;49;13
+Birgir Þórarinsson;45;50;5
+Bjarkey Olsen Gunnarsdóttir;52;51;2
+Björn Leví Gunnarsson;80;51;1
+Haraldur Benediktsson;43;50;7
+Ágúst Ólafur Ágústsson;42;51;9
+Ólafur Ísleifsson;90;57;10
+Guðjón S. Brjánsson;51;55;3
+Jón Þór Ólafsson;36;40;4
 Steingrímur J. Sigfússon;0;0;0
-Þorsteinn Sæmundsson;36;40;0
-Þórunn Egilsdóttir;32;41;2
-Áslaug Arna Sigurbjörnsdóttir;33;34;0
-Bergþór Ólason;34;42;3
-Rósa Björk Brynjólfsdóttir;55;75;11
-Þorgerður K. Gunnarsdóttir;44;35;2
-Vilhjálmur Árnason;70;89;0
-Hanna Katrín Friðriksson;46;44;5
-Jón Gunnarsson;35;44;9
-Ari Trausti Guðmundsson;73;76;0
-Líneik Anna Sævarsdóttir;76;83;0
-Gunnar Bragi Sveinsson;29;33;0
-Helga Vala Helgadóttir;77;82;0
-Karl Gauti Hjaltason;63;42;0
-Logi Einarsson;32;33;0
-Guðmundur Ingi Kristinsson;63;42;0
-Halldóra Mogensen;40;42;0
+Þorsteinn Sæmundsson;36;40;4
+Þórunn Egilsdóttir;35;41;6
+Áslaug Arna Sigurbjörnsdóttir;37;38;1
+Bergþór Ólason;37;45;5
+Rósa Björk Brynjólfsdóttir;60;82;17
+Þorgerður K. Gunnarsdóttir;54;39;6
+Vilhjálmur Árnason;79;100;22
+Hanna Katrín Friðriksson;52;47;8
+Jón Gunnarsson;37;47;10
+Ari Trausti Guðmundsson;77;81;4
+Líneik Anna Sævarsdóttir;77;84;7
+Gunnar Bragi Sveinsson;34;39;5
+Helga Vala Helgadóttir;78;83;5
+Karl Gauti Hjaltason;64;43;3
+Logi Einarsson;36;37;1
+Guðmundur Ingi Kristinsson;71;50;1
+Halldóra Mogensen;48;50;2

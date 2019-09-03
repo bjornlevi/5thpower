@@ -1,0 +1,15 @@
+nefnd_id,nefnd;fjöldi funda;heildarfundartími;fjöldi mála;mnr
+207;fjárlaganefnd;50;1:16:00;7;2,65,66,1,494,49,167;
+202;efnahags- og viðskiptanefnd;49;0:25:00;28;246,3,177,562,395,422,424,629,2,135,452,494,93,565,561,249,67,46,423,12,388,518,14,474,13,247,387,108;
+205;velferðarnefnd;47;0:10:00;24;88,293,202,26,18,494,27,28,469,51,98,9,22,24,468,426,25,105,112,43,178,346,427,238;
+201;allsherjar- og menntamálanefnd;58;0:24:00;26;133,394,564,7,213,494,42,236,339,458,442,441,50,128,63,203,345,113,466,10,622,8,219,465,37,393;
+204;umhverfis- og samgöngunefnd;43;0:23:00;21;455,389,5,11,201,110,481,4,494,454,185,248,111,479,480,390,190,263,425,109,467;
+148;utanríkismálanefnd;37;1:34:00;10;612,336,492,494,76,333,545,117,116,337;
+206;stjórnskipunar- og eftirlitsnefnd;40;1:19:00;9;40,494,132,80,89,264,222,443,45;
+140;Íslandsdeild Vestnorræna ráðsins;1;-1 day, 20:27:00;0;;
+137;Íslandsdeild Norðurlandaráðs;5;1:53:00;0;;
+203;atvinnuveganefnd;41;1:00:00;16;429,456,581,494,484,76,215,179,330,292,138,331,433,485,115,457;
+200;Íslandsdeild þingmannanefnda EFTA og EES;4;0:45:00;0;;
+142;Íslandsdeild þingmannaráðstefnunnar um norðurskautsmál;1;1:00:00;0;;
+132;Íslandsdeild Alþjóðaþingmannasambandsins;1;0:30:00;0;;
+147;Íslandsdeild NATO-þingsins;1;0:30:00;0;;

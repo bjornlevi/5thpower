@@ -22,7 +22,7 @@ except:
 	pass
 
 
-sessions = list(range(148,149))
+sessions = list(range(1,149))
 url = 'http://www.althingi.is/altext/xml/raedulisti/?lthing='
 
 def get_speech(url):
@@ -35,21 +35,24 @@ def get_speech(url):
 
 for session in sessions:
 	print("session", str(session))
-	query = url+str(session)
-	response = requests.get(query)
-	data = xmltodict.parse(response.text)
-	for r in data[u'ræðulisti'][u'ræða']:
-		try:
-			speech = get_speech(r[u'slóðir'][u'xml'])
-			speaker = r[u'ræðumaður'][u'nafn']
-			speech_start = r[u'ræðahófst']
-			speech_end = r[u'ræðulauk']
-			speech_type = r[u'tegundræðu']
-			# vista gögn
-			values = (speech.lower(), speaker, session, speech_start, speech_end, speech_type)
-			c.execute('insert into ordanotkun values(?,?,?,?,?,?)', values)
-			conn.commit()
-			print(str(session), "Speech saved", speaker)
-		except:
-			pass
-	conn.close()
+	try:
+		query = url+str(session)
+		response = requests.get(query)
+		data = xmltodict.parse(response.text)
+		for r in data[u'ræðulisti'][u'ræða']:
+			try:
+				speech = get_speech(r[u'slóðir'][u'xml'])
+				speaker = r[u'ræðumaður'][u'nafn']
+				speech_start = r[u'ræðahófst']
+				speech_end = r[u'ræðulauk']
+				speech_type = r[u'tegundræðu'] 
+				# vista gögn
+				values = (speech.lower(), speaker, session, speech_start, speech_end, speech_type)
+				c.execute('insert into ordanotkun values(?,?,?,?,?,?)', values)
+				conn.commit()
+				print(str(session), "Speech saved", speaker)
+			except:
+				pass
+		conn.close()
+	except Exception as e:
+		print(e)
