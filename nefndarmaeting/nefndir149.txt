@@ -1,0 +1,54 @@
+þingmaður, Fjöldi mætinga, Vænt mæting, Fjarvera
+Andrés Ingi Jónsson;132;146;9
+Anna Kolbrún Árnadóttir;126;147;21
+Birgir Ármannsson;64;77;13
+Guðmundur Andri Thorsson;77;81;1
+Helgi Hrafn Gunnarsson;47;79;2
+Jón Steindór Valdimarsson;133;141;8
+Páll Magnússon;140;159;19
+Steinunn Þóra Árnadóttir;60;78;10
+Willum Þór Þórsson;157;160;3
+Þórhildur Sunna Ævarsdóttir;46;73;27
+Albertína Friðbjörg Elíasdóttir;67;73;6
+Halla Signý Kristjánsdóttir;135;142;8
+Inga Sæland;86;85;18
+Kolbeinn Óttarsson Proppé;119;138;19
+Lilja Rafney Magnúsdóttir;74;80;7
+Njáll Trausti Friðbertsson;133;156;22
+Sigurður Páll Jónsson;60;73;7
+Ásmundur Friðriksson;121;149;23
+Ólafur Ísleifsson;89;77;4
+Bryndís Haraldsdóttir;115;126;14
+Brynjar Níelsson;115;139;18
+Oddný G. Harðardóttir;55;75;21
+Sigmundur Davíð Gunnlaugsson;53;76;17
+Silja Dögg Gunnarsdóttir;41;120;12
+Smári McCarthy;93;119;15
+Ólafur Þór Gunnarsson;140;144;4
+Óli Björn Kárason;132;139;7
+Þorsteinn Víglundsson;126;75;17
+Birgir Þórarinsson;73;82;9
+Bjarkey Olsen Gunnarsdóttir;79;82;2
+Björn Leví Gunnarsson;154;84;5
+Haraldur Benediktsson;78;82;4
+Ágúst Ólafur Ágústsson;68;82;7
+Guðjón S. Brjánsson;71;76;2
+Jón Þór Ólafsson;71;64;9
+Steingrímur J. Sigfússon;0;0;0
+Þorsteinn Sæmundsson;55;64;7
+Þórunn Egilsdóttir;55;64;6
+Áslaug Arna Sigurbjörnsdóttir;39;45;5
+Bergþór Ólason;49;89;21
+Rósa Björk Brynjólfsdóttir;104;133;23
+Guðmundur Ingi Kristinsson;71;70;6
+Vilhjálmur Árnason;119;153;33
+Hanna Katrín Friðriksson;103;83;15
+Jón Gunnarsson;69;83;12
+Ari Trausti Guðmundsson;115;129;12
+Gunnar Bragi Sveinsson;38;48;6
+Helga Vala Helgadóttir;133;147;8
+Líneik Anna Sævarsdóttir;141;147;5
+Karl Gauti Hjaltason;71;83;13
+Logi Einarsson;42;44;0
+Þorgerður K. Gunnarsdóttir;83;44;9
+Halldóra Mogensen;66;69;3
