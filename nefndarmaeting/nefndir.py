@@ -2,10 +2,15 @@
 
 import requests
 import xmltodict
-from datetime import datetime
+from datetime import datetime, timedelta
 from fuzzywuzzy import process
+import sys
 
-session = 149
+session = None
+try:
+	session = sys.argv[1]
+except:
+	sys.exit(0)
 
 def get_nefndir(session):
 	url = 'http://www.althingi.is/altext/xml/nefndir/?lthing='+str(session)
@@ -76,27 +81,39 @@ def get_fundir(session, mps_in_nefndir):
 	response = requests.get(url)
 	data = xmltodict.parse(response.text)
 	fundir = []
+	fundir_time = []
 	for fundur in data[u'nefndarfundir'][u'nefndarfundur']:
 		try:
 			dagsetning = fundur[u'hefst'][u'dagur']
 			nefnd_id = fundur[u'nefnd'][u'@id']
 			fundargerd = requests.get(fundur[u'nánar'][u'fundargerð'][u'xml'])
 			fundargerd_data = xmltodict.parse(fundargerd.text)
+			fundur_settur = fundargerd_data[u'nefndarfundur'][u'fundursettur']
+			fundur_slit = fundargerd_data[u'nefndarfundur'][u'fuslit']
 			maeting = fundargerd_data[u'nefndarfundur'][u'fundargerð'][u'texti'].split('</h2>')[1].split('<BR><BR>')[0]
+			#dæmi um maeting: Jón Gunnarsson (JónG) formaður, kl. 09:00 <BR>Ari Trausti Guðmundsson (ATG) 1. varaformaður, kl. 09:00 <BR>Líneik Anna Sævarsdóttir (LínS) 2. varaformaður, kl. 09:00 <BR>Bergþór Ólason (BergÓ), kl. 09:00 <BR>Björn Leví Gunnarsson (BLG), kl. 09:00 <BR>Guðjón S. Brjánsson (GBr), kl. 09:00 <BR>Hanna Katrín Friðriksson (HKF), kl. 09:00 <BR>Karl Gauti Hjaltason (KGH), kl. 09:00 <BR>Kolbeinn Óttarsson Proppé (KÓP), kl. 09:00 <BR>Vilhjálmur Árnason (VilÁ), kl. 09:00 
+			#Willum Þór Þórsson (WÞÞ) formaður, kl. 09:00 <BR>Haraldur Benediktsson (HarB) 1. varaformaður, kl. 09:00 <BR>Ágúst Ólafur Ágústsson (ÁÓÁ), kl. 09:00 <BR>Birgir Þórarinsson (BirgÞ), kl. 09:00 <BR>Bjarkey Olsen Gunnarsdóttir (BjG) fyrir Steinunni Þóru Árnadóttur (SÞÁ), kl. 09:00 <BR>Björn Leví Gunnarsson (BLG), kl. 09:00 <BR>Njáll Trausti Friðbertsson (NTF), kl. 09:00 <BR>Þorsteinn Víglundsson (ÞorstV), kl. 09:00 
 			attendance = maeting.split('<BR>')
+			#Ari Trausti Guðmundsson (ATG) 1. varaformaður, kl. 09:00 
+			#Bjarkey Olsen Gunnarsdóttir (BjG) fyrir Steinunni Þóru Árnadóttur (SÞÁ), kl. 09:00 
 			mps = []
+			mps_time_attendance = []
 			for a in attendance:
-				if 'fyrir' in a:
+				if 'fyrir' in a: #ef varamaður
 					m = a.split('fyrir ')[1].split(' (')[0]
 					#laga fallbeygingu
 					mps.append(process.extractOne(m, mps_in_nefndir)[0])
+					mps_time_attendance.append([process.extractOne(m, mps_in_nefndir)[0], a.split('kl. ')[1].strip()])
 				else:
 					mps.append(a.split(' (')[0])
+					mps_time_attendance.append([a.split(' (')[0], a.split('kl. ')[1].strip()])
 			#mps = [i.split(' (')[0] for i in attendance]
 			fundir.append({'nefnd': nefnd_id, 'mps': mps, 'dagsetning': dagsetning})
+			fundir_time.append({'nefnd': nefnd_id, 'mps': mps_time_attendance, 'dagsetning': dagsetning, 'fundur_settur': fundur_settur, 'fundur_slit': fundur_slit})
 		except Exception as e:
 			print(fundur[u'nefnd']['#text'] + ' - ' +  fundur[u'hefst'][u'texti'])
-	return fundir
+			print(e)
+	return fundir, fundir_time
 
 def count_nefndarfundir(session):
 	url = 'http://www.althingi.is/altext/xml/nefndarfundir/?lthing='+str(session)
@@ -175,12 +192,18 @@ mp_nefndir = get_mps_adalnefndir(session)
 #for mp in mp_nefndir:
 	#print(mp+';'+str(mp_nefndir[mp]))
 
-mp_fundir = get_fundir(session, mp_nefndir.keys())
+mp_fundir, mp_fundir_time = get_fundir(session, mp_nefndir.keys())
+#mp_fundir
 #{'mps': ['Haraldur Benediktsson', 'Oddný G. Harðardóttir', ...], 
 #'nefnd': '207', 
-#'dagsetning': '2016-12-07'}
+#'dagsetning': '2016-12-07',
+#'fundur_settur': '2019-09-18T09:00:00',
+#'fundur_slit': '2019-09-18T12:09:00'}
 #for fundur in mp_fundir:
 	#print(fundur)
+#mp_fundir_time
+#{'mps': [['Haraldur Benediktsson', '09:00'], ['Oddný G. Harðardóttir', '09:00'], ...], 
+#print(mp_fundir_time)
 
 mp_attendance = get_assembly_attendance(mp_ids)
 #{'Haraldur Benediktsson': [[date_inn, date_út], [date_inn, ...], ...], 'Oddný ...': [[...], ...]}
@@ -195,24 +218,44 @@ fjoldi_nefndarfunda = count_nefndarfundir(session)
 #print(mp_nefndir.keys())
 
 with open(u'nefndir'+str(session)+'.txt', 'w') as f:
-	f.write('þingmaður, Fjöldi mætinga, Vænt mæting, Fjarvera\n')
+	f.write('þingmaður,Vænt mæting,Fjöldi mætinga,Varamaður mætti,Fjarvera,Seint\n')
 
 	for mp in mp_nefndir.keys():
+		print(mp)
 		total_meeting = 0 #heildarfjöldi funda sem mætt er á sem aðalmaður eða ekki.
 		expected_meetings = 0 #fjöldi funda sem aðalmaður
 		missed_meeting = 0 #mætti ekki sem aðalmaður
-		for fundur in mp_fundir:
+		backup_attends = 0
+		late = timedelta(minutes=0)
+		for fundur in mp_fundir_time:
 			if mp_in_nefnd(mp, fundur['nefnd'], mp_nefndir, fundur['dagsetning']):
 				expected_meetings += 1 #fjöldi funda sem mp ætti að mæta á
-				if mp in fundur['mps']:
+				if mp in [i[0] for i in fundur['mps']]:
 					total_meeting += 1 #mættur og á að vera
+					#f.write(';'+str(fundur['dagsetning'])+';;;\n')
 				else:
 					if mp_in_attendance(mp, mp_attendance, fundur['dagsetning']):
-						missed_meeting += 1 #ekki mættur en er með varamann
+						backup_attends += 1 #er á þingi, ekki mættur en er með varamann sem mætir á fundinn
+					else:
+						missed_meeting += 1 #ekki mættur og er ekki með varamann
+						#f.write(';;;'+str(fundur['dagsetning'])+';\n')
 					#print(fundur['dagsetning'], fundur['nefnd'])
 			else:
-				if mp in fundur['mps']:
+				if mp[0] in [i[0] for i in fundur['mps']]:
 					total_meeting += 1 #mættur en á ekki að vera
-
+					#f.write(';'+str(fundur['dagsetning'])+';;;\n')
+			#stundvísi = fundur_settur - mp[1]
+			#print(fundur['fundur_settur'])
+			for m in fundur['mps']:
+				if m[0] == mp:
+					#fundur['fundur_settur'] = datetime.strptime('2020-01-16T13:30:00', '%Y-%m-%dT%H:%M:%S')
+					settur = datetime.strptime(fundur['fundur_settur'].split('T')[1], '%H:%M:%S')
+					maettur = datetime.strptime(m[1], '%H:%M')
+					d = maettur - settur
+					if d > timedelta(minutes=0):
+						#print(fundur['dagsetning'] + ': ' + str(d))
+						#f.write(';;;;'+fundur['dagsetning']+' '+str(d)+'\n')
+						late += d
+			
 		#print(mp+';'+str(total_meeting)+';'+str(expected_meetings)+';'+str(missed_meeting))
-		f.write(mp+';'+str(total_meeting)+';'+str(expected_meetings)+';'+str(missed_meeting)+'\n')
+		f.write(mp+','+str(expected_meetings)+','+str(total_meeting)+','+str(missed_meeting)+','+str(backup_attends)+','+str(late)+'\n')
