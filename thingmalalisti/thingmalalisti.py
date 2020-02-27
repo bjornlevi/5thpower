@@ -107,7 +107,7 @@ def get_issue_data(url):
 	except:
 		return ''
 	try:
-		if data[u'þingmál'][u'ræður'][u'ræða'][0][u'tegundræðu'] == 'flutningsræða':
+		if data[u'þingmál'][u'ræður'][u'ræða'][0][u'tegundræðu'] == 'flutningsræða' or data[u'þingmál'][u'ræður'][u'ræða'][1][u'tegundræðu'] == 'flutningsræða':
 			issue_introduction = data[u'þingmál'][u'ræður'][u'ræða'][0][u'ræðahófst']
 		else:
 			issue_introduction = ''

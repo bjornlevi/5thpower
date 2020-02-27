@@ -4,8 +4,13 @@ import requests
 import xmltodict
 from datetime import datetime
 from fuzzywuzzy import process
+import sys
 
-session = 148
+session = None
+try:
+	session = sys.argv[1]
+except:
+	sys.exit(0)
 
 def get_nefndir(session):
 	url = 'http://www.althingi.is/altext/xml/nefndir/?lthing='+str(session)

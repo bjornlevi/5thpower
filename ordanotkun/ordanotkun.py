@@ -22,7 +22,7 @@ except:
 	pass
 
 
-sessions = list(range(1,149))
+sessions = list(range(150,151))
 url = 'http://www.althingi.is/altext/xml/raedulisti/?lthing='
 
 def get_speech(url):
