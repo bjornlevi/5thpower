@@ -1,56 +1,56 @@
 þingmaður,Vænt mæting,Fjöldi mætinga,Varamaður mætti,Fjarvera,Seint
-Andrés Ingi Jónsson,72,62,5,5,5:15:00
-Anna Kolbrún Árnadóttir,130,102,3,25,2:30:00
-Birgir Ármannsson,84,76,8,0,6:23:00
-Bjarkey Olsen Gunnarsdóttir,84,73,11,0,3:00:00
-Guðmundur Andri Thorsson,149,140,9,0,3:02:00
-Helgi Hrafn Gunnarsson,84,74,10,0,0:20:00
-Jón Steindór Valdimarsson,115,108,7,0,0:35:00
-Páll Magnússon,168,145,20,3,12:27:00
-Silja Dögg Gunnarsdóttir,104,70,19,15,5:55:00
-Steinunn Þóra Árnadóttir,140,132,5,3,2:57:00
-Willum Þór Þórsson,130,127,1,2,0:20:00
-Þorbjörg Sigríður Gunnlaugsdóttir,24,22,2,0,1:20:00
-Þórunn Egilsdóttir,128,23,104,1,0:28:00
-Albertína Friðbjörg Elíasdóttir,43,35,6,2,0:29:00
-Halla Signý Kristjánsdóttir,89,77,5,7,2:03:00
-Jón Þór Ólafsson,43,33,10,0,4:30:00
-Kolbeinn Óttarsson Proppé,137,120,8,9,1:34:00
-Lilja Rafney Magnúsdóttir,96,72,7,17,2:15:00
-Njáll Trausti Friðbertsson,127,107,4,16,6:44:00
-Rósa Björk Brynjólfsdóttir,77,65,7,5,7:58:00
-Sigurður Páll Jónsson,43,38,5,0,0:57:00
-Ásmundur Friðriksson,96,82,8,6,8:16:00
-Ólafur Ísleifsson,43,29,14,0,0:05:00
-Þórhildur Sunna Ævarsdóttir,65,65,0,0,0:56:00
-Bryndís Haraldsdóttir,134,121,5,8,9:19:00
-Brynjar Níelsson,159,128,31,0,3:57:00
-Oddný G. Harðardóttir,93,83,4,6,3:05:00
-Sigmundur Davíð Gunnlaugsson,93,74,13,6,6:45:00
-Smári McCarthy,128,88,25,15,2:04:00
-Ólafur Þór Gunnarsson,139,137,2,0,1:10:00
-Óli Björn Kárason,158,151,7,0,1:39:00
-Þorsteinn Víglundsson,61,53,0,8,4:34:00
-Birgir Þórarinsson,84,77,4,3,1:58:00
-Björn Leví Gunnarsson,84,81,3,0,1:48:00
-Haraldur Benediktsson,84,76,8,0,2:44:00
-Inga Sæland,91,66,25,0,0:28:00
-Ágúst Ólafur Ágústsson,84,73,11,0,1:55:00
-Guðjón S. Brjánsson,79,72,4,3,0:10:00
-Steingrímur J. Sigfússon,0,0,0,0,0:00:00
-Þorsteinn Sæmundsson,65,56,0,9,1:44:00
-Sigríður Á. Andersen,34,30,2,2,0:06:00
-Áslaug Arna Sigurbjörnsdóttir,0,0,0,0,0:00:00
-Bergþór Ólason,72,54,12,6,1:17:00
-Guðmundur Ingi Kristinsson,46,33,3,10,0:50:00
-Vilhjálmur Árnason,118,98,20,0,8:52:00
-Hanna Katrín Friðriksson,73,57,16,0,4:49:00
-Jón Gunnarsson,73,62,0,11,2:16:00
-Ari Trausti Guðmundsson,106,94,12,0,0:55:00
-Gunnar Bragi Sveinsson,34,28,0,6,1:01:00
-Líneik Anna Sævarsdóttir,137,122,15,0,2:14:00
-Karl Gauti Hjaltason,72,64,8,0,6:29:00
-Logi Einarsson,34,33,1,0,0:38:00
-Þorgerður K. Gunnarsdóttir,34,23,7,4,0:38:00
-Halldóra Mogensen,46,40,6,0,2:30:00
-Helga Vala Helgadóttir,46,43,3,0,4:20:00
+Andrés Ingi Jónsson,81,71,5:15:00
+Anna Kolbrún Árnadóttir,197,160,3:18:00
+Birgir Ármannsson,92,83,6:28:00
+Bjarkey Olsen Gunnarsdóttir,92,82,3:00:00
+Guðmundur Andri Thorsson,161,157,3:12:00
+Helgi Hrafn Gunnarsson,92,83,1:35:00
+Jón Steindór Valdimarsson,121,153,1:00:00
+Páll Magnússon,181,166,12:32:00
+Silja Dögg Gunnarsdóttir,105,85,8:40:00
+Steinunn Þóra Árnadóttir,159,156,3:17:00
+Willum Þór Þórsson,153,147,0:35:00
+Þorbjörg Sigríður Gunnlaugsdóttir,32,47,1:20:00
+Þórunn Egilsdóttir,23,29,0:28:00
+Albertína Friðbjörg Elíasdóttir,69,68,1:09:00
+Halla Signý Kristjánsdóttir,179,179,2:46:00
+Jón Þór Ólafsson,71,64,7:35:00
+Kolbeinn Óttarsson Proppé,135,130,1:41:00
+Lilja Rafney Magnúsdóttir,186,162,3:24:00
+Njáll Trausti Friðbertsson,177,158,9:13:00
+Rósa Björk Brynjólfsdóttir,120,111,11:40:00
+Sigurður Páll Jónsson,80,73,1:02:00
+Ásmundur Friðriksson,188,170,13:42:00
+Ólafur Ísleifsson,80,65,0:10:00
+Þórhildur Sunna Ævarsdóttir,80,80,1:01:00
+Bryndís Haraldsdóttir,148,137,10:04:00
+Brynjar Níelsson,175,139,4:07:00
+Oddný G. Harðardóttir,97,89,3:15:00
+Sigmundur Davíð Gunnlaugsson,85,79,6:55:00
+Smári McCarthy,121,104,2:14:00
+Ólafur Þór Gunnarsson,205,203,3:08:00
+Óli Björn Kárason,174,165,1:49:00
+Þorsteinn Víglundsson,62,95,4:34:00
+Birgir Þórarinsson,93,92,2:28:00
+Björn Leví Gunnarsson,100,163,1:48:00
+Haraldur Benediktsson,100,91,2:44:00
+Inga Sæland,107,124,0:28:00
+Ágúst Ólafur Ágústsson,98,88,2:15:00
+Guðjón S. Brjánsson,77,75,0:50:00
+Steingrímur J. Sigfússon,0,0,0:00:00
+Þorsteinn Sæmundsson,74,69,1:44:00
+Sigríður Á. Andersen,43,40,0:06:00
+Áslaug Arna Sigurbjörnsdóttir,0,0,0:00:00
+Bergþór Ólason,71,55,1:17:00
+Guðmundur Ingi Kristinsson,104,87,1:23:00
+Vilhjálmur Árnason,179,154,12:43:00
+Hanna Katrín Friðriksson,75,138,9:40:00
+Jón Gunnarsson,72,63,2:16:00
+Ari Trausti Guðmundsson,118,105,0:55:00
+Gunnar Bragi Sveinsson,43,37,1:01:00
+Líneik Anna Sævarsdóttir,143,132,2:14:00
+Karl Gauti Hjaltason,74,66,6:32:00
+Logi Einarsson,44,41,1:00:00
+Þorgerður K. Gunnarsdóttir,42,66,1:28:00
+Halldóra Mogensen,105,97,4:57:00
+Helga Vala Helgadóttir,105,104,4:53:00
