@@ -1,0 +1,71 @@
+Þing: 150
+Meðalfjöldi virka daga v/ósvaraðra spurninga: 35 / fjöldi ósvaraðra fyrirspurna: 155
+Meðalsvartími í virkum dögum: 38 / fjöldi svaraðra fyrirspurna: 297
+Heildarfjöldi fyrirspurna: 452
+===
+Svartími einstaka ráðherra
+umhverfis- og auðlindaráðherra
+Meðalfjöldi virka daga v/ósvaraðra spurninga: 21 / fjöldi ósvaraðra fyrirspurna: 22
+Meðalsvartími í virkum dögum: 40 / fjöldi svaraðra fyrirspurna: 14
+Heildarfjöldi fyrirspurna: 36
+===
+fjármála- og efnahagsráðherra
+Meðalfjöldi virka daga v/ósvaraðra spurninga: 47 / fjöldi ósvaraðra fyrirspurna: 26
+Meðalsvartími í virkum dögum: 47 / fjöldi svaraðra fyrirspurna: 41
+Heildarfjöldi fyrirspurna: 67
+===
+mennta- og menningarmálaráðherra
+Meðalfjöldi virka daga v/ósvaraðra spurninga: 37 / fjöldi ósvaraðra fyrirspurna: 27
+Meðalsvartími í virkum dögum: 53 / fjöldi svaraðra fyrirspurna: 13
+Heildarfjöldi fyrirspurna: 40
+===
+sjávarútvegs- og landbúnaðarráðherra
+Meðalfjöldi virka daga v/ósvaraðra spurninga: 30 / fjöldi ósvaraðra fyrirspurna: 8
+Meðalsvartími í virkum dögum: 31 / fjöldi svaraðra fyrirspurna: 34
+Heildarfjöldi fyrirspurna: 42
+===
+ferðamála-, iðnaðar- og nýsköpunarráðherra
+Meðalfjöldi virka daga v/ósvaraðra spurninga: 30 / fjöldi ósvaraðra fyrirspurna: 9
+Meðalsvartími í virkum dögum: 47 / fjöldi svaraðra fyrirspurna: 29
+Heildarfjöldi fyrirspurna: 38
+===
+samgöngu- og sveitarstjórnarráðherra
+Meðalfjöldi virka daga v/ósvaraðra spurninga: 21 / fjöldi ósvaraðra fyrirspurna: 9
+Meðalsvartími í virkum dögum: 37 / fjöldi svaraðra fyrirspurna: 34
+Heildarfjöldi fyrirspurna: 43
+===
+utanríkisráðherra
+Meðalfjöldi virka daga v/ósvaraðra spurninga: 181 / fjöldi ósvaraðra fyrirspurna: 3
+Meðalsvartími í virkum dögum: 76 / fjöldi svaraðra fyrirspurna: 6
+Heildarfjöldi fyrirspurna: 9
+===
+dómsmálaráðherra
+Meðalfjöldi virka daga v/ósvaraðra spurninga: 26 / fjöldi ósvaraðra fyrirspurna: 21
+Meðalsvartími í virkum dögum: 37 / fjöldi svaraðra fyrirspurna: 34
+Heildarfjöldi fyrirspurna: 55
+===
+félags- og barnamálaráðherra
+Meðalfjöldi virka daga v/ósvaraðra spurninga: 30 / fjöldi ósvaraðra fyrirspurna: 14
+Meðalsvartími í virkum dögum: 38 / fjöldi svaraðra fyrirspurna: 26
+Heildarfjöldi fyrirspurna: 40
+===
+forsætisráðherra
+Meðalfjöldi virka daga v/ósvaraðra spurninga: 5 / fjöldi ósvaraðra fyrirspurna: 2
+Meðalsvartími í virkum dögum: 31 / fjöldi svaraðra fyrirspurna: 23
+Heildarfjöldi fyrirspurna: 25
+===
+heilbrigðisráðherra
+Meðalfjöldi virka daga v/ósvaraðra spurninga: 45 / fjöldi ósvaraðra fyrirspurna: 6
+Meðalsvartími í virkum dögum: 25 / fjöldi svaraðra fyrirspurna: 39
+Heildarfjöldi fyrirspurna: 45
+===
+forseti
+Meðalfjöldi virka daga v/ósvaraðra spurninga: 0 / fjöldi ósvaraðra fyrirspurna: 1
+Meðalsvartími í virkum dögum: 15 / fjöldi svaraðra fyrirspurna: 3
+Heildarfjöldi fyrirspurna: 4
+===
+utanríkis- og þróunarsamvinnuráðherra
+Meðalfjöldi virka daga v/ósvaraðra spurninga: 44 / fjöldi ósvaraðra fyrirspurna: 7
+Meðalsvartími í virkum dögum: 94 / fjöldi svaraðra fyrirspurna: 1
+Heildarfjöldi fyrirspurna: 8
+===

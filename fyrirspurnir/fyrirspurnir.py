@@ -42,7 +42,7 @@ def get_documents(url):
 		'answer': answer
 		}
 
-sessions = list(range(150,151))
+sessions = list(range(139,151))
 
 url = "http://www.althingi.is/altext/xml/thingmalalisti/?lthing="
 
@@ -66,7 +66,8 @@ for session in sessions:
 
 	for i in issues:
 		try:
-			print('Processing: ' + str(issues[i]['question']['question_id']))
+			if issues[i]['question']['question_id']%100 == 1:
+				print('Processing: ' + str(issues[i]['question']['question_id']))
 		except:
 			pass
 		if issues[i]['question'] == '':
@@ -132,4 +133,26 @@ for session in sessions:
 		print('Meðalfjöldi virka daga v/ósvaraðra spurninga: ' + str(round(u)) + ' / fjöldi ósvaraðra fyrirspurna: ' + str(len(ministers[m]['unanswered'])))
 		print('Meðalsvartími í virkum dögum: ' + str(round(a)) + ' / fjöldi svaraðra fyrirspurna: ' + str(len(ministers[m]['answered'])))
 		print('Heildarfjöldi fyrirspurna: ' + str(len(ministers[m]['answered'])+len(ministers[m]['unanswered'])))
-		print('===')		
+		print('===')
+
+	#csv
+	with open(str(session)+'.csv', 'w') as f: 
+		f.write('Ráðherra, #fyrirspurna, #svarað, svartími, #ósvarað, ósvartími\n')	
+		for m in ministers:
+			u = 0
+			a = 0
+			try:
+				u = sum(ministers[m]['unanswered'])/len(ministers[m]['unanswered'])*5/7
+			except:
+				pass
+			try:
+				a = sum(ministers[m]['answered'])/len(ministers[m]['answered'])*5/7
+			except:
+				pass
+			fjoldi = str(len(ministers[m]['answered'])+len(ministers[m]['unanswered']))
+			svarad = str(len(ministers[m]['answered']))
+			svartimi = str(round(a))
+			osvarad = str(len(ministers[m]['unanswered']))
+			osvartimi = str(round(u))
+			f.write(m + ', ' + fjoldi + ', ' + svarad + ', ' + svartimi + ', ' + osvarad + ', ' + osvartimi + '\n')
+
