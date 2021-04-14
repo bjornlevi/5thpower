@@ -169,15 +169,18 @@ def get_assembly_attendance(mps):
 		url = 'http://www.althingi.is/altext/xml/thingmenn/thingmadur/thingseta/?nr='+mps[mp]
 		response = requests.get(url)
 		data = xmltodict.parse(response.text)
-		for sitting in data[u'þingmaður'][u'þingsetur'][u'þingseta']:
-			try:
-				if sitting[u'tegund'] == 'þingmaður':
-					if sitting[u'tímabil'][u'út'] == None:
-						sitting[u'tímabil'][u'út'] = datetime.strptime(datetime.now(),'%d.%m.%Y')
-					mp_in_session[mp].append([sitting[u'tímabil'][u'inn'], sitting[u'tímabil'][u'út']])
-			except:
-				#print(sitting, mp)
-				pass
+		try:
+			for sitting in data[u'þingmaður'][u'þingsetur'][u'þingseta']:
+				try:
+					if sitting[u'tegund'] == 'þingmaður':
+						if sitting[u'tímabil'][u'út'] == None:
+							sitting[u'tímabil'][u'út'] = datetime.strptime(datetime.now(),'%d.%m.%Y')
+						mp_in_session[mp].append([sitting[u'tímabil'][u'inn'], sitting[u'tímabil'][u'út']])
+				except:
+					#print(sitting, mp)
+					pass
+		except Exception as e: #sumir hætta á miðju kjörtímabili
+			print(e, data[u'þingmaður'])
 	return mp_in_session
 
 def mp_in_attendance(mp, mp_in_session_dates, meeting_date):

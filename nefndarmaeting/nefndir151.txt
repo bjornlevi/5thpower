@@ -1,0 +1,54 @@
+þingmaður,Vænt mæting,Fjöldi mætinga,Varamaður mætti,Fjarvera,Seint
+Anna Kolbrún Árnadóttir,12,12,0,0,0:00:00
+Birgir Ármannsson,13,13,0,0,0:53:00
+Bjarkey Olsen Gunnarsdóttir,28,26,2,0,3:35:00
+Guðmundur Andri Thorsson,25,25,0,0,0:10:00
+Páll Magnússon,30,29,1,0,0:20:00
+Silja Dögg Gunnarsdóttir,18,18,0,0,0:20:00
+Steinunn Þóra Árnadóttir,30,29,1,0,1:18:00
+Þorbjörg Sigríður Gunnlaugsdóttir,13,12,1,0,1:55:00
+Þorsteinn Sæmundsson,25,24,1,0,0:05:00
+Þórhildur Sunna Ævarsdóttir,13,13,0,0,0:12:00
+Albertína Friðbjörg Elíasdóttir,10,10,0,0,0:05:00
+Halla Signý Kristjánsdóttir,22,22,0,0,0:00:00
+Haraldur Benediktsson,26,24,2,0,0:00:00
+Helgi Hrafn Gunnarsson,10,9,0,1,0:00:00
+Lilja Rafney Magnúsdóttir,22,22,0,0,0:00:00
+Njáll Trausti Friðbertsson,17,16,1,0,0:40:00
+Sigurður Páll Jónsson,10,10,0,0,0:00:00
+Ásmundur Friðriksson,22,22,0,0,0:10:00
+Ólafur Ísleifsson,10,10,0,0,0:00:00
+Bryndís Haraldsdóttir,22,22,0,0,0:20:00
+Brynjar Níelsson,29,21,8,0,0:10:00
+Jón Steindór Valdimarsson,17,17,0,0,0:00:00
+Oddný G. Harðardóttir,17,17,0,0,0:20:00
+Sigmundur Davíð Gunnlaugsson,17,15,2,0,0:50:00
+Smári McCarthy,17,16,1,0,0:00:00
+Willum Þór Þórsson,34,34,0,0,0:00:00
+Ólafur Þór Gunnarsson,29,29,0,0,0:00:00
+Óli Björn Kárason,29,29,0,0,0:00:00
+Birgir Þórarinsson,17,16,1,0,0:28:00
+Björn Leví Gunnarsson,17,17,0,0,0:00:00
+Inga Sæland,17,17,0,0,0:00:00
+Ágúst Ólafur Ágústsson,17,17,0,0,0:00:00
+Guðjón S. Brjánsson,11,11,0,0,0:00:00
+Steingrímur J. Sigfússon,0,0,0,0,0:00:00
+Sigríður Á. Andersen,5,5,0,0,0:00:00
+Bergþór Ólason,11,11,0,0,0:00:00
+Rósa Björk Brynjólfsdóttir,5,5,0,0,0:00:00
+Guðmundur Ingi Kristinsson,12,11,1,0,0:00:00
+Kolbeinn Óttarsson Proppé,23,22,1,0,0:57:00
+Vilhjálmur Árnason,23,23,0,0,1:21:00
+Hanna Katrín Friðriksson,11,9,2,0,2:18:00
+Jón Gunnarsson,11,8,3,0,0:11:00
+Ari Trausti Guðmundsson,16,16,0,0,0:13:00
+Gunnar Bragi Sveinsson,5,5,0,0,0:00:00
+Andrés Ingi Jónsson,12,12,0,0,0:00:00
+Jón Þór Ólafsson,12,12,0,0,0:00:00
+Líneik Anna Sævarsdóttir,23,23,0,0,0:13:00
+Þórunn Egilsdóttir,12,10,2,0,0:00:00
+Karl Gauti Hjaltason,11,11,0,0,0:30:00
+Logi Einarsson,5,5,0,0,0:00:00
+Þorgerður K. Gunnarsdóttir,5,5,0,0,0:15:00
+Halldóra Mogensen,12,6,6,0,0:00:00
+Helga Vala Helgadóttir,12,12,0,0,0:00:00
