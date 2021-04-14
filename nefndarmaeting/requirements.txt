@@ -1,3 +1,4 @@
-requests
 xmltodict
+requests
 fuzzywuzzy
+python-Levenshtein

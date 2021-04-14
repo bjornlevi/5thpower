@@ -5,6 +5,7 @@ import xmltodict
 from datetime import datetime, timedelta
 from fuzzywuzzy import process
 import sys
+from os import path
 
 session = None
 try:
@@ -12,10 +13,31 @@ try:
 except:
 	sys.exit(0)
 
+def strip_url(url):
+	return url.replace('/', '-').replace(':','-').replace('?','-').replace('=','-')
+
+def get_url_or_saved(url):
+	if path.exists("data/"+strip_url(url)):
+		#print("opening saved document " + url)
+		try:
+			with open('data/'+strip_url(url), 'w') as f:
+				return f.read()
+		except: #corrupted document, get it again
+			response = requests.get(url) #get data
+			with open('data/'+strip_url(url), 'w') as f:
+				f.write(response.text) #save data
+			return response.text
+	else:
+		#print("opening document from url " + url)
+		response = requests.get(url) #get data
+		with open('data/'+strip_url(url), 'w') as f:
+			f.write(response.text) #save data
+		return response.text #continue
+
 def get_nefndir(session):
 	url = 'http://www.althingi.is/altext/xml/nefndir/?lthing='+str(session)
-	response = requests.get(url)
-	data = xmltodict.parse(response.text)
+	response = get_url_or_saved(url)
+	data = xmltodict.parse(response)
 	nefndir = []
 	for i in data[u'nefndir']:
 		for nefnd in data[u'nefndir'][i]:
@@ -24,8 +46,8 @@ def get_nefndir(session):
 
 def get_mps(session):
 	url = 'http://www.althingi.is/altext/xml/nefndir/nefndarmenn/?lthing='+str(session)
-	response = requests.get(url)
-	data = xmltodict.parse(response.text)
+	response = get_url_or_saved(url)
+	data = xmltodict.parse(response)
 	mps = {}
 	for i in data[u'nefndarmenn']:
 		for nefnd in data[u'nefndarmenn'][i]:
@@ -42,8 +64,8 @@ def get_mps(session):
 
 def get_mps_adalnefndir(session):
 	url = 'http://www.althingi.is/altext/xml/nefndir/nefndarmenn/?lthing='+str(session)
-	response = requests.get(url)
-	data = xmltodict.parse(response.text)
+	response = get_url_or_saved(url)
+	data = xmltodict.parse(response)
 	mps = {}
 	for i in data[u'nefndarmenn']:
 		for nefnd in data[u'nefndarmenn'][i]:
@@ -78,16 +100,16 @@ def get_mps_adalnefndir(session):
 
 def get_fundir(session, mps_in_nefndir):
 	url = 'http://www.althingi.is/altext/xml/nefndarfundir/?lthing='+str(session)
-	response = requests.get(url)
-	data = xmltodict.parse(response.text)
+	response = get_url_or_saved(url)
+	data = xmltodict.parse(response)
 	fundir = []
 	fundir_time = []
 	for fundur in data[u'nefndarfundir'][u'nefndarfundur']:
 		try:
 			dagsetning = fundur[u'hefst'][u'dagur']
 			nefnd_id = fundur[u'nefnd'][u'@id']
-			fundargerd = requests.get(fundur[u'nánar'][u'fundargerð'][u'xml'])
-			fundargerd_data = xmltodict.parse(fundargerd.text)
+			fundargerd = get_url_or_saved(fundur[u'nánar'][u'fundargerð'][u'xml'])
+			fundargerd_data = xmltodict.parse(fundargerd)
 			fundur_settur = fundargerd_data[u'nefndarfundur'][u'fundursettur']
 			fundur_slit = fundargerd_data[u'nefndarfundur'][u'fuslit']
 			maeting = fundargerd_data[u'nefndarfundur'][u'fundargerð'][u'texti'].split('</h2>')[1].split('<BR><BR>')[0]
@@ -101,10 +123,11 @@ def get_fundir(session, mps_in_nefndir):
 			for a in attendance:
 				if 'fyrir' in a: #ef varamaður
 					m = a.split('fyrir ')[1].split(' (')[0]
-					#laga fallbeygingu
-					mps.append(process.extractOne(m, mps_in_nefndir)[0])
+					#skrá mætingu varamanns á aðalmann
+					mps.append(process.extractOne(m, mps_in_nefndir)[0]) 
 					mps_time_attendance.append([process.extractOne(m, mps_in_nefndir)[0], a.split('kl. ')[1].strip()])
 				else:
+					#skrá mætingu aðalmanns
 					mps.append(a.split(' (')[0])
 					mps_time_attendance.append([a.split(' (')[0], a.split('kl. ')[1].strip()])
 			#mps = [i.split(' (')[0] for i in attendance]
@@ -117,8 +140,8 @@ def get_fundir(session, mps_in_nefndir):
 
 def count_nefndarfundir(session):
 	url = 'http://www.althingi.is/altext/xml/nefndarfundir/?lthing='+str(session)
-	response = requests.get(url)
-	data = xmltodict.parse(response.text)
+	response = get_url_or_saved(url)
+	data = xmltodict.parse(response)
 	nefndir = {}
 	for fundur in data[u'nefndarfundir'][u'nefndarfundur']:
 		#print(fundur[u'nefnd'])
@@ -152,8 +175,8 @@ def mp_in_nefnd(mp, nefnd, mp_nefndir, meeting_date):
 
 def get_mp_ids(session):
 	url = 'http://www.althingi.is/altext/xml/thingmenn/?lthing='+str(session)
-	response = requests.get(url)
-	data = xmltodict.parse(response.text)
+	response = get_url_or_saved(url)
+	data = xmltodict.parse(response)
 	mp_ids = {}
 	for mp in data[u'þingmannalisti'][u'þingmaður']:
 		mp_ids[mp[u'nafn']]=mp[u'@id']
@@ -167,20 +190,17 @@ def get_assembly_attendance(mps):
 	for mp in mps:
 		mp_in_session[mp] = []
 		url = 'http://www.althingi.is/altext/xml/thingmenn/thingmadur/thingseta/?nr='+mps[mp]
-		response = requests.get(url)
-		data = xmltodict.parse(response.text)
-		try:
-			for sitting in data[u'þingmaður'][u'þingsetur'][u'þingseta']:
-				try:
-					if sitting[u'tegund'] == 'þingmaður':
-						if sitting[u'tímabil'][u'út'] == None:
-							sitting[u'tímabil'][u'út'] = datetime.strptime(datetime.now(),'%d.%m.%Y')
-						mp_in_session[mp].append([sitting[u'tímabil'][u'inn'], sitting[u'tímabil'][u'út']])
-				except:
-					#print(sitting, mp)
-					pass
-		except Exception as e: #sumir hætta á miðju kjörtímabili
-			print(e, data[u'þingmaður'])
+		response = get_url_or_saved(url)
+		data = xmltodict.parse(response)
+		for sitting in data[u'þingmaður'][u'þingsetur'][u'þingseta']:
+			try:
+				if sitting[u'tegund'] == 'þingmaður':
+					if sitting[u'tímabil'][u'út'] == None:
+						sitting[u'tímabil'][u'út'] = datetime.strptime(datetime.now(),'%d.%m.%Y')
+					mp_in_session[mp].append([sitting[u'tímabil'][u'inn'], sitting[u'tímabil'][u'út']])
+			except:
+				#print(sitting, mp)
+				pass
 	return mp_in_session
 
 def mp_in_attendance(mp, mp_in_session_dates, meeting_date):
@@ -190,6 +210,7 @@ def mp_in_attendance(mp, mp_in_session_dates, meeting_date):
 	return False	
 
 mp_nefndir = get_mps_adalnefndir(session)
+#print(mp_nefndir)
 #{'mp':[{'start':date, 'end':date, nefnd_id:id}, ...]
 #{Guðjón S. Brjánsson: [{'end': '2017-01-24', 'nefnd_id': '201', 'start': '2016-12-19'}, ...], ...}
 #for mp in mp_nefndir:
@@ -197,13 +218,17 @@ mp_nefndir = get_mps_adalnefndir(session)
 
 mp_fundir, mp_fundir_time = get_fundir(session, mp_nefndir.keys())
 #mp_fundir
-#{'mps': ['Haraldur Benediktsson', 'Oddný G. Harðardóttir', ...], 
-#'nefnd': '207', 
-#'dagsetning': '2016-12-07',
-#'fundur_settur': '2019-09-18T09:00:00',
-#'fundur_slit': '2019-09-18T12:09:00'}
+#{
+	#'mps': ['Haraldur Benediktsson', 'Oddný G. Harðardóttir', ...], 
+	#'nefnd': '207', 
+	#'dagsetning': '2016-12-07',
+	#'fundur_settur': '2019-09-18T09:00:00',
+	#'fundur_slit': '2019-09-18T12:09:00'
+#}
+
 #for fundur in mp_fundir:
 	#print(fundur)
+
 #mp_fundir_time
 #{'mps': [['Haraldur Benediktsson', '09:00'], ['Oddný G. Harðardóttir', '09:00'], ...], 
 #print(mp_fundir_time)
@@ -221,38 +246,31 @@ fjoldi_nefndarfunda = count_nefndarfundir(session)
 #print(mp_nefndir.keys())
 
 with open(u'nefndir'+str(session)+'.txt', 'w') as f:
-	f.write('þingmaður,Vænt mæting,Fjöldi mætinga,Varamaður mætti,Fjarvera,Seint\n')
+	f.write('þingmaður,Vænt mæting,Fjöldi mætinga,Seint\n')
 
-	for mp in mp_nefndir.keys():
+	for mp in mp_nefndir.keys(): #skoðum hvern þingmann fyrir sig
 		print(mp)
 		total_meeting = 0 #heildarfjöldi funda sem mætt er á sem aðalmaður eða ekki.
 		expected_meetings = 0 #fjöldi funda sem aðalmaður
 		missed_meeting = 0 #mætti ekki sem aðalmaður
-		backup_attends = 0
+		backup_attends = 0 #varamaður er á þingi
 		late = timedelta(minutes=0)
 		for fundur in mp_fundir_time:
-			if mp_in_nefnd(mp, fundur['nefnd'], mp_nefndir, fundur['dagsetning']):
-				expected_meetings += 1 #fjöldi funda sem mp ætti að mæta á
-				if mp in [i[0] for i in fundur['mps']]:
-					total_meeting += 1 #mættur og á að vera
-					#f.write(';'+str(fundur['dagsetning'])+';;;\n')
-				else:
-					if mp_in_attendance(mp, mp_attendance, fundur['dagsetning']):
-						backup_attends += 1 #er á þingi, ekki mættur en er með varamann sem mætir á fundinn
-					else:
-						missed_meeting += 1 #ekki mættur og er ekki með varamann
-						#f.write(';;;'+str(fundur['dagsetning'])+';\n')
-					#print(fundur['dagsetning'], fundur['nefnd'])
-			else:
-				if mp[0] in [i[0] for i in fundur['mps']]:
-					total_meeting += 1 #mættur en á ekki að vera
-					#f.write(';'+str(fundur['dagsetning'])+';;;\n')
+
+			if mp_in_nefnd(mp, fundur['nefnd'], mp_nefndir, fundur['dagsetning']) and mp_in_attendance(mp, mp_attendance, fundur['dagsetning']):
+				expected_meetings += 1 #þingmaður er í nefnd, skráður á þing og ætti að mæta á fund		
+
+			if mp in [i[0] for i in fundur['mps']]: #athuga hvort þingmaður er á mætingarlista
+				total_meeting += 1 #þingmaður er á mætingarlista, skrá mætingu.
+
+
 			#stundvísi = fundur_settur - mp[1]
 			#print(fundur['fundur_settur'])
 			for m in fundur['mps']:
 				if m[0] == mp:
 					#fundur['fundur_settur'] = datetime.strptime('2020-01-16T13:30:00', '%Y-%m-%dT%H:%M:%S')
 					settur = datetime.strptime(fundur['fundur_settur'].split('T')[1], '%H:%M:%S')
+					slit = datetime.strptime(fundur['fundur_slit'].split('T')[1], '%H:%M:%S')
 					maettur = datetime.strptime(m[1], '%H:%M')
 					d = maettur - settur
 					if d > timedelta(minutes=0):
@@ -261,4 +279,4 @@ with open(u'nefndir'+str(session)+'.txt', 'w') as f:
 						late += d
 			
 		#print(mp+';'+str(total_meeting)+';'+str(expected_meetings)+';'+str(missed_meeting))
-		f.write(mp+','+str(expected_meetings)+','+str(total_meeting)+','+str(missed_meeting)+','+str(backup_attends)+','+str(late)+'\n')
+		f.write(mp+','+str(expected_meetings)+','+str(total_meeting)+','+str(late)+'\n')
