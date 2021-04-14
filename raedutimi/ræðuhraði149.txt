@@ -1,0 +1,107 @@
+þingmaður, orð á mín, hraðasta ræða, url, hægasta ræða, url
+Katrín Jakobsdóttir,148,186,http://www.althingi.is/xml/149/raedur/rad20181108T115502.xml,117,http://www.althingi.is/xml/149/raedur/rad20190301T110546.xml
+Logi Einarsson,126,161,http://www.althingi.is/xml/149/raedur/rad20190301T150150.xml,90,http://www.althingi.is/xml/149/raedur/rad20190409T181426.xml
+Sigmundur Davíð Gunnlaugsson,119,152,http://www.althingi.is/xml/149/raedur/rad20190226T221243.xml,97,http://www.althingi.is/xml/149/raedur/rad20190227T161252.xml
+Bjarni Benediktsson,128,175,http://www.althingi.is/xml/149/raedur/rad20180913T111325.xml,84,http://www.althingi.is/xml/149/raedur/rad20190305T172849.xml
+Halldóra Mogensen,149,178,http://www.althingi.is/xml/149/raedur/rad20180914T193951.xml,119,http://www.althingi.is/xml/149/raedur/rad20190221T150410.xml
+Sigurður Ingi Jóhannsson,143,172,http://www.althingi.is/xml/149/raedur/rad20181213T134922.xml,110,http://www.althingi.is/xml/149/raedur/rad20190429T164427.xml
+Inga Sæland,133,177,http://www.althingi.is/xml/149/raedur/rad20190409T165922.xml,104,http://www.althingi.is/xml/149/raedur/rad20181203T152028.xml
+Þorgerður K. Gunnarsdóttir,142,176,http://www.althingi.is/xml/149/raedur/rad20181015T163155.xml,107,http://www.althingi.is/xml/149/raedur/rad20190402T214303.xml
+Svandís Svavarsdóttir,132,172,http://www.althingi.is/xml/149/raedur/rad20181025T160314.xml,99,http://www.althingi.is/xml/149/raedur/rad20190304T151107.xml
+Albertína Friðbjörg Elíasdóttir,137,174,http://www.althingi.is/xml/149/raedur/rad20181214T135902.xml,106,http://www.althingi.is/xml/149/raedur/rad20190320T160909.xml
+Sigurður Páll Jónsson,104,140,http://www.althingi.is/xml/149/raedur/rad20181108T112450.xml,76,http://www.althingi.is/xml/149/raedur/rad20190227T173536.xml
+Sigríður Á. Andersen,135,183,http://www.althingi.is/xml/149/raedur/rad20181025T104813.xml,110,http://www.althingi.is/xml/149/raedur/rad20190305T141158.xml
+Smári McCarthy,133,165,http://www.althingi.is/xml/149/raedur/rad20180927T135640.xml,89,http://www.althingi.is/xml/149/raedur/rad20190129T161111.xml
+Lilja Alfreðsdóttir,126,156,http://www.althingi.is/xml/149/raedur/rad20180914T162724.xml,91,http://www.althingi.is/xml/149/raedur/rad20190411T145032.xml
+Ólafur Ísleifsson,105,149,http://www.althingi.is/xml/149/raedur/rad20190205T135650.xml,72,http://www.althingi.is/xml/149/raedur/rad20190205T191043.xml
+Þorsteinn Víglundsson,135,180,http://www.althingi.is/xml/149/raedur/rad20181210T202452.xml,99,http://www.althingi.is/xml/149/raedur/rad20190402T192106.xml
+Guðmundur Ingi Guðbrandsson,129,159,http://www.althingi.is/xml/149/raedur/rad20190221T111727.xml,105,http://www.althingi.is/xml/149/raedur/rad20181023T232001.xml
+Ágúst Ólafur Ágústsson,147,183,http://www.althingi.is/xml/149/raedur/rad20180918T150944.xml,98,http://www.althingi.is/xml/149/raedur/rad20181010T151335.xml
+Bergþór Ólason,111,156,http://www.althingi.is/xml/149/raedur/rad20180912T214627.xml,83,http://www.althingi.is/xml/149/raedur/rad20190227T025719.xml
+Jón Þór Ólafsson,149,201,http://www.althingi.is/xml/149/raedur/rad20181127T135627.xml,112,http://www.althingi.is/xml/149/raedur/rad20190123T183519.xml
+Ásmundur Einar Daðason,143,176,http://www.althingi.is/xml/149/raedur/rad20181112T165040.xml,101,http://www.althingi.is/xml/149/raedur/rad20190327T163601.xml
+Karl Gauti Hjaltason,117,156,http://www.althingi.is/xml/149/raedur/rad20180914T184703.xml,82,http://www.althingi.is/xml/149/raedur/rad20190205T191225.xml
+Hanna Katrín Friðriksson,144,180,http://www.althingi.is/xml/149/raedur/rad20181016T144549.xml,108,http://www.althingi.is/xml/149/raedur/rad20190205T221301.xml
+Birgir Þórarinsson,111,160,http://www.althingi.is/xml/149/raedur/rad20190430T165327.xml,72,http://www.althingi.is/xml/149/raedur/rad20190227T170256.xml
+Björn Leví Gunnarsson,131,189,http://www.althingi.is/xml/149/raedur/rad20181024T133844.xml,81,http://www.althingi.is/xml/149/raedur/rad20190205T232639.xml
+Njáll Trausti Friðbertsson,129,175,http://www.althingi.is/xml/149/raedur/rad20190301T145937.xml,98,http://www.althingi.is/xml/149/raedur/rad20190325T154046.xml
+Bjarkey Olsen Gunnarsdóttir,137,187,http://www.althingi.is/xml/149/raedur/rad20181112T163213.xml,92,http://www.althingi.is/xml/149/raedur/rad20190319T152752.xml
+Willum Þór Þórsson,113,139,http://www.althingi.is/xml/149/raedur/rad20181017T160649.xml,89,http://www.althingi.is/xml/149/raedur/rad20181115T154412.xml
+Haraldur Benediktsson,136,183,http://www.althingi.is/xml/149/raedur/rad20181213T153515.xml,108,http://www.althingi.is/xml/149/raedur/rad20180927T143847.xml
+Óli Björn Kárason,106,144,http://www.althingi.is/xml/149/raedur/rad20180913T151149.xml,77,http://www.althingi.is/xml/149/raedur/rad20190228T113731.xml
+Áslaug Arna Sigurbjörnsdóttir,134,177,http://www.althingi.is/xml/149/raedur/rad20181105T161309.xml,67,http://www.althingi.is/xml/149/raedur/rad20190502T111517.xml
+Þorsteinn Sæmundsson,128,169,http://www.althingi.is/xml/149/raedur/rad20181024T143834.xml,93,http://www.althingi.is/xml/149/raedur/rad20190227T045108.xml
+Ólafur Þór Gunnarsson,108,157,http://www.althingi.is/xml/149/raedur/rad20180919T185557.xml,69,http://www.althingi.is/xml/149/raedur/rad20190319T215841.xml
+Þórunn Egilsdóttir,137,167,http://www.althingi.is/xml/149/raedur/rad20181122T123722.xml,104,http://www.althingi.is/xml/149/raedur/rad20181106T153329.xml
+Þórdís Kolbrún R. Gylfadóttir,148,196,http://www.althingi.is/xml/149/raedur/rad20181112T151018.xml,113,http://www.althingi.is/xml/149/raedur/rad20190327T160934.xml
+Ari Trausti Guðmundsson,121,161,http://www.althingi.is/xml/149/raedur/rad20181009T173615.xml,94,http://www.althingi.is/xml/149/raedur/rad20181211T221741.xml
+Guðjón S. Brjánsson,112,148,http://www.althingi.is/xml/149/raedur/rad20180914T191609.xml,78,http://www.althingi.is/xml/149/raedur/rad20190220T160502.xml
+Ásmundur Friðriksson,130,154,http://www.althingi.is/xml/149/raedur/rad20181011T112623.xml,102,http://www.althingi.is/xml/149/raedur/rad20190311T155551.xml
+Sara Elísa Þórðardóttir,114,152,http://www.althingi.is/xml/149/raedur/rad20180914T161607.xml,94,http://www.althingi.is/xml/149/raedur/rad20190123T183920.xml
+Halla Signý Kristjánsdóttir,122,169,http://www.althingi.is/xml/149/raedur/rad20190402T143225.xml,88,http://www.althingi.is/xml/149/raedur/rad20190124T163819.xml
+Jónína Björk Óskarsdóttir,111,116,http://www.althingi.is/xml/149/raedur/rad20180914T123241.xml,105,http://www.althingi.is/xml/149/raedur/rad20180914T122755.xml
+Kristján Þór Júlíusson,126,165,http://www.althingi.is/xml/149/raedur/rad20180914T140315.xml,88,http://www.althingi.is/xml/149/raedur/rad20190402T214443.xml
+Þórhildur Sunna Ævarsdóttir,141,175,http://www.althingi.is/xml/149/raedur/rad20181211T184124.xml,110,http://www.althingi.is/xml/149/raedur/rad20190131T155418.xml
+Helga Vala Helgadóttir,116,162,http://www.althingi.is/xml/149/raedur/rad20190402T143907.xml,82,http://www.althingi.is/xml/149/raedur/rad20190221T122150.xml
+Líneik Anna Sævarsdóttir,112,141,http://www.althingi.is/xml/149/raedur/rad20180914T154000.xml,81,http://www.althingi.is/xml/149/raedur/rad20190307T152351.xml
+Njörður Sigurðsson,127,152,http://www.althingi.is/xml/149/raedur/rad20180920T133857.xml,108,http://www.althingi.is/xml/149/raedur/rad20180914T155025.xml
+Páll Magnússon,116,137,http://www.althingi.is/xml/149/raedur/rad20180927T175053.xml,90,http://www.althingi.is/xml/149/raedur/rad20181016T153511.xml
+Jón Steindór Valdimarsson,110,143,http://www.althingi.is/xml/149/raedur/rad20181122T171617.xml,75,http://www.althingi.is/xml/149/raedur/rad20190503T104020.xml
+Guðlaugur Þór Þórðarson,142,190,http://www.althingi.is/xml/149/raedur/rad20180914T174927.xml,106,http://www.althingi.is/xml/149/raedur/rad20190429T173409.xml
+Gunnar Bragi Sveinsson,138,194,http://www.althingi.is/xml/149/raedur/rad20181126T153731.xml,98,http://www.althingi.is/xml/149/raedur/rad20190226T232348.xml
+Rósa Björk Brynjólfsdóttir,133,171,http://www.althingi.is/xml/149/raedur/rad20181025T113740.xml,94,http://www.althingi.is/xml/149/raedur/rad20190401T163241.xml
+Guðmundur Andri Thorsson,102,135,http://www.althingi.is/xml/149/raedur/rad20181025T112107.xml,72,http://www.althingi.is/xml/149/raedur/rad20190131T141520.xml
+Arna Lára Jónsdóttir,158,181,http://www.althingi.is/xml/149/raedur/rad20180917T161931.xml,136,http://www.althingi.is/xml/149/raedur/rad20180920T103242.xml
+Kolbeinn Óttarsson Proppé,129,164,http://www.althingi.is/xml/149/raedur/rad20181018T172915.xml,91,http://www.althingi.is/xml/149/raedur/rad20190320T152317.xml
+Steinunn Þóra Árnadóttir,100,144,http://www.althingi.is/xml/149/raedur/rad20181107T151301.xml,71,http://www.althingi.is/xml/149/raedur/rad20181026T000711.xml
+Anna Kolbrún Árnadóttir,121,148,http://www.althingi.is/xml/149/raedur/rad20181214T134812.xml,94,http://www.althingi.is/xml/149/raedur/rad20190319T213043.xml
+Brynjar Níelsson,117,161,http://www.althingi.is/xml/149/raedur/rad20181108T164034.xml,85,http://www.althingi.is/xml/149/raedur/rad20190305T143330.xml
+Heiða Guðný Ásgeirsdóttir,191,207,http://www.althingi.is/xml/149/raedur/rad20180918T133306.xml,176,http://www.althingi.is/xml/149/raedur/rad20180920T120036.xml
+Guðmundur Ingi Kristinsson,123,173,http://www.althingi.is/xml/149/raedur/rad20181119T171626.xml,87,http://www.althingi.is/xml/149/raedur/rad20190319T145634.xml
+Helgi Hrafn Gunnarsson,162,210,http://www.althingi.is/xml/149/raedur/rad20181107T160032.xml,118,http://www.althingi.is/xml/149/raedur/rad20181023T185923.xml
+Bryndís Haraldsdóttir,144,184,http://www.althingi.is/xml/149/raedur/rad20181213T141611.xml,102,http://www.althingi.is/xml/149/raedur/rad20190131T125713.xml
+Olga Margrét Cilia,161,172,http://www.althingi.is/xml/149/raedur/rad20190123T150747.xml,147,http://www.althingi.is/xml/149/raedur/rad20190410T150744.xml
+Vilhjálmur Árnason,130,163,http://www.althingi.is/xml/149/raedur/rad20181127T163936.xml,97,http://www.althingi.is/xml/149/raedur/rad20190218T174333.xml
+Hjálmar Bogi Hafliðason,165,184,http://www.althingi.is/xml/149/raedur/rad20180918T140227.xml,146,http://www.althingi.is/xml/149/raedur/rad20180920T131404.xml
+Maríanna Eva Ragnarsdóttir,141,148,http://www.althingi.is/xml/149/raedur/rad20180919T151111.xml,135,http://www.althingi.is/xml/149/raedur/rad20180926T150452.xml
+Silja Dögg Gunnarsdóttir,131,144,http://www.althingi.is/xml/149/raedur/rad20180919T151758.xml,112,http://www.althingi.is/xml/149/raedur/rad20180920T155052.xml
+Teitur Björn Einarsson,122,148,http://www.althingi.is/xml/149/raedur/rad20181011T145850.xml,96,http://www.althingi.is/xml/149/raedur/rad20181011T144542.xml
+Andrés Ingi Jónsson,113,151,http://www.althingi.is/xml/149/raedur/rad20181011T114859.xml,83,http://www.althingi.is/xml/149/raedur/rad20190306T162538.xml
+Birgir Ármannsson,117,144,http://www.althingi.is/xml/149/raedur/rad20181122T125829.xml,94,http://www.althingi.is/xml/149/raedur/rad20181204T174326.xml
+Oddný G. Harðardóttir,114,150,http://www.althingi.is/xml/149/raedur/rad20180927T130754.xml,85,http://www.althingi.is/xml/149/raedur/rad20190307T144340.xml
+Sigríður María Egilsdóttir,132,143,http://www.althingi.is/xml/149/raedur/rad20180925T134439.xml,115,http://www.althingi.is/xml/149/raedur/rad20190319T202233.xml
+Lilja Rafney Magnúsdóttir,114,144,http://www.althingi.is/xml/149/raedur/rad20190321T174054.xml,90,http://www.althingi.is/xml/149/raedur/rad20181210T180008.xml
+Jón Þór Þorvaldsson,126,188,http://www.althingi.is/xml/149/raedur/rad20181204T134355.xml,81,http://www.althingi.is/xml/149/raedur/rad20181011T153610.xml
+Snæbjörn Brynjarsson,165,185,http://www.althingi.is/xml/149/raedur/rad20181213T142311.xml,150,http://www.althingi.is/xml/149/raedur/rad20181213T201631.xml
+Una María Óskarsdóttir,124,159,http://www.althingi.is/xml/149/raedur/rad20181011T104114.xml,97,http://www.althingi.is/xml/149/raedur/rad20190411T132239.xml
+Jón Gunnarsson,130,180,http://www.althingi.is/xml/149/raedur/rad20181211T204415.xml,105,http://www.althingi.is/xml/149/raedur/rad20190410T161820.xml
+Jóhanna Vigdís Guðmundsdóttir,131,140,http://www.althingi.is/xml/149/raedur/rad20181018T161530.xml,122,http://www.althingi.is/xml/149/raedur/rad20181016T133838.xml
+Þórarinn Ingi Pétursson,108,125,http://www.althingi.is/xml/149/raedur/rad20181025T114713.xml,92,http://www.althingi.is/xml/149/raedur/rad20190409T205642.xml
+Ingibjörg Þórðardóttir,145,160,http://www.althingi.is/xml/149/raedur/rad20181017T151146.xml,108,http://www.althingi.is/xml/149/raedur/rad20181016T180523.xml
+Jóhann Friðrik Friðriksson,113,117,http://www.althingi.is/xml/149/raedur/rad20181016T144108.xml,107,http://www.althingi.is/xml/149/raedur/rad20181017T165711.xml
+Hildur Sverrisdóttir,142,147,http://www.althingi.is/xml/149/raedur/rad20181025T112539.xml,138,http://www.althingi.is/xml/149/raedur/rad20181121T150358.xml
+Þorgrímur Sigmundsson,127,159,http://www.althingi.is/xml/149/raedur/rad20181016T140041.xml,110,http://www.althingi.is/xml/149/raedur/rad20181025T234309.xml
+Valgerður Gunnarsdóttir,127,136,http://www.althingi.is/xml/149/raedur/rad20181024T143130.xml,109,http://www.althingi.is/xml/149/raedur/rad20181016T180923.xml
+María Hjálmarsdóttir,167,169,http://www.althingi.is/xml/149/raedur/rad20181024T135454.xml,164,http://www.althingi.is/xml/149/raedur/rad20181017T172349.xml
+Steingrímur J. Sigfússon,136,165,http://www.althingi.is/xml/149/raedur/rad20181126T164740.xml,108,http://www.althingi.is/xml/149/raedur/rad20190410T225918.xml
+Margrét Tryggvadóttir,131,138,http://www.althingi.is/xml/149/raedur/rad20181108T104517.xml,118,http://www.althingi.is/xml/149/raedur/rad20181106T171019.xml
+Ásgerður K. Gylfadóttir,132,155,http://www.althingi.is/xml/149/raedur/rad20181107T150413.xml,110,http://www.althingi.is/xml/149/raedur/rad20190321T174317.xml
+Pawel Bartoszek,152,183,http://www.althingi.is/xml/149/raedur/rad20181121T153105.xml,135,http://www.althingi.is/xml/149/raedur/rad20181126T201348.xml
+Berglind Häsler,127,147,http://www.althingi.is/xml/149/raedur/rad20181121T150614.xml,100,http://www.althingi.is/xml/149/raedur/rad20181122T150211.xml
+Karen Elísabet Halldórsdóttir,167,167,http://www.althingi.is/xml/149/raedur/rad20181121T151328.xml,167,http://www.althingi.is/xml/149/raedur/rad20181121T151328.xml
+Alex B. Stefánsson,134,142,http://www.althingi.is/xml/149/raedur/rad20181204T134630.xml,126,http://www.althingi.is/xml/149/raedur/rad20181204T170555.xml
+Ellert B. Schram,115,125,http://www.althingi.is/xml/149/raedur/rad20181213T105242.xml,104,http://www.althingi.is/xml/149/raedur/rad20181211T135907.xml
+Lilja Rannveig Sigurgeirsdóttir,140,140,http://www.althingi.is/xml/149/raedur/rad20181212T150730.xml,140,http://www.althingi.is/xml/149/raedur/rad20181212T150730.xml
+Bjartur Aðalbjörnsson,129,131,http://www.althingi.is/xml/149/raedur/rad20190123T152154.xml,127,http://www.althingi.is/xml/149/raedur/rad20190130T153431.xml
+Elvar Eyvindsson,121,150,http://www.althingi.is/xml/149/raedur/rad20190123T153355.xml,106,http://www.althingi.is/xml/149/raedur/rad20190124T171650.xml
+Albert Guðmundsson,149,149,http://www.althingi.is/xml/149/raedur/rad20190130T150124.xml,149,http://www.althingi.is/xml/149/raedur/rad20190130T150124.xml
+Una Hildardóttir,126,133,http://www.althingi.is/xml/149/raedur/rad20190206T151335.xml,122,http://www.althingi.is/xml/149/raedur/rad20190410T151201.xml
+Einar Kárason,125,147,http://www.althingi.is/xml/149/raedur/rad20190430T140134.xml,87,http://www.althingi.is/xml/149/raedur/rad20190326T223542.xml
+Unnur Brá Konráðsdóttir,124,124,http://www.althingi.is/xml/149/raedur/rad20190219T134222.xml,124,http://www.althingi.is/xml/149/raedur/rad20190228T103138.xml
+Álfheiður Eymarsdóttir,100,122,http://www.althingi.is/xml/149/raedur/rad20190306T151734.xml,83,http://www.althingi.is/xml/149/raedur/rad20190219T161920.xml
+Fjölnir Sæmundsson,126,147,http://www.althingi.is/xml/149/raedur/rad20190305T133807.xml,109,http://www.althingi.is/xml/149/raedur/rad20190306T194554.xml
+Katla Hólm Þórhildardóttir,144,148,http://www.althingi.is/xml/149/raedur/rad20190305T135818.xml,140,http://www.althingi.is/xml/149/raedur/rad20190307T114938.xml
+Valgerður Sveinsdóttir,142,142,http://www.althingi.is/xml/149/raedur/rad20190307T112155.xml,142,http://www.althingi.is/xml/149/raedur/rad20190307T112155.xml
+Gísli Garðarsson,159,159,http://www.althingi.is/xml/149/raedur/rad20190311T173434.xml,159,http://www.althingi.is/xml/149/raedur/rad20190311T173434.xml
+Álfheiður Ingadóttir,115,133,http://www.althingi.is/xml/149/raedur/rad20190409T135523.xml,96,http://www.althingi.is/xml/149/raedur/rad20190410T203744.xml
+Páll Valur Björnsson,147,166,http://www.althingi.is/xml/149/raedur/rad20190410T160819.xml,131,http://www.althingi.is/xml/149/raedur/rad20190409T140936.xml

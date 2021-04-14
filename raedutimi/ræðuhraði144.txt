@@ -1,0 +1,94 @@
+þingmaður, orð á mín, hraðasta ræða, url, hægasta ræða, url
+Sigmundur Davíð Gunnlaugsson,137,185,http://www.althingi.is/altext/raeda/144/rad20150515T113445.html,111,http://www.althingi.is/altext/raeda/144/rad20150224T134122.html
+Árni Páll Árnason,130,187,http://www.althingi.is/altext/raeda/144/rad20140917T164441.html,89,http://www.althingi.is/altext/raeda/144/rad20150602T204742.html
+Katrín Jakobsdóttir,151,194,http://www.althingi.is/altext/raeda/144/rad20150127T141856.html,124,http://www.althingi.is/altext/raeda/144/rad20150430T170739.html
+Bjarni Benediktsson,133,181,http://www.althingi.is/altext/raeda/144/rad20150427T150541.html,89,http://www.althingi.is/altext/raeda/144/rad20141006T163106.html
+Guðmundur Steingrímsson,128,160,http://www.althingi.is/altext/raeda/144/rad20150608T151004.html,91,http://www.althingi.is/altext/raeda/144/rad20140923T152747.html
+Jón Þór Ólafsson,138,188,http://www.althingi.is/altext/raeda/144/rad20150521T145907.html,98,http://www.althingi.is/altext/raeda/144/rad20141203T214654.html
+Vigdís Hauksdóttir,130,169,http://www.althingi.is/altext/raeda/144/rad20150317T135945.html,102,http://www.althingi.is/altext/raeda/144/rad20141209T225055.html
+Katrín Júlíusdóttir,140,185,http://www.althingi.is/altext/raeda/144/rad20150416T105128.html,108,http://www.althingi.is/altext/raeda/144/rad20150414T204649.html
+Steinunn Þóra Árnadóttir,105,133,http://www.althingi.is/altext/raeda/144/rad20150520T153525.html,77,http://www.althingi.is/altext/raeda/144/rad20150428T184725.html
+Ragnheiður Ríkharðsdóttir,116,145,http://www.althingi.is/altext/raeda/144/rad20150414T214600.html,88,http://www.althingi.is/altext/raeda/144/rad20150203T140245.html
+Björt Ólafsdóttir,122,159,http://www.althingi.is/altext/raeda/144/rad20150521T144043.html,88,http://www.althingi.is/altext/raeda/144/rad20141204T232033.html
+Helgi Hrafn Gunnarsson,154,206,http://www.althingi.is/altext/raeda/144/rad20150430T145757.html,107,http://www.althingi.is/altext/raeda/144/rad20150414T212107.html
+Gunnar Bragi Sveinsson,154,180,http://www.althingi.is/altext/raeda/144/rad20150326T125150.html,123,http://www.althingi.is/altext/raeda/144/rad20150319T112734.html
+Kristján L. Möller,143,186,http://www.althingi.is/altext/raeda/144/rad20141216T200439.html,111,http://www.althingi.is/altext/raeda/144/rad20150521T130635.html
+Steingrímur J. Sigfússon,150,188,http://www.althingi.is/altext/raeda/144/rad20150612T143141.html,106,http://www.althingi.is/altext/raeda/144/rad20150428T215954.html
+Guðlaugur Þór Þórðarson,146,191,http://www.althingi.is/altext/raeda/144/rad20150204T161245.html,103,http://www.althingi.is/altext/raeda/144/rad20140916T165152.html
+Brynhildur S. Björnsdóttir,131,161,http://www.althingi.is/altext/raeda/144/rad20140912T205728.html,98,http://www.althingi.is/altext/raeda/144/rad20140912T153416.html
+Birgitta Jónsdóttir,123,169,http://www.althingi.is/altext/raeda/144/rad20150122T145219.html,87,http://www.althingi.is/altext/raeda/144/rad20140923T164226.html
+Helgi Hjörvar,125,160,http://www.althingi.is/altext/raeda/144/rad20141212T150748.html,78,http://www.althingi.is/altext/raeda/144/rad20150303T170323.html
+Ólína Kjerúlf Þorvarðardóttir,119,135,http://www.althingi.is/altext/raeda/144/rad20140917T150253.html,94,http://www.althingi.is/altext/raeda/144/rad20150129T151250.html
+Karl Garðarsson,141,168,http://www.althingi.is/altext/raeda/144/rad20140925T115950.html,109,http://www.althingi.is/altext/raeda/144/rad20150527T101314.html
+Össur Skarphéðinsson,144,186,http://www.althingi.is/altext/raeda/144/rad20150305T130352.html,109,http://www.althingi.is/altext/raeda/144/rad20150612T204832.html
+Brynhildur Pétursdóttir,145,200,http://www.althingi.is/altext/raeda/144/rad20150129T192253.html,101,http://www.althingi.is/altext/raeda/144/rad20150324T184033.html
+Valgerður Gunnarsdóttir,112,132,http://www.althingi.is/altext/raeda/144/rad20141112T151720.html,85,http://www.althingi.is/altext/raeda/144/rad20150226T110739.html
+Lilja Rafney Magnúsdóttir,113,187,http://www.althingi.is/altext/raeda/144/rad20150521T150725.html,80,http://www.althingi.is/altext/raeda/144/rad20150224T151418.html
+Pétur H. Blöndal,133,157,http://www.althingi.is/altext/raeda/144/rad20141211T162341.html,100,http://www.althingi.is/altext/raeda/144/rad20150128T161846.html
+Haraldur Benediktsson,142,169,http://www.althingi.is/altext/raeda/144/rad20150227T130306.html,115,http://www.althingi.is/altext/raeda/144/rad20150529T140328.html
+Svandís Svavarsdóttir,126,175,http://www.althingi.is/altext/raeda/144/rad20150122T152926.html,80,http://www.althingi.is/altext/raeda/144/rad20150205T121114.html
+Willum Þór Þórsson,109,141,http://www.althingi.is/altext/raeda/144/rad20150521T151151.html,77,http://www.althingi.is/altext/raeda/144/rad20140916T231533.html
+Ragnheiður E. Árnadóttir,134,166,http://www.althingi.is/altext/raeda/144/rad20140912T110238.html,98,http://www.althingi.is/altext/raeda/144/rad20140925T110151.html
+Sigrún Magnúsdóttir,123,160,http://www.althingi.is/altext/raeda/144/rad20150701T104526.html,100,http://www.althingi.is/altext/raeda/144/rad20150420T171132.html
+Kristján Þór Júlíusson,126,153,http://www.althingi.is/altext/raeda/144/rad20141020T163937.html,92,http://www.althingi.is/altext/raeda/144/rad20150629T102633.html
+Sigríður Ingibjörg Ingadóttir,110,147,http://www.althingi.is/altext/raeda/144/rad20150205T130857.html,75,http://www.althingi.is/altext/raeda/144/rad20150605T171511.html
+Elín Hirst,111,138,http://www.althingi.is/altext/raeda/144/rad20140912T131440.html,83,http://www.althingi.is/altext/raeda/144/rad20150202T164525.html
+Eygló Harðardóttir,143,181,http://www.althingi.is/altext/raeda/144/rad20150604T101200.html,108,http://www.althingi.is/altext/raeda/144/rad20150428T181447.html
+Hanna Birna Kristjánsdóttir,165,203,http://www.althingi.is/altext/raeda/144/rad20140912T152957.html,121,http://www.althingi.is/altext/raeda/144/rad20141014T190651.html
+Sigurður Ingi Jóhannsson,143,176,http://www.althingi.is/altext/raeda/144/rad20141009T111839.html,111,http://www.althingi.is/altext/raeda/144/rad20141117T153222.html
+Vilhjálmur Bjarnason,112,152,http://www.althingi.is/altext/raeda/144/rad20150305T141217.html,71,http://www.althingi.is/altext/raeda/144/rad20140924T161043.html
+Óttarr Proppé,116,179,http://www.althingi.is/altext/raeda/144/rad20150624T154123.html,86,http://www.althingi.is/altext/raeda/144/rad20140922T161040.html
+Illugi Gunnarsson,156,226,http://www.althingi.is/altext/raeda/144/rad20150413T155747.html,117,http://www.althingi.is/altext/raeda/144/rad20141014T135647.html
+Páll Valur Björnsson,159,193,http://www.althingi.is/altext/raeda/144/rad20150127T171940.html,129,http://www.althingi.is/altext/raeda/144/rad20140912T192335.html
+Höskuldur Þórhallsson,126,163,http://www.althingi.is/altext/raeda/144/rad20141216T002611.html,94,http://www.althingi.is/altext/raeda/144/rad20141205T133150.html
+Brynjar Níelsson,116,146,http://www.althingi.is/altext/raeda/144/rad20150604T152222.html,96,http://www.althingi.is/altext/raeda/144/rad20150701T121425.html
+Páll Jóhann Pálsson,109,156,http://www.althingi.is/altext/raeda/144/rad20150430T112700.html,70,http://www.althingi.is/altext/raeda/144/rad20141106T124422.html
+Jóhanna María Sigmundsdóttir,156,200,http://www.althingi.is/altext/raeda/144/rad20150605T112332.html,121,http://www.althingi.is/altext/raeda/144/rad20150430T190615.html
+Frosti Sigurjónsson,148,194,http://www.althingi.is/altext/raeda/144/rad20150611T161651.html,108,http://www.althingi.is/altext/raeda/144/rad20141014T161116.html
+Vilhjálmur Árnason,139,181,http://www.althingi.is/altext/raeda/144/rad20141022T152502.html,111,http://www.althingi.is/altext/raeda/144/rad20141113T123818.html
+Elsa Lára Arnardóttir,138,162,http://www.althingi.is/altext/raeda/144/rad20150623T133048.html,92,http://www.althingi.is/altext/raeda/144/rad20140924T174523.html
+Líneik Anna Sævarsdóttir,124,157,http://www.althingi.is/altext/raeda/144/rad20150324T144041.html,91,http://www.althingi.is/altext/raeda/144/rad20150120T150349.html
+Ögmundur Jónasson,117,151,http://www.althingi.is/altext/raeda/144/rad20150302T160823.html,93,http://www.althingi.is/altext/raeda/144/rad20150613T173229.html
+Oddný G. Harðardóttir,116,153,http://www.althingi.is/altext/raeda/144/rad20141007T142038.html,72,http://www.althingi.is/altext/raeda/144/rad20150316T161558.html
+Einar K. Guðfinnsson,153,165,http://www.althingi.is/altext/raeda/144/rad20150316T163611.html,130,http://www.althingi.is/altext/raeda/144/rad20141023T125011.html
+Bjarkey Olsen Gunnarsdóttir,133,180,http://www.althingi.is/altext/raeda/144/rad20150603T102628.html,98,http://www.althingi.is/altext/raeda/144/rad20150416T161410.html
+Sigrún Gunnarsdóttir,117,128,http://www.althingi.is/altext/raeda/144/rad20140918T115827.html,112,http://www.althingi.is/altext/raeda/144/rad20140923T134238.html
+Silja Dögg Gunnarsdóttir,134,172,http://www.althingi.is/altext/raeda/144/rad20150218T194250.html,118,http://www.althingi.is/altext/raeda/144/rad20150218T195345.html
+Ásmundur Friðriksson,131,166,http://www.althingi.is/altext/raeda/144/rad20150623T133258.html,100,http://www.althingi.is/altext/raeda/144/rad20150522T114403.html
+Valgerður Bjarnadóttir,109,157,http://www.althingi.is/altext/raeda/144/rad20150121T190443.html,74,http://www.althingi.is/altext/raeda/144/rad20150205T160031.html
+Unnur Brá Konráðsdóttir,137,166,http://www.althingi.is/altext/raeda/144/rad20150522T155441.html,107,http://www.althingi.is/altext/raeda/144/rad20150226T222103.html
+Haraldur Einarsson,116,138,http://www.althingi.is/altext/raeda/144/rad20150528T114657.html,86,http://www.althingi.is/altext/raeda/144/rad20150430T184456.html
+Hjálmar Bogi Hafliðason,162,185,http://www.althingi.is/altext/raeda/144/rad20150612T212031.html,143,http://www.althingi.is/altext/raeda/144/rad20140923T175553.html
+Þorsteinn Sæmundsson,129,181,http://www.althingi.is/altext/raeda/144/rad20150415T152453.html,86,http://www.althingi.is/altext/raeda/144/rad20141023T115852.html
+Halldóra Mogensen,148,173,http://www.althingi.is/altext/raeda/144/rad20150225T150423.html,129,http://www.althingi.is/altext/raeda/144/rad20150324T232011.html
+Jón Árnason,122,122,http://www.althingi.is/altext/raeda/144/rad20140924T150951.html,122,http://www.althingi.is/altext/raeda/144/rad20140924T150951.html
+Jón Gunnarsson,145,178,http://www.althingi.is/altext/raeda/144/rad20150521T101235.html,109,http://www.althingi.is/altext/raeda/144/rad20150416T110524.html
+Guðbjartur Hannesson,156,200,http://www.althingi.is/altext/raeda/144/rad20150305T111837.html,119,http://www.althingi.is/altext/raeda/144/rad20150318T160823.html
+Róbert Marshall,130,169,http://www.althingi.is/altext/raeda/144/rad20150623T135257.html,99,http://www.althingi.is/altext/raeda/144/rad20150427T151704.html
+Þórunn Egilsdóttir,142,172,http://www.althingi.is/altext/raeda/144/rad20150623T135106.html,114,http://www.althingi.is/altext/raeda/144/rad20141113T120839.html
+Björn Leví Gunnarsson,134,163,http://www.althingi.is/altext/raeda/144/rad20141009T164351.html,109,http://www.althingi.is/altext/raeda/144/rad20141015T174607.html
+Álfheiður Ingadóttir,114,135,http://www.althingi.is/altext/raeda/144/rad20141021T182854.html,85,http://www.althingi.is/altext/raeda/144/rad20141021T171613.html
+Björn Valur Gíslason,135,156,http://www.althingi.is/altext/raeda/144/rad20141016T112039.html,108,http://www.althingi.is/altext/raeda/144/rad20141016T152537.html
+Anna María Elíasdóttir,141,141,http://www.althingi.is/altext/raeda/144/rad20141015T150658.html,141,http://www.althingi.is/altext/raeda/144/rad20141015T150658.html
+Sigurður Páll Jónsson,118,118,http://www.althingi.is/altext/raeda/144/rad20141016T111628.html,118,http://www.althingi.is/altext/raeda/144/rad20141016T111628.html
+Sveinbjörg Birna Sveinbjörnsdóttir,118,136,http://www.althingi.is/altext/raeda/144/rad20150303T135102.html,103,http://www.althingi.is/altext/raeda/144/rad20141016T142847.html
+Ásmundur Einar Daðason,149,181,http://www.althingi.is/altext/raeda/144/rad20150317T160335.html,125,http://www.althingi.is/altext/raeda/144/rad20150430T192347.html
+Óli Björn Kárason,118,135,http://www.althingi.is/altext/raeda/144/rad20141022T162632.html,88,http://www.althingi.is/altext/raeda/144/rad20141021T135825.html
+Oddgeir Ágúst Ottesen,156,156,http://www.althingi.is/altext/raeda/144/rad20141021T191024.html,156,http://www.althingi.is/altext/raeda/144/rad20141021T191024.html
+Eyrún Eyþórsdóttir,142,155,http://www.althingi.is/altext/raeda/144/rad20141104T135206.html,130,http://www.althingi.is/altext/raeda/144/rad20141105T164129.html
+Eyrún Ingibjörg Sigþórsdóttir,141,160,http://www.althingi.is/altext/raeda/144/rad20141120T140635.html,122,http://www.althingi.is/altext/raeda/144/rad20141120T135506.html
+Birgir Ármannsson,124,155,http://www.althingi.is/altext/raeda/144/rad20141215T152127.html,88,http://www.althingi.is/altext/raeda/144/rad20150414T223146.html
+Lúðvík Geirsson,124,139,http://www.althingi.is/altext/raeda/144/rad20141204T224501.html,106,http://www.althingi.is/altext/raeda/144/rad20141204T215831.html
+Ólöf Nordal,152,207,http://www.althingi.is/altext/raeda/144/rad20150430T114840.html,104,http://www.althingi.is/altext/raeda/144/rad20150428T201157.html
+Sigríður Á. Andersen,116,157,http://www.althingi.is/altext/raeda/144/rad20150428T135119.html,82,http://www.althingi.is/altext/raeda/144/rad20141211T181852.html
+Margrét Gauja Magnúsdóttir,131,144,http://www.althingi.is/altext/raeda/144/rad20141216T153120.html,118,http://www.althingi.is/altext/raeda/144/rad20141215T174001.html
+Sigurður Örn Ágústsson,147,155,http://www.althingi.is/altext/raeda/144/rad20150127T135746.html,133,http://www.althingi.is/altext/raeda/144/rad20150204T150615.html
+Rósa Björk Brynjólfsdóttir,134,176,http://www.althingi.is/altext/raeda/144/rad20150129T145225.html,114,http://www.althingi.is/altext/raeda/144/rad20150127T164255.html
+Áslaug María Friðriksdóttir,133,139,http://www.althingi.is/altext/raeda/144/rad20150129T173857.html,120,http://www.althingi.is/altext/raeda/144/rad20150203T172058.html
+Ásta Guðrún Helgadóttir,120,120,http://www.althingi.is/altext/raeda/144/rad20150303T135530.html,120,http://www.althingi.is/altext/raeda/144/rad20150303T135530.html
+Geir Jón Þórisson,101,101,http://www.althingi.is/altext/raeda/144/rad20150511T205200.html,101,http://www.althingi.is/altext/raeda/144/rad20150511T205200.html
+Eldar Ástþórsson,126,167,http://www.althingi.is/altext/raeda/144/rad20150624T171006.html,99,http://www.althingi.is/altext/raeda/144/rad20150702T122219.html
+Fjóla Hrund Björnsdóttir,163,163,http://www.althingi.is/altext/raeda/144/rad20150603T101753.html,163,http://www.althingi.is/altext/raeda/144/rad20150603T101753.html
+Mörður Árnason,122,146,http://www.althingi.is/altext/raeda/144/rad20150610T172943.html,98,http://www.althingi.is/altext/raeda/144/rad20150605T155411.html
+Ólafur Ragnar Grímsson,91,91,http://www.althingi.is/altext/raeda/144/rad20150619T114544.html,91,http://www.althingi.is/altext/raeda/144/rad20150619T114544.html
+Andrés Ingi Jónsson,118,127,http://www.althingi.is/altext/raeda/144/rad20150630T101708.html,109,http://www.althingi.is/altext/raeda/144/rad20150701T214426.html

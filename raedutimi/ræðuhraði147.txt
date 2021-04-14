@@ -1,0 +1,40 @@
+þingmaður, orð á mín, hraðasta ræða, url, hægasta ræða, url
+Bjarni Benediktsson,125,158,http://www.althingi.is/altext/raeda/147/rad20170926T183645.html,95,http://www.althingi.is/altext/raeda/147/rad20170927T005542.html
+Katrín Jakobsdóttir,164,190,http://www.althingi.is/altext/raeda/147/rad20170914T134224.html,132,http://www.althingi.is/altext/raeda/147/rad20170926T164538.html
+Birgitta Jónsdóttir,129,149,http://www.althingi.is/altext/raeda/147/rad20170913T200104.html,104,http://www.althingi.is/altext/raeda/147/rad20170926T170320.html
+Sigurður Ingi Jóhannsson,133,142,http://www.althingi.is/altext/raeda/147/rad20170914T115752.html,124,http://www.althingi.is/altext/raeda/147/rad20170913T200929.html
+Benedikt Jóhannesson,124,134,http://www.althingi.is/altext/raeda/147/rad20170914T173526.html,112,http://www.althingi.is/altext/raeda/147/rad20170914T163332.html
+Óttarr Proppé,123,153,http://www.althingi.is/altext/raeda/147/rad20170913T202925.html,107,http://www.althingi.is/altext/raeda/147/rad20170926T154739.html
+Logi Einarsson,131,171,http://www.althingi.is/altext/raeda/147/rad20170914T124554.html,105,http://www.althingi.is/altext/raeda/147/rad20170926T173419.html
+Sigríður Á. Andersen,125,148,http://www.althingi.is/altext/raeda/147/rad20170926T233619.html,99,http://www.althingi.is/altext/raeda/147/rad20170926T164745.html
+Steingrímur J. Sigfússon,154,179,http://www.althingi.is/altext/raeda/147/rad20170914T172838.html,122,http://www.althingi.is/altext/raeda/147/rad20170913T205544.html
+Þórhildur Sunna Ævarsdóttir,148,176,http://www.althingi.is/altext/raeda/147/rad20170926T153757.html,129,http://www.althingi.is/altext/raeda/147/rad20170926T152102.html
+Lilja Alfreðsdóttir,115,115,http://www.althingi.is/altext/raeda/147/rad20170913T210945.html,115,http://www.althingi.is/altext/raeda/147/rad20170913T210945.html
+Þorgerður K. Gunnarsdóttir,138,138,http://www.althingi.is/altext/raeda/147/rad20170913T211521.html,138,http://www.althingi.is/altext/raeda/147/rad20170913T211521.html
+Björt Ólafsdóttir,126,126,http://www.althingi.is/altext/raeda/147/rad20170913T212112.html,126,http://www.althingi.is/altext/raeda/147/rad20170913T212112.html
+Oddný G. Harðardóttir,123,123,http://www.althingi.is/altext/raeda/147/rad20170913T212749.html,122,http://www.althingi.is/altext/raeda/147/rad20170926T154003.html
+Páll Magnússon,140,140,http://www.althingi.is/altext/raeda/147/rad20170913T213326.html,140,http://www.althingi.is/altext/raeda/147/rad20170913T213326.html
+Kolbeinn Óttarsson Proppé,148,165,http://www.althingi.is/altext/raeda/147/rad20170926T184421.html,135,http://www.althingi.is/altext/raeda/147/rad20170914T144928.html
+Eva Pandora Baldursdóttir,129,131,http://www.althingi.is/altext/raeda/147/rad20170913T214147.html,128,http://www.althingi.is/altext/raeda/147/rad20170926T174653.html
+Silja Dögg Gunnarsdóttir,131,144,http://www.althingi.is/altext/raeda/147/rad20170914T142235.html,115,http://www.althingi.is/altext/raeda/147/rad20170914T143842.html
+Þorsteinn Víglundsson,145,178,http://www.althingi.is/altext/raeda/147/rad20170914T134503.html,131,http://www.althingi.is/altext/raeda/147/rad20170914T133200.html
+Theodóra S. Þorsteinsdóttir,124,134,http://www.althingi.is/altext/raeda/147/rad20170913T215802.html,114,http://www.althingi.is/altext/raeda/147/rad20170914T125122.html
+Guðjón S. Brjánsson,120,120,http://www.althingi.is/altext/raeda/147/rad20170913T220150.html,120,http://www.althingi.is/altext/raeda/147/rad20170913T220150.html
+Bjarkey Olsen Gunnarsdóttir,146,165,http://www.althingi.is/altext/raeda/147/rad20170914T112222.html,130,http://www.althingi.is/altext/raeda/147/rad20170914T111641.html
+Björn Leví Gunnarsson,132,175,http://www.althingi.is/altext/raeda/147/rad20170914T113317.html,111,http://www.althingi.is/altext/raeda/147/rad20170914T172642.html
+Haraldur Benediktsson,151,157,http://www.althingi.is/altext/raeda/147/rad20170914T123138.html,144,http://www.althingi.is/altext/raeda/147/rad20170914T120847.html
+Eygló Harðardóttir,143,176,http://www.althingi.is/altext/raeda/147/rad20170926T180146.html,113,http://www.althingi.is/altext/raeda/147/rad20170926T235110.html
+Andrés Ingi Jónsson,116,152,http://www.althingi.is/altext/raeda/147/rad20170926T134319.html,100,http://www.althingi.is/altext/raeda/147/rad20170927T002047.html
+Rósa Björk Brynjólfsdóttir,130,136,http://www.althingi.is/altext/raeda/147/rad20170914T152907.html,120,http://www.althingi.is/altext/raeda/147/rad20170914T153718.html
+Ari Trausti Guðmundsson,126,126,http://www.althingi.is/altext/raeda/147/rad20170914T154144.html,126,http://www.althingi.is/altext/raeda/147/rad20170914T154144.html
+Óli Björn Kárason,106,113,http://www.althingi.is/altext/raeda/147/rad20170914T161829.html,95,http://www.althingi.is/altext/raeda/147/rad20170914T155139.html
+Smári McCarthy,126,138,http://www.althingi.is/altext/raeda/147/rad20170914T165153.html,114,http://www.althingi.is/altext/raeda/147/rad20170914T161619.html
+Ásta Guðrún Helgadóttir,132,142,http://www.althingi.is/altext/raeda/147/rad20170914T163940.html,119,http://www.althingi.is/altext/raeda/147/rad20170914T162311.html
+Steinunn Þóra Árnadóttir,108,119,http://www.althingi.is/altext/raeda/147/rad20170914T170641.html,100,http://www.althingi.is/altext/raeda/147/rad20170914T170210.html
+Pawel Bartoszek,140,152,http://www.althingi.is/altext/raeda/147/rad20170926T150605.html,135,http://www.althingi.is/altext/raeda/147/rad20170926T160048.html
+Svandís Svavarsdóttir,122,142,http://www.althingi.is/altext/raeda/147/rad20170926T151603.html,101,http://www.althingi.is/altext/raeda/147/rad20170927T005249.html
+Hildur Sverrisdóttir,126,126,http://www.althingi.is/altext/raeda/147/rad20170926T150915.html,126,http://www.althingi.is/altext/raeda/147/rad20170926T151342.html
+Gunnar Bragi Sveinsson,142,142,http://www.althingi.is/altext/raeda/147/rad20170926T151829.html,142,http://www.althingi.is/altext/raeda/147/rad20170926T151829.html
+Jón Steindór Valdimarsson,106,106,http://www.althingi.is/altext/raeda/147/rad20170926T160633.html,106,http://www.althingi.is/altext/raeda/147/rad20170926T160633.html
+Nichole Leigh Mosty,124,130,http://www.althingi.is/altext/raeda/147/rad20170926T235250.html,117,http://www.althingi.is/altext/raeda/147/rad20170926T233944.html
+Áslaug Arna Sigurbjörnsdóttir,144,150,http://www.althingi.is/altext/raeda/147/rad20170926T230915.html,139,http://www.althingi.is/altext/raeda/147/rad20170926T235432.html

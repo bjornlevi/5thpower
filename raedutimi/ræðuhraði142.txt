@@ -1,0 +1,70 @@
+þingmaður, orð á mín, hraðasta ræða, url, hægasta ræða, url
+Birgir Ármannsson,132,153,http://www.althingi.is/xml/142/raedur/rad20130917T140228.xml,109,http://www.althingi.is/xml/142/raedur/rad20130606T160308.xml
+Sigmundur Davíð Gunnlaugsson,147,183,http://www.althingi.is/xml/142/raedur/rad20130611T133356.xml,122,http://www.althingi.is/xml/142/raedur/rad20130613T141926.xml
+Árni Páll Árnason,131,166,http://www.althingi.is/xml/142/raedur/rad20130612T160714.xml,102,http://www.althingi.is/xml/142/raedur/rad20130626T160806.xml
+Katrín Jakobsdóttir,146,163,http://www.althingi.is/xml/142/raedur/rad20130613T140012.xml,126,http://www.althingi.is/xml/142/raedur/rad20130701T230329.xml
+Bjarni Benediktsson,129,152,http://www.althingi.is/xml/142/raedur/rad20130703T195403.xml,99,http://www.althingi.is/xml/142/raedur/rad20130704T223250.xml
+Guðmundur Steingrímsson,127,167,http://www.althingi.is/xml/142/raedur/rad20130917T165144.xml,99,http://www.althingi.is/xml/142/raedur/rad20130621T112229.xml
+Jón Þór Ólafsson,124,160,http://www.althingi.is/xml/142/raedur/rad20130627T103727.xml,88,http://www.althingi.is/xml/142/raedur/rad20130702T152552.xml
+Helgi Hrafn Gunnarsson,151,171,http://www.althingi.is/xml/142/raedur/rad20130618T144625.xml,126,http://www.althingi.is/xml/142/raedur/rad20130624T191740.xml
+Eygló Harðardóttir,142,165,http://www.althingi.is/xml/142/raedur/rad20130626T162423.xml,122,http://www.althingi.is/xml/142/raedur/rad20130626T160343.xml
+Katrín Júlíusdóttir,144,196,http://www.althingi.is/xml/142/raedur/rad20130627T105926.xml,116,http://www.althingi.is/xml/142/raedur/rad20130628T142633.xml
+Ögmundur Jónasson,119,145,http://www.althingi.is/xml/142/raedur/rad20130611T152532.xml,101,http://www.althingi.is/xml/142/raedur/rad20130701T203343.xml
+Ragnheiður Ríkharðsdóttir,118,148,http://www.althingi.is/xml/142/raedur/rad20130704T201116.xml,84,http://www.althingi.is/xml/142/raedur/rad20130625T134336.xml
+Brynhildur Pétursdóttir,154,170,http://www.althingi.is/xml/142/raedur/rad20130702T134425.xml,136,http://www.althingi.is/xml/142/raedur/rad20130620T140121.xml
+Sigurður Ingi Jóhannsson,138,159,http://www.althingi.is/xml/142/raedur/rad20130614T121101.xml,113,http://www.althingi.is/xml/142/raedur/rad20130704T213151.xml
+Sigríður Ingibjörg Ingadóttir,108,129,http://www.althingi.is/xml/142/raedur/rad20130917T150717.xml,79,http://www.althingi.is/xml/142/raedur/rad20130704T134711.xml
+Bjarkey Olsen Gunnarsdóttir,141,175,http://www.althingi.is/xml/142/raedur/rad20130620T141116.xml,94,http://www.althingi.is/xml/142/raedur/rad20130916T180558.xml
+Valgerður Gunnarsdóttir,107,120,http://www.althingi.is/xml/142/raedur/rad20130910T155613.xml,91,http://www.althingi.is/xml/142/raedur/rad20130611T155826.xml
+Óttarr Proppé,117,140,http://www.althingi.is/xml/142/raedur/rad20130610T220215.xml,95,http://www.althingi.is/xml/142/raedur/rad20130912T114758.xml
+Gunnar Bragi Sveinsson,156,165,http://www.althingi.is/xml/142/raedur/rad20130912T130944.xml,147,http://www.althingi.is/xml/142/raedur/rad20130912T110817.xml
+Pétur H. Blöndal,136,169,http://www.althingi.is/xml/142/raedur/rad20130916T175624.xml,113,http://www.althingi.is/xml/142/raedur/rad20130624T160837.xml
+Árni Þór Sigurðsson,138,177,http://www.althingi.is/xml/142/raedur/rad20130911T172220.xml,105,http://www.althingi.is/xml/142/raedur/rad20130702T161856.xml
+Valgerður Bjarnadóttir,116,134,http://www.althingi.is/xml/142/raedur/rad20130613T134137.xml,103,http://www.althingi.is/xml/142/raedur/rad20130916T181251.xml
+Oddný G. Harðardóttir,117,138,http://www.althingi.is/xml/142/raedur/rad20130625T133450.xml,95,http://www.althingi.is/xml/142/raedur/rad20130628T134656.xml
+Guðbjartur Hannesson,164,210,http://www.althingi.is/xml/142/raedur/rad20130627T153151.xml,131,http://www.althingi.is/xml/142/raedur/rad20130626T172631.xml
+Lilja Rafney Magnúsdóttir,113,139,http://www.althingi.is/xml/142/raedur/rad20130614T154424.xml,80,http://www.althingi.is/xml/142/raedur/rad20130702T195110.xml
+Össur Skarphéðinsson,145,173,http://www.althingi.is/xml/142/raedur/rad20130701T202902.xml,126,http://www.althingi.is/xml/142/raedur/rad20130702T174230.xml
+Kristján L. Möller,140,160,http://www.althingi.is/xml/142/raedur/rad20130614T120414.xml,123,http://www.althingi.is/xml/142/raedur/rad20130618T172227.xml
+Helgi Hjörvar,136,182,http://www.althingi.is/xml/142/raedur/rad20130612T153116.xml,103,http://www.althingi.is/xml/142/raedur/rad20130703T142620.xml
+Svandís Svavarsdóttir,126,167,http://www.althingi.is/xml/142/raedur/rad20130916T152556.xml,96,http://www.althingi.is/xml/142/raedur/rad20130611T194903.xml
+Þorsteinn Sæmundsson,131,157,http://www.althingi.is/xml/142/raedur/rad20130620T104416.xml,107,http://www.althingi.is/xml/142/raedur/rad20130912T105104.xml
+Vilhjálmur Bjarnason,93,95,http://www.althingi.is/xml/142/raedur/rad20130912T122028.xml,90,http://www.althingi.is/xml/142/raedur/rad20130611T204332.xml
+Hanna Birna Kristjánsdóttir,171,192,http://www.althingi.is/xml/142/raedur/rad20130911T163602.xml,160,http://www.althingi.is/xml/142/raedur/rad20130627T111323.xml
+Páll Jóhann Pálsson,101,118,http://www.althingi.is/xml/142/raedur/rad20130702T000242.xml,81,http://www.althingi.is/xml/142/raedur/rad20130612T160244.xml
+Jón Gunnarsson,129,155,http://www.althingi.is/xml/142/raedur/rad20130620T105039.xml,96,http://www.althingi.is/xml/142/raedur/rad20130614T151113.xml
+Frosti Sigurjónsson,150,165,http://www.althingi.is/xml/142/raedur/rad20130917T134941.xml,132,http://www.althingi.is/xml/142/raedur/rad20130702T135551.xml
+Höskuldur Þórhallsson,120,140,http://www.althingi.is/xml/142/raedur/rad20130614T113209.xml,99,http://www.althingi.is/xml/142/raedur/rad20130703T184210.xml
+Vigdís Hauksdóttir,128,145,http://www.althingi.is/xml/142/raedur/rad20130703T173321.xml,113,http://www.althingi.is/xml/142/raedur/rad20130917T164700.xml
+Unnur Brá Konráðsdóttir,153,174,http://www.althingi.is/xml/142/raedur/rad20130613T105451.xml,132,http://www.althingi.is/xml/142/raedur/rad20130704T134925.xml
+Vilhjálmur Árnason,130,143,http://www.althingi.is/xml/142/raedur/rad20130625T135202.xml,119,http://www.althingi.is/xml/142/raedur/rad20130625T151919.xml
+Brynjar Níelsson,111,136,http://www.althingi.is/xml/142/raedur/rad20130704T203631.xml,92,http://www.althingi.is/xml/142/raedur/rad20130703T144007.xml
+Haraldur Einarsson,125,139,http://www.althingi.is/xml/142/raedur/rad20130704T111904.xml,113,http://www.althingi.is/xml/142/raedur/rad20130620T104626.xml
+Róbert Marshall,134,154,http://www.althingi.is/xml/142/raedur/rad20130614T113653.xml,109,http://www.althingi.is/xml/142/raedur/rad20130627T112048.xml
+Björt Ólafsdóttir,123,162,http://www.althingi.is/xml/142/raedur/rad20130612T160450.xml,91,http://www.althingi.is/xml/142/raedur/rad20130917T170322.xml
+Elín Hirst,136,152,http://www.althingi.is/xml/142/raedur/rad20130702T134207.xml,117,http://www.althingi.is/xml/142/raedur/rad20130912T103604.xml
+Willum Þór Þórsson,93,115,http://www.althingi.is/xml/142/raedur/rad20130627T113924.xml,69,http://www.althingi.is/xml/142/raedur/rad20130613T164021.xml
+Haraldur Benediktsson,139,169,http://www.althingi.is/xml/142/raedur/rad20130613T110436.xml,109,http://www.althingi.is/xml/142/raedur/rad20130701T160147.xml
+Illugi Gunnarsson,160,207,http://www.althingi.is/xml/142/raedur/rad20130613T181315.xml,122,http://www.althingi.is/xml/142/raedur/rad20130613T121400.xml
+Sigrún Magnúsdóttir,123,135,http://www.althingi.is/xml/142/raedur/rad20130619T152205.xml,113,http://www.althingi.is/xml/142/raedur/rad20130627T103510.xml
+Líneik Anna Sævarsdóttir,120,142,http://www.althingi.is/xml/142/raedur/rad20130917T134235.xml,95,http://www.althingi.is/xml/142/raedur/rad20130911T170623.xml
+Elsa Lára Arnardóttir,131,164,http://www.althingi.is/xml/142/raedur/rad20130627T120704.xml,105,http://www.althingi.is/xml/142/raedur/rad20130620T104148.xml
+Páll Valur Björnsson,155,198,http://www.althingi.is/xml/142/raedur/rad20130912T162559.xml,122,http://www.althingi.is/xml/142/raedur/rad20130621T171436.xml
+Silja Dögg Gunnarsdóttir,139,143,http://www.althingi.is/xml/142/raedur/rad20130613T163043.xml,132,http://www.althingi.is/xml/142/raedur/rad20130917T135129.xml
+Karl Garðarsson,138,162,http://www.althingi.is/xml/142/raedur/rad20130702T133702.xml,122,http://www.althingi.is/xml/142/raedur/rad20130917T135347.xml
+Steingrímur J. Sigfússon,149,178,http://www.althingi.is/xml/142/raedur/rad20130624T161047.xml,127,http://www.althingi.is/xml/142/raedur/rad20130912T182516.xml
+Kristján Þór Júlíusson,134,159,http://www.althingi.is/xml/142/raedur/rad20130625T143751.xml,123,http://www.althingi.is/xml/142/raedur/rad20130620T140351.xml
+Ragnheiður E. Árnadóttir,142,160,http://www.althingi.is/xml/142/raedur/rad20130621T111654.xml,112,http://www.althingi.is/xml/142/raedur/rad20130614T110338.xml
+Birgitta Jónsdóttir,119,149,http://www.althingi.is/xml/142/raedur/rad20130701T202706.xml,99,http://www.althingi.is/xml/142/raedur/rad20130916T153301.xml
+Ásmundur Friðriksson,134,147,http://www.althingi.is/xml/142/raedur/rad20130620T104832.xml,115,http://www.althingi.is/xml/142/raedur/rad20130917T134025.xml
+Ásmundur Einar Daðason,141,150,http://www.althingi.is/xml/142/raedur/rad20130618T151648.xml,131,http://www.althingi.is/xml/142/raedur/rad20130912T130004.xml
+Sigríður Á. Andersen,116,125,http://www.althingi.is/xml/142/raedur/rad20130626T152704.xml,107,http://www.althingi.is/xml/142/raedur/rad20130618T174854.xml
+Þórunn Egilsdóttir,129,134,http://www.althingi.is/xml/142/raedur/rad20130704T210803.xml,121,http://www.althingi.is/xml/142/raedur/rad20130917T173224.xml
+Jóhanna María Sigmundsdóttir,165,175,http://www.althingi.is/xml/142/raedur/rad20130912T104514.xml,158,http://www.althingi.is/xml/142/raedur/rad20130620T103311.xml
+Björn Valur Gíslason,133,154,http://www.althingi.is/xml/142/raedur/rad20130624T170923.xml,106,http://www.althingi.is/xml/142/raedur/rad20130625T170854.xml
+Rósa Björk Brynjólfsdóttir,133,149,http://www.althingi.is/xml/142/raedur/rad20130627T105648.xml,117,http://www.althingi.is/xml/142/raedur/rad20130628T123406.xml
+Edward H. Huijbens,161,193,http://www.althingi.is/xml/142/raedur/rad20130701T165041.xml,135,http://www.althingi.is/xml/142/raedur/rad20130628T122353.xml
+Freyja Haraldsdóttir,141,162,http://www.althingi.is/xml/142/raedur/rad20130702T134851.xml,112,http://www.althingi.is/xml/142/raedur/rad20130704T232630.xml
+Guðlaugur Þór Þórðarson,131,143,http://www.althingi.is/xml/142/raedur/rad20130912T125034.xml,120,http://www.althingi.is/xml/142/raedur/rad20130912T105638.xml
+Brynhildur S. Björnsdóttir,115,115,http://www.althingi.is/xml/142/raedur/rad20130703T135414.xml,115,http://www.althingi.is/xml/142/raedur/rad20130703T135414.xml
+Sigrún Gunnarsdóttir,111,127,http://www.althingi.is/xml/142/raedur/rad20130917T145817.xml,102,http://www.althingi.is/xml/142/raedur/rad20130917T133829.xml

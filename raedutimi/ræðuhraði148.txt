@@ -1,0 +1,87 @@
+þingmaður, orð á mín, hraðasta ræða, url, hægasta ræða, url
+Birgir Ármannsson,130,155,http://www.althingi.is/altext/raeda/148/rad20180222T144543.html,101,http://www.althingi.is/altext/raeda/148/rad20180124T154545.html
+Katrín Jakobsdóttir,163,205,http://www.althingi.is/altext/raeda/148/rad20171222T161918.html,126,http://www.althingi.is/altext/raeda/148/rad20180502T152815.html
+Logi Einarsson,130,174,http://www.althingi.is/altext/raeda/148/rad20171222T181020.html,100,http://www.althingi.is/altext/raeda/148/rad20171229T223055.html
+Sigmundur Davíð Gunnlaugsson,132,161,http://www.althingi.is/altext/raeda/148/rad20180122T163656.html,78,http://www.althingi.is/altext/raeda/148/rad20171215T155711.html
+Bjarni Benediktsson,129,179,http://www.althingi.is/altext/raeda/148/rad20180411T155926.html,93,http://www.althingi.is/altext/raeda/148/rad20180206T141145.html
+Halldóra Mogensen,154,183,http://www.althingi.is/altext/raeda/148/rad20180130T143019.html,119,http://www.althingi.is/altext/raeda/148/rad20180604T214724.html
+Sigurður Ingi Jóhannsson,142,163,http://www.althingi.is/altext/raeda/148/rad20180219T165858.html,120,http://www.althingi.is/altext/raeda/148/rad20180718T143641.html
+Inga Sæland,135,165,http://www.althingi.is/altext/raeda/148/rad20180226T165516.html,100,http://www.althingi.is/altext/raeda/148/rad20180611T154243.html
+Þorgerður K. Gunnarsdóttir,147,185,http://www.althingi.is/altext/raeda/148/rad20180409T165551.html,116,http://www.althingi.is/altext/raeda/148/rad20180410T225057.html
+Guðmundur Ingi Guðbrandsson,130,150,http://www.althingi.is/altext/raeda/148/rad20180305T183509.html,94,http://www.althingi.is/altext/raeda/148/rad20180416T184649.html
+Helga Vala Helgadóttir,115,156,http://www.althingi.is/altext/raeda/148/rad20180416T160744.html,80,http://www.althingi.is/altext/raeda/148/rad20180605T185208.html
+Birgir Þórarinsson,124,160,http://www.althingi.is/altext/raeda/148/rad20180130T142529.html,92,http://www.althingi.is/altext/raeda/148/rad20180322T203329.html
+Áslaug Arna Sigurbjörnsdóttir,136,167,http://www.althingi.is/altext/raeda/148/rad20180219T162811.html,82,http://www.althingi.is/altext/raeda/148/rad20180606T212054.html
+Jón Þór Ólafsson,158,235,http://www.althingi.is/altext/raeda/148/rad20180509T181135.html,118,http://www.althingi.is/altext/raeda/148/rad20180207T150106.html
+Lilja Alfreðsdóttir,132,160,http://www.althingi.is/altext/raeda/148/rad20180125T123132.html,110,http://www.althingi.is/altext/raeda/148/rad20180409T180936.html
+Ólafur Ísleifsson,107,160,http://www.althingi.is/altext/raeda/148/rad20180411T205738.html,75,http://www.althingi.is/altext/raeda/148/rad20180320T160614.html
+Þorsteinn Víglundsson,137,172,http://www.althingi.is/altext/raeda/148/rad20180227T180536.html,108,http://www.althingi.is/altext/raeda/148/rad20180301T162426.html
+Svandís Svavarsdóttir,138,209,http://www.althingi.is/altext/raeda/148/rad20180425T154122.html,96,http://www.althingi.is/altext/raeda/148/rad20171215T183915.html
+Guðmundur Andri Thorsson,105,136,http://www.althingi.is/altext/raeda/148/rad20180412T222045.html,73,http://www.althingi.is/altext/raeda/148/rad20180606T210630.html
+Anna Kolbrún Árnadóttir,129,167,http://www.althingi.is/altext/raeda/148/rad20180307T150214.html,101,http://www.althingi.is/altext/raeda/148/rad20180412T222827.html
+Ásmundur Friðriksson,128,162,http://www.althingi.is/altext/raeda/148/rad20180529T133438.html,104,http://www.althingi.is/altext/raeda/148/rad20180207T150803.html
+Helgi Hrafn Gunnarsson,157,214,http://www.althingi.is/altext/raeda/148/rad20180322T120614.html,108,http://www.althingi.is/altext/raeda/148/rad20180221T151127.html
+Ásmundur Einar Daðason,149,184,http://www.althingi.is/altext/raeda/148/rad20180606T154534.html,124,http://www.althingi.is/altext/raeda/148/rad20171215T141339.html
+Guðmundur Ingi Kristinsson,128,173,http://www.althingi.is/altext/raeda/148/rad20180412T112822.html,62,http://www.althingi.is/altext/raeda/148/rad20180413T104611.html
+Hanna Katrín Friðriksson,149,193,http://www.althingi.is/altext/raeda/148/rad20180227T163856.html,115,http://www.althingi.is/altext/raeda/148/rad20171214T221322.html
+Ágúst Ólafur Ágústsson,142,176,http://www.althingi.is/altext/raeda/148/rad20180607T145741.html,97,http://www.althingi.is/altext/raeda/148/rad20180604T203807.html
+Björn Leví Gunnarsson,129,183,http://www.althingi.is/altext/raeda/148/rad20180130T134502.html,69,http://www.althingi.is/altext/raeda/148/rad20180130T154341.html
+Bjarkey Olsen Gunnarsdóttir,142,185,http://www.althingi.is/altext/raeda/148/rad20180228T161106.html,106,http://www.althingi.is/altext/raeda/148/rad20180301T145434.html
+Oddný G. Harðardóttir,115,147,http://www.althingi.is/altext/raeda/148/rad20180321T150912.html,91,http://www.althingi.is/altext/raeda/148/rad20180607T221634.html
+Willum Þór Þórsson,111,141,http://www.althingi.is/altext/raeda/148/rad20180611T145116.html,80,http://www.althingi.is/altext/raeda/148/rad20171222T123508.html
+Njáll Trausti Friðbertsson,129,149,http://www.althingi.is/altext/raeda/148/rad20180612T230908.html,107,http://www.althingi.is/altext/raeda/148/rad20180208T155753.html
+Gunnar Bragi Sveinsson,151,196,http://www.althingi.is/altext/raeda/148/rad20180409T170503.html,118,http://www.althingi.is/altext/raeda/148/rad20180123T145545.html
+Kristján Þór Júlíusson,127,165,http://www.althingi.is/altext/raeda/148/rad20180319T165319.html,104,http://www.althingi.is/altext/raeda/148/rad20180412T194503.html
+Smári McCarthy,129,168,http://www.althingi.is/altext/raeda/148/rad20180307T152702.html,103,http://www.althingi.is/altext/raeda/148/rad20180605T184958.html
+Þórdís Kolbrún R. Gylfadóttir,151,197,http://www.althingi.is/altext/raeda/148/rad20171215T175653.html,110,http://www.althingi.is/altext/raeda/148/rad20180412T223426.html
+Guðlaugur Þór Þórðarson,151,205,http://www.althingi.is/altext/raeda/148/rad20180412T210905.html,105,http://www.althingi.is/altext/raeda/148/rad20180410T213414.html
+Sigurður Páll Jónsson,107,145,http://www.althingi.is/altext/raeda/148/rad20171228T140253.html,77,http://www.althingi.is/altext/raeda/148/rad20171229T222705.html
+Bergþór Ólason,121,169,http://www.althingi.is/altext/raeda/148/rad20180604T205032.html,86,http://www.althingi.is/altext/raeda/148/rad20180508T223443.html
+Þorsteinn Sæmundsson,131,172,http://www.althingi.is/altext/raeda/148/rad20180416T181918.html,105,http://www.althingi.is/altext/raeda/148/rad20180131T175427.html
+Sigríður Á. Andersen,133,186,http://www.althingi.is/altext/raeda/148/rad20180531T174216.html,105,http://www.althingi.is/altext/raeda/148/rad20180509T203618.html
+Þórhildur Sunna Ævarsdóttir,138,195,http://www.althingi.is/altext/raeda/148/rad20180131T150923.html,108,http://www.althingi.is/altext/raeda/148/rad20180503T165317.html
+Ari Trausti Guðmundsson,122,147,http://www.althingi.is/altext/raeda/148/rad20180409T173427.html,97,http://www.althingi.is/altext/raeda/148/rad20180222T125118.html
+Ólafur Þór Gunnarsson,116,153,http://www.althingi.is/altext/raeda/148/rad20180306T134944.html,89,http://www.althingi.is/altext/raeda/148/rad20180426T162450.html
+Vilhjálmur Árnason,137,168,http://www.althingi.is/altext/raeda/148/rad20180221T160644.html,109,http://www.althingi.is/altext/raeda/148/rad20180424T181405.html
+Guðjón S. Brjánsson,119,163,http://www.althingi.is/altext/raeda/148/rad20180607T103209.html,89,http://www.althingi.is/altext/raeda/148/rad20180227T194850.html
+Steinunn Þóra Árnadóttir,109,141,http://www.althingi.is/altext/raeda/148/rad20180413T154811.html,81,http://www.althingi.is/altext/raeda/148/rad20180227T184055.html
+Bryndís Haraldsdóttir,146,184,http://www.althingi.is/altext/raeda/148/rad20180208T112208.html,115,http://www.althingi.is/altext/raeda/148/rad20180424T201510.html
+Silja Dögg Gunnarsdóttir,131,158,http://www.althingi.is/altext/raeda/148/rad20180301T130250.html,107,http://www.althingi.is/altext/raeda/148/rad20180201T135339.html
+Jón Steindór Valdimarsson,119,158,http://www.althingi.is/altext/raeda/148/rad20180206T144321.html,88,http://www.althingi.is/altext/raeda/148/rad20180612T210104.html
+Steingrímur J. Sigfússon,140,161,http://www.althingi.is/altext/raeda/148/rad20180607T171623.html,113,http://www.althingi.is/altext/raeda/148/rad20180426T151851.html
+Karl Gauti Hjaltason,126,174,http://www.althingi.is/altext/raeda/148/rad20180322T115212.html,90,http://www.althingi.is/altext/raeda/148/rad20180130T184254.html
+Albertína Friðbjörg Elíasdóttir,139,170,http://www.althingi.is/altext/raeda/148/rad20180322T120214.html,94,http://www.althingi.is/altext/raeda/148/rad20180320T170149.html
+Rósa Björk Brynjólfsdóttir,139,182,http://www.althingi.is/altext/raeda/148/rad20180412T210655.html,110,http://www.althingi.is/altext/raeda/148/rad20180608T143027.html
+Líneik Anna Sævarsdóttir,113,153,http://www.althingi.is/altext/raeda/148/rad20180208T164520.html,90,http://www.althingi.is/altext/raeda/148/rad20180503T145910.html
+Andrés Ingi Jónsson,120,150,http://www.althingi.is/altext/raeda/148/rad20180612T215012.html,94,http://www.althingi.is/altext/raeda/148/rad20180426T175204.html
+Þórunn Egilsdóttir,142,169,http://www.althingi.is/altext/raeda/148/rad20180322T115008.html,121,http://www.althingi.is/altext/raeda/148/rad20180531T220512.html
+Lilja Rafney Magnúsdóttir,116,143,http://www.althingi.is/altext/raeda/148/rad20180410T202458.html,91,http://www.althingi.is/altext/raeda/148/rad20171229T194156.html
+Kolbeinn Óttarsson Proppé,132,180,http://www.althingi.is/altext/raeda/148/rad20180307T152024.html,89,http://www.althingi.is/altext/raeda/148/rad20180503T181919.html
+Óli Björn Kárason,109,147,http://www.althingi.is/altext/raeda/148/rad20180323T155806.html,81,http://www.althingi.is/altext/raeda/148/rad20171221T160540.html
+Halla Signý Kristjánsdóttir,130,159,http://www.althingi.is/altext/raeda/148/rad20180306T133908.html,101,http://www.althingi.is/altext/raeda/148/rad20180531T213034.html
+Brynjar Níelsson,124,154,http://www.althingi.is/altext/raeda/148/rad20180124T174015.html,88,http://www.althingi.is/altext/raeda/148/rad20180531T125218.html
+Páll Magnússon,124,131,http://www.althingi.is/altext/raeda/148/rad20180612T204915.html,113,http://www.althingi.is/altext/raeda/148/rad20180321T151948.html
+Haraldur Benediktsson,143,161,http://www.althingi.is/altext/raeda/148/rad20180503T140110.html,131,http://www.althingi.is/altext/raeda/148/rad20171229T130550.html
+Elvar Eyvindsson,141,177,http://www.althingi.is/altext/raeda/148/rad20180123T133941.html,120,http://www.althingi.is/altext/raeda/148/rad20180125T122135.html
+Olga Margrét Cilia,160,175,http://www.althingi.is/altext/raeda/148/rad20180124T150220.html,142,http://www.althingi.is/altext/raeda/148/rad20180125T133059.html
+Una Hildardóttir,127,137,http://www.althingi.is/altext/raeda/148/rad20180228T155257.html,116,http://www.althingi.is/altext/raeda/148/rad20180222T114624.html
+Unnur Brá Konráðsdóttir,173,173,http://www.althingi.is/altext/raeda/148/rad20180130T142748.html,173,http://www.althingi.is/altext/raeda/148/rad20180130T142748.html
+Bjarni Jónsson,124,124,http://www.althingi.is/altext/raeda/148/rad20180131T151411.html,124,http://www.althingi.is/altext/raeda/148/rad20180131T151411.html
+Þórarinn Ingi Pétursson,112,116,http://www.althingi.is/altext/raeda/148/rad20180221T151341.html,109,http://www.althingi.is/altext/raeda/148/rad20180131T191021.html
+Alex B. Stefánsson,143,161,http://www.althingi.is/altext/raeda/148/rad20180206T133436.html,130,http://www.althingi.is/altext/raeda/148/rad20180208T175321.html
+Jón Gunnarsson,136,173,http://www.althingi.is/altext/raeda/148/rad20180226T161105.html,114,http://www.althingi.is/altext/raeda/148/rad20180227T160529.html
+Adda María Jóhannsdóttir,154,163,http://www.althingi.is/altext/raeda/148/rad20180220T140125.html,145,http://www.althingi.is/altext/raeda/148/rad20180221T160913.html
+Pawel Bartoszek,151,184,http://www.althingi.is/altext/raeda/148/rad20180322T115510.html,126,http://www.althingi.is/altext/raeda/148/rad20180322T174601.html
+Jónína Björg Magnúsdóttir,151,177,http://www.althingi.is/altext/raeda/148/rad20180323T104951.html,119,http://www.althingi.is/altext/raeda/148/rad20180320T133838.html
+Álfheiður Eymarsdóttir,109,126,http://www.althingi.is/altext/raeda/148/rad20180322T123325.html,90,http://www.althingi.is/altext/raeda/148/rad20180410T210906.html
+Fjölnir Sæmundsson,144,157,http://www.althingi.is/altext/raeda/148/rad20180425T160216.html,133,http://www.althingi.is/altext/raeda/148/rad20180425T152355.html
+Hildur Sverrisdóttir,119,134,http://www.althingi.is/altext/raeda/148/rad20180426T172753.html,103,http://www.althingi.is/altext/raeda/148/rad20180426T173234.html
+Jón Þór Þorvaldsson,156,176,http://www.althingi.is/altext/raeda/148/rad20180426T104625.html,147,http://www.althingi.is/altext/raeda/148/rad20180426T181610.html
+Valgerður Gunnarsdóttir,113,113,http://www.althingi.is/altext/raeda/148/rad20180509T150527.html,113,http://www.althingi.is/altext/raeda/148/rad20180509T150527.html
+Sara Elísa Þórðardóttir,112,132,http://www.althingi.is/altext/raeda/148/rad20180606T110131.html,103,http://www.althingi.is/altext/raeda/148/rad20180529T195418.html
+Ásgerður K. Gylfadóttir,141,144,http://www.althingi.is/altext/raeda/148/rad20180604T215226.html,137,http://www.althingi.is/altext/raeda/148/rad20180605T170132.html
+Karl Liljendal Hólmgeirsson,160,160,http://www.althingi.is/altext/raeda/148/rad20180606T104736.html,160,http://www.althingi.is/altext/raeda/148/rad20180606T104736.html
+Teitur Björn Einarsson,102,109,http://www.althingi.is/altext/raeda/148/rad20180606T110419.html,94,http://www.althingi.is/altext/raeda/148/rad20180608T180557.html
+Snæbjörn Brynjarsson,152,161,http://www.althingi.is/altext/raeda/148/rad20180612T232337.html,138,http://www.althingi.is/altext/raeda/148/rad20180612T235503.html
+Pia Kjærsgaard,55,55,http://www.althingi.is/altext/raeda/148/rad20180718T145138.html,55,http://www.althingi.is/altext/raeda/148/rad20180718T145138.html
+Guðni Th. Jóhannesson,89,89,http://www.althingi.is/altext/raeda/148/rad20180718T150651.html,89,http://www.althingi.is/altext/raeda/148/rad20180718T150651.html
